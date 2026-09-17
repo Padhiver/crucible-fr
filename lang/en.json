@@ -5,6 +5,14 @@
       "Resilience": "Resilience",
       "Speed": "Speed"
     },
+    "TOOLTIPS": {
+      "Dexterity": "<p>Dexterity is a physical quickness attribute that reflects agility and precision of movement. Dexterity affects <strong>Initiative</strong> in taking action, the <strong>Dodge</strong> component of Physical Defense, <strong>Reflex</strong> defense, and the use of weaponry which scales with Dexterity.</p>",
+      "Intellect": "<p>Intellect is a mental quickness attribute that reflects speed of thought and decisiveness of action. Intellect affects <strong>Initiative</strong> in taking action, the <strong>Reflex</strong> defense, and the size of <strong>Focus</strong> pool.</p>",
+      "Presence": "<p>Presence is a mental resilience attribute describing a creature's force of personality, resolve, and self-belief. Presence affects <strong>Willpower</strong> defense and the size of <strong>Focus</strong> pool. Each point of Presence increases base <strong>Morale</strong> by 4.</p>",
+      "Strength": "<p>Strength is a physical power attribute describing a creature's potency, brawn and might. Strength affects <strong>Fortitude</strong> defense, carrying <strong>Capacity</strong>, and the use of weaponry which scales with Strength. Each point of Strength increases base <strong>Health</strong> by 2.</p>",
+      "Toughness": "<p>Toughness is a physical resilience attribute describing physical hardiness and tenacity. Toughness affects the <strong>Fortitude</strong> defense. Each point of Toughness increases base <strong>Health</strong> by 4.</p>",
+      "Wisdom": "<p>Wisdom is a mental power attribute describing a creature's force of conviction, depth of knowledge, and patience. Wisdom affects <strong>Willpower</strong> defense and size of <strong>Focus</strong> pool. Each point of Wisdom increases base <strong>Morale</strong> by 2.</p>"
+    },
     "Dexterity": "Dexterity",
     "DexterityAbbr": "Dex",
     "Intellect": "Intellect",
@@ -68,7 +76,7 @@
         "Name": "Reactive Strike"
       },
       "Recover": {
-        "Description": "Spend 10 minutes outside of Combat recovering from exertion to fully restore Health, Morale, Action, and Focus.",
+        "Description": "Spend 10 minutes outside of Combat recovering from exertion to fully restore <strong>Health</strong>, <strong>Morale</strong>, <strong>Action</strong>, and <strong>Focus</strong>. Any existing <strong>Heroism</strong> is removed and temporary effects with a short duration end. Recover does not reduce <strong>Wounds</strong> or <strong>Madness</strong>.",
         "Name": "Recover"
       },
       "Reload": {
@@ -76,7 +84,7 @@
         "Name": "Reload Weapon"
       },
       "Rest": {
-        "Description": "Spend ten hours to fully rest, including time to eat, sleep, tend to wounds, and recover resources.",
+        "Description": "Spend ten hours to fully rest, including time to eat, sleep, tend to wounds, and recover resources. Delivers all <strong>Recover</strong> benefits, and heroes reduce accumulated <strong>Wounds</strong> and <strong>Madness</strong> by their character <strong>Level</strong>. Temporary effects with a longer duration also end.",
         "Name": "Rest"
       },
       "Search": {
@@ -436,7 +444,7 @@
         }
       },
       "AlreadyConfirmed": "The action against you has already been confirmed and can no longer be reacted to.",
-      "AuraNoToken": "You cannot use an Aura-target action without having a token on the scene!",
+      "AuraNoToken": "You cannot use a self-emanating action without having a token on the scene!",
       "BadStatus": "You may not perform {action} while {status}.",
       "CannotAffordCost": "{name} has insufficient {resource} to use {action}!",
       "CannotAffordHands": {
@@ -784,9 +792,10 @@
       "movement": {
         "engagement": {
           "base": "Base Engagement",
+          "hint": "Number of Enemies able to be Engaged",
           "label": "Engagement",
           "labelShort": "Engage",
-          "tooltip": "Number of Enemies able to be Engaged<br>(Size - 2) + Engagement Bonus"
+          "tooltip": "Engagement describes the total number of opposing Combatants that you can simultaneously battle against without becoming more vulnerable. Heroes have a base of 1. Adversaries start at 1 and add +1 for every 2 Size above 4, rounded up.<br>Base Engagement + Engagement Bonus"
         },
         "engagementBonus": {
           "hint": "An additive modifier to base engagement.",
@@ -803,8 +812,9 @@
         },
         "stride": {
           "base": "Base Stride",
+          "hint": "Movement distance per spent Action Point.",
           "label": "Stride",
-          "tooltip": "Movement distance per spent Action Point."
+          "tooltip": "Movement actions allow you to move a number of feet up to your Stride. This movement cannot be broken up, and leftover distance is not saved across actions if you move less than your Stride.<br>Ancestry/Taxonomy Base Stride + Stride Bonus"
         },
         "strideBonus": {
           "hint": "An additive modifier to Stride speed of the Actor defined by Ancestry or Taxonomy.",
@@ -1565,12 +1575,29 @@
     "Void": "Void"
   },
   "DEFENSES": {
-    "TOOLTIPS": {
+    "FORMULAS": {
+      "Armor": "Armor Base + Quality Bonus",
+      "Block": "Sum of equipped weapon Block",
+      "Dodge": "Armor Base Dodge + max(Dexterity - Scaling, 0) + Enchantment",
       "Fortitude": "{base} + ((Strength + Wisdom) / 4)",
       "Madness": "{base} + (Madness / 10)",
+      "Parry": "Sum of equipped weapon Parry",
+      "Physical": "Armor + Dodge + Parry + Block",
       "Reflex": "{base} + ((Dexterity + Intellect) / 4)",
       "Willpower": "{base} + ((Toughness + Presence) / 4)",
       "Wounds": "{base} + (Wounds / 10)"
+    },
+    "TOOLTIPS": {
+      "Armor": "",
+      "Block": "",
+      "Dodge": "",
+      "Fortitude": "",
+      "Madness": "",
+      "Parry": "",
+      "Physical": "",
+      "Reflex": "",
+      "Willpower": "",
+      "Wounds": ""
     },
     "Armor": "Armor",
     "Block": "Block",
