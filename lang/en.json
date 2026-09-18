@@ -956,9 +956,6 @@
         "empty": "Equip up to {slots} tools or consumables from your Backpack toggling the shield icon.",
         "header": "Toolbelt"
       },
-      "TRAINING": {
-        "header": "Training Talents"
-      },
       "WEAPON": {
         "empty": "Equip weapons from your Backpack toggling the shield icon.",
         "header": "Weapons"
@@ -1040,6 +1037,9 @@
         "label": "Item Types",
         "hint": "Which item types this affix can be applied to. If no specific types are checked, then all item types are allowed."
       },
+      "properties": {
+        "label": "Affix Properties"
+      },
       "tier": {
         "label": "Tier",
         "hint": "The allowed range of power tiers for this affix. Each tier consumes one point of prefix or suffix capacity.",
@@ -1055,6 +1055,13 @@
         }
       }
     },
+    "PROPERTIES": {
+      "Cursed": "Cursed"
+    },
+    "WARNINGS": {
+      "CursedGamemasterOnly": "Only a Gamemaster may remove a Cursed affix from an item."
+    },
+    "CursedName": "Cursed {name}",
     "ConfigIdentity": "Affix Identity",
     "ConfigTier": "Tier Configuration",
     "TierRestriction": "Tier Range",
@@ -1511,6 +1518,7 @@
   "CRUCIBLE": {
     "SHEETS": {
       "Accessory": "Crucible Accessory Sheet",
+      "ActionBehavior": "Crucible Action Behavior Sheet",
       "Adversary": "Crucible Adversary Sheet",
       "Affix": "Crucible Affix Sheet",
       "Ancestry": "Crucible Ancestry Sheet",
@@ -1874,6 +1882,7 @@
       "CombineEquipped": "{item} cannot be combined into a stack while it is equipped.",
       "CombineInvalidTarget": "{item} cannot be combined: the target must be a different item on the same actor.",
       "CombineQuantity": "Cannot combine {quantity} units of {item} which holds a stack of {available}.",
+      "CursedDivestment": "{name} is cursed and cannot be divested. A Gamemaster must perform this action.",
       "HookAlreadyExists": "{item} already declares a function for the \"{hook}\" hook.",
       "InvalidIdentifier": "Invalid Crucible identifier value \"{id}\" which must be alphanumeric without spaces or special characters",
       "NotTalent": "The dropped document must be a Talent.",
@@ -1958,6 +1967,38 @@
     }
   },
   "REGION_BEHAVIORS": {
+    "ACTION": {
+      "FIELDS": {
+        "action": {
+          "hint": "The action to potentially perform on any token who triggers an event on this behavior.",
+          "label": "Triggered Action"
+        },
+        "actor": {
+          "hint": "The actor responsible for the creation of this behavior. This actor will roll any triggered actions.",
+          "label": "Origin Actor"
+        },
+        "frequency": {
+          "hint": "How frequently should this action be able to be applied to a triggering token?",
+          "label": "Frequency"
+        },
+        "origin": {
+          "hint": "The effect responsible for tracking the existence of this behavior. If present, determines which tokens should actually trigger an Action based on the originating action's targeting configuration.",
+          "label": "Origin"
+        }
+      },
+      "FREQUENCIES": {
+        "every": "Every Time",
+        "once": "Once",
+        "roundActor": "Once per Round per Actor"
+      },
+      "TABS": {
+        "action": "Action",
+        "effects": "Effects",
+        "behavior": "Behavior"
+      },
+      "ConfigTitle": "Region Action: {action}",
+      "RegionConfiguration": "Region Configuration"
+    },
     "HAZARD": {
       "FIELDS": {
         "danger": {
@@ -2706,6 +2747,7 @@
       "skill": "Crucible Skill"
     },
     "RegionBehavior": {
+      "crucible.action": "Crucible Action",
       "crucible.hazard": "Crucible Hazard"
     }
   },
@@ -2803,12 +2845,10 @@
       "Trade": "Trade Skills",
       "Weapon": "Weapon Proficiencies"
     },
-    "BonusTooltip": "Your current bonus to checks using this training.",
     "CapTooltip": "Your level presently limits any one training to {points} points.",
     "Decrease": "Reclaim a Proficiency Point",
     "Increase": "Allocate a Proficiency Point",
-    "PassiveTooltip": "Your passive score for this training.",
-    "PointsTooltip": "{points} training points accumulated, from every source."
+    "PassiveTooltip": "Your passive score for this training."
   },
   "WEAPON": {
     "CATEGORIES": {
