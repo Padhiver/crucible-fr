@@ -1004,18 +1004,6 @@
                 "public": "<p>Une lame particulièrement tranchante utilisée pour le rasage ou, dans certains cas, pour la chirurgie.</p>"
             }
         },
-        "repairKitSmith00": {
-            "name": "Kit de réparation (forge)",
-            "description": {
-                "public": "<p>Un sac en cuir contenant des pierres à aiguiser et une meuleuse, un petit marteau, un petit creuset pour liquéfier le métal et un assortiment de petits morceaux de ferraille. Peut servir à réparer les armures, les armes et les accessoires métalliques.</p>"
-            }
-        },
-        "repairKitTailor0": {
-            "name": "Kit de réparation (couture)",
-            "description": {
-                "public": "<p>Un sac en cuir contenant des ciseaux, des aiguilles, un métier à tisser et un assortiment de petits morceaux de tissu, de cuir, de fil et de ficelle. Peut servir à réparer les armures et accessoires en tissu et en cuir.</p>"
-            }
-        },
         "ring000000000000": {
             "name": "Anneau",
             "description": {

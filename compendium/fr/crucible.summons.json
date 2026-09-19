@@ -15,10 +15,6 @@
                 "EBS39VwHFZ4jvcMK": {
                     "name": "Griffes osseuses"
                 },
-                "runedeath0000000": {
-                    "name": "Rune : Mort",
-                    "description": "Vous apprenez la Rune de Mort, vous permettant de manipuler une puissance impie."
-                },
                 "gesturefan000000": {
                     "name": "Signe : Éventail",
                     "description": "Vous apprenez le signe Éventail, vous permettant de projeter une puissance arcanique dans un arc limité."
@@ -41,10 +37,6 @@
         "AlwoqQKoL1BnnZjd": {
             "name": "Visiteur de Flamme",
             "items": {
-                "runeflame0000000": {
-                    "name": "Rune : Flamme",
-                    "description": "<p>La force chaotique élémentaire, l'énergie thermique. La rune de Flamme régit le feu et la chaleur. Elle est opposée à la rune ordonnée du Givre.</p>\n<p>La rune de Flamme est basée sur l'<strong>Intellect</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts de <strong>Feu</strong> à la <strong>Santé</strong>.</p>"
-                },
                 "fireAbsorption00": {
                     "name": "Absorption de Feu",
                     "description": "<p>La @ref[actor.name]{créature} possède une capacité exceptionnelle à prospérer dans des environnements brûlants. Sa résistance au <strong>Feu</strong> est doublée et si cette résistance réduit une quantité de dégâts en dessous de zéro, le montant négatif est reçu comme <strong>Guérison</strong> à la place.</p>"
@@ -119,10 +111,6 @@
                 "7RSTMS2y9bqVGtgb": {
                     "name": "Griffe Glacée"
                 },
-                "runefrost0000000": {
-                    "name": "Rune : Givre",
-                    "description": "Vous apprenez la Rune de Givre, vous permettant de canaliser l'élément arcanique de la glace."
-                },
                 "gestureinfluence": {
                     "name": "Signe : Influence",
                     "description": "<p>Vous apprenez le signe Influence, vous permettant d'intensifier ou de diminuer un phénomène arcanique à courte portée.</p>\n<p>Le signe d'Influence est une évolution plus puissante du signe Contact, infligeant plus de dégâts ou de soins, mais nécessitant 2 Actions pour être exécuté.</p>"
@@ -174,10 +162,6 @@
                 "amorphous0000000": {
                     "name": "Informe",
                     "description": "<p>La @ref[actor.name]{créature} peut se déplacer à travers un espace aussi étroit que 1 pouce de diamètre sans aucune pénalité à sa <strong>Foulée</strong>. Elle est immunisée contre la condition @Condition[restrained].</p>"
-                },
-                "runefrost0000000": {
-                    "name": "Rune : Givre",
-                    "description": "<p>La force ordonnée élémentaire, l'énergie thermique. La rune de Givre régit la glace et le froid. Elle est opposée à la rune chaotique de Flamme.</p>\n<p>La rune de Givre est basée sur la <strong>Sagesse</strong>, cible la <strong>Fortitude</strong>, et inflige des dégâts de <strong>Froid</strong> à la <strong>Santé</strong>.</p>"
                 },
                 "aqueousTransmiss": {
                     "name": "Transmission aqueuse",
@@ -257,10 +241,6 @@
         "RuNh1bFGiHKdHeKI": {
             "name": "Lutin de Flamme",
             "items": {
-                "runeflame0000000": {
-                    "name": "Rune : Flamme",
-                    "description": "Vous apprenez la Rune de Flamme, vous permettant de tisser l'élément arcanique du feu."
-                },
                 "gesturefan000000": {
                     "name": "Signe : Éventail",
                     "description": "Vous apprenez le signe Éventail, vous permettant de projeter une puissance arcanique dans un arc limité."
@@ -293,10 +273,6 @@
         "ugQYiiEmj9idwvqW": {
             "name": "Visiteur de Terre",
             "items": {
-                "runeearth0000000": {
-                    "name": "Rune : Terre",
-                    "description": "<p>La force ordonnée de la terre élémentaire, responsable de la matière physique. La rune de Terre régit la santé et les questions relatives à la croissance biologique. Elle est opposée à la rune chaotique d'Orage.</p>\n<p>La rune de Terre est basée sur la <strong>Sagesse</strong>, cible le <strong>Réflexe</strong>, et inflige des dégâts d'<strong>Acide</strong> à la <strong>Santé</strong>.</p>"
-                },
                 "acidAbsorption00": {
                     "name": "Absorption d'Acide",
                     "description": "<p>La @ref[actor.name]{créature} possède une capacité exceptionnelle à prospérer dans des environnements acides. Sa résistance à l'<strong>Acide</strong> est doublée et si cette résistance réduit une quantité de dégâts en dessous de zéro, le montant négatif est reçu comme <strong>Guérison</strong> à la place.</p>"
@@ -334,10 +310,6 @@
                 },
                 "Qu8kL7eiBNkcOXpn": {
                     "name": "Griffe de Terre"
-                },
-                "runeearth0000000": {
-                    "name": "Rune : Terre",
-                    "description": "Vous apprenez la Rune de Terre, vous permettant de contrôler les forces tectoniques et corrosives."
                 },
                 "gestureray000000": {
                     "name": "Signe : Rayon",

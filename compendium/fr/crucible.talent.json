@@ -34,11 +34,9 @@
         "Actions": "Actions",
         "Tier 1": "Palier 1",
         "Ranged": "À Distance",
-        "Weaponry": "Armement",
         "Parry": "Parade",
         "Heroism": "Héroïsme",
         "Inflections": "Inflexions",
-        "Tradecraft": "Artisanat",
         "Armor": "Armures",
         "Action": "Action",
         "Focus": "Focus",
@@ -79,14 +77,6 @@
                 }
             }
         },
-        "alchemyJourneyma": {
-            "name": "Alchimie : Compagnon",
-            "description": "<p>Vous avez un niveau d'expérience professionnel avec les sciences alchimiques et pouvez réaliser certains des processus alchimiques les plus avancés avec suffisamment de temps.</p><p>Les propriétés de base de la plupart des ingrédients courants vous sont faciles à retenir sans documents de référence, mais vous avez toujours besoin de livres pour les recettes et ingrédients plus rares.</p>"
-        },
-        "alchemyNovice000": {
-            "name": "Alchimie : Novice",
-            "description": "<p>Vous avez reçu une formation dans les fondamentaux de l'Alchimie et êtes capable de travailler avec la plupart des concoctions et décoctions courantes.</p><p>Vous avez toujours besoin de consulter des recettes et des livres pour identifier les ingrédients alchimiques et leurs propriétés.</p>"
-        },
         "anticipateharm00": {
             "name": "Anticipation du danger",
             "description": "Vos réflexes aiguisés et votre acuité vous permettent d'anticiper un danger imminent et de réagir pour l'éviter.",
@@ -97,22 +87,6 @@
                     "description": "<p>Vous pouvez bouger de @[feet 4] immédiatement après que la zone d'effet de l'attaque soit déclarée. Si ce déplacement vous permet de sortir de la zone de l'attaque, vous n'êtes pas affecté par celle-ci.</p>"
                 }
             }
-        },
-        "arcanaAdept00000": {
-            "name": "Arcanes : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Arcanes</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
-        },
-        "arcanaJourneyman": {
-            "name": "Arcanes : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Arcanes</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
-        },
-        "arcanaMaster0000": {
-            "name": "Arcanes : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Arcanes</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
-        },
-        "arcanaNovice0000": {
-            "name": "Arcanes : Novice",
-            "description": "<p>Votre éducation a couvert les fondamentaux de la métaphysique et de la théorie magique, la relation entre les runes, la nature opposée de l'ordre et du chaos, et une introduction sommaire aux êtres spirituels, incluant les figures de culte déifiées et diabolisées les plus connues. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Arcanes</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Votre compréhension rudimentaire de la grammaire principale de la magie est suffisante pour identifier quelle rune mineure un sort ou un rituel peut utiliser, ainsi que le signe utilisé (si ce n'est l'inflexion). Vous pouvez identifier si une figure est influencée davantage par le chaos ou par l'ordre, et pouvez repérer les signes d'esprits communs (mineurs et majeurs). Vous en savez assez sur les coutumes religieuses pour communiquer avec ceux qui vénèrent un esprit ou une divinité particulière sans vous mettre dans l'embarras.</p>"
         },
         "arcanearcher0000": {
             "name": "Archer arcanique",
@@ -161,48 +135,6 @@
                     "description": "<p>Vous étudiez une créature pendant 1 minute. Effectuez un Test de Connaissance à propos de votre cible. Sur une réussite, vous apprenez toutes ses Vulnérabilités aux dégâts. Votre Initiative minimale pendant le premier round de Combat devient supérieure de 1 à l'Initiative de la cible que vous avez marqué.</p><h3 class=\"divider\">Notes de playtest</h3><p>Cette action n'est pas encore automatisée.</p>"
                 }
             }
-        },
-        "assessstrength00": {
-            "name": "Évaluer la force",
-            "description": "<p>Vous prenez un moment pour observer une créature que vous pouvez voir et développez une intuition sur ses points forts.</p>\n<p>Effectuez un <strong>Test de connaissances</strong> utilisant une Compétence choisie par le Maître du jeu. En cas de réussite, vous apprenez quel type de Défense entre Physique, Fortitude, Volonté ou Réflexe est le plus élevé chez la créature. Sur une Réussite critique, vous apprenez les deux types de défense les plus élevés.</p>",
-            "actions": {
-                "assessStrength": {
-                    "name": "Évaluer la force",
-                    "description": "<p>Vous observez une créature que vous pouvez voir pour évaluer ses points forts notables.</p>"
-                }
-            }
-        },
-        "athleticsAdept00": {
-            "name": "Athlétisme : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Athlétisme</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
-        },
-        "athleticsJourney": {
-            "name": "Athlétisme : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Athlétisme</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
-        },
-        "athleticsMaster0": {
-            "name": "Athlétisme : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Athlétisme</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
-        },
-        "athleticsNovice0": {
-            "name": "Athlétisme : Novice",
-            "description": "<p>Vous avez reçu une formation en athlétisme de base. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Athlétisme</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez si une surface peut supporter votre poids, comment trouver des prises en escaladant, et comment répartir votre poids pour flotter en nageant. Vous savez courir sur la distance et comment vous rythmer pour éviter l'épuisement.</p>"
-        },
-        "awarenessAdept00": {
-            "name": "Vigilance : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Vigilance</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
-        },
-        "awarenessJourney": {
-            "name": "Vigilance : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Vigilance</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
-        },
-        "awarenessMaster0": {
-            "name": "Vigilance : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Vigilance</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
-        },
-        "awarenessNovice0": {
-            "name": "Vigilance : Novice",
-            "description": "<p>Vous avez été formé aux bases de la vigilance situationnelle, et êtes capable de remarquer des détails importants de votre environnement. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Vigilance</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez vérifier les sorties en entrant dans une pièce, et comment chercher des armes dissimulées, des pièges cachés, et autres menaces. Vous savez repérer quand vous êtes suivi et comment chercher les cachettes communes.</p>"
         },
         "backstab00000000": {
             "name": "Frappe traîtresse",
@@ -381,18 +313,6 @@
             "name": "Économie d'effort",
             "description": "<p>Vous trouvez le calme et la concentration en économisant votre effort au combat. Lorsque vous terminez votre <strong>Tour</strong> avec de l'Action non dépensée, vous gagnez <strong>+1 Focus</strong>.</p>"
         },
-        "controlProficien": {
-            "name": "Maîtrise du Contrôle",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Contrôle. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action @Action[Compendium.crucible.talent.Item.runeControl00000 motivate], étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
-        },
-        "cookingJourneyma": {
-            "name": "Cuisine : Compagnon",
-            "description": "<p>Vous avez un niveau d'expérience professionnel dans les arts culinaires et pouvez réaliser certaines des méthodes de préparation alimentaire les plus avancées avec suffisamment de temps.</p><p>Les propriétés de base de la plupart des ingrédients courants vous sont faciles à retenir sans documents de référence, mais vous avez toujours besoin de livres pour les recettes et ingrédients plus rares.</p>"
-        },
-        "cookingNovice000": {
-            "name": "Cuisine : Novice",
-            "description": "<p>Vous avez reçu une formation dans les fondamentaux de la Cuisine et êtes capable de produire de nombreux repas courants en utilisant les ingrédients disponibles.</p><p>Vous avez toujours besoin de consulter des recettes et des livres pour identifier certains ingrédients et leurs préparations.</p>"
-        },
         "counterevade0000": {
             "name": "Contre-Esquive",
             "description": "<p>Vous êtes exercé aux styles de combat évasifs qui utilisent l'attaque manquée d'un ennemi pour concevoir une ouverture de contre-attaque.</p>",
@@ -437,26 +357,6 @@
                 }
             }
         },
-        "deathProficiency": {
-            "name": "Maîtrise de la Mort",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Mort. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action @Action[Compendium.crucible.talent.Item.runeDeath0000000 ennervate], étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
-        },
-        "deceptionAdept00": {
-            "name": "Duperie : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Duperie</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
-        },
-        "deceptionJourney": {
-            "name": "Duperie : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Duperie</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
-        },
-        "deceptionMaster0": {
-            "name": "Duperie : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Duperie</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
-        },
-        "deceptionNovice0": {
-            "name": "Duperie : Novice",
-            "description": "<p>Vous êtes un menteur et un manipulateur, et la duperie est une compétence que vous avez pratiquée. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Duperie</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez monter des mensonges et arnaques de base, et reconnaître les signes révélateurs qui trahissent souvent les mauvais menteurs. Vous pouvez constituer une fausse documentation basique pour la plupart des documents courants, mais ils ne résisteront pas à un examen minutieux.</p>"
-        },
         "decisiveAction00": {
             "name": "Action décisive",
             "description": "<p>Votre esprit aiguisé réagit rapidement au cœur du chaos des combats, identifiant et saisissant les opportunités que d'autres pourraient manquer.</p>",
@@ -499,22 +399,6 @@
                     "description": "<p>Vous devenez un cyclone d'armes tourbillonnantes, réalisant des attaques de <strong>Frappe</strong> avec vos deux armes contre chaque ennemi à porté.</p>"
                 }
             }
-        },
-        "diplomacyAdept00": {
-            "name": "Diplomatie : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Diplomatie</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
-        },
-        "diplomacyJourney": {
-            "name": "Diplomatie : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Diplomatie</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
-        },
-        "diplomacyMaster0": {
-            "name": "Diplomatie : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Diplomatie</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
-        },
-        "diplomacyNovice0": {
-            "name": "Diplomatie : Novice",
-            "description": "<p>Vous connaissez les bases du débat et comment utiliser des dispositifs rhétoriques pour rendre vos arguments plus convaincants. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Diplomatie</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez comment exploiter de l'émotion dans vos mots pour inspirer les autres ou influencer leurs opinions. Vous pouvez faire un argumentaire convaincant, et vous pouvez généralement amener les autres à être d'accord avec votre point de vue.</p>"
         },
         "dirtytricks00000": {
             "name": "Coups bas",
@@ -583,18 +467,6 @@
         "dustbinder000000": {
             "name": "Terramancien",
             "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune de Terre. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[corroding].</p><p>L'effet Corrodé dure <strong>3 Rounds</strong> et inflige la moitié du score de caractéristique que votre <strong>Rune de terre</strong> utilise en tant que dégâts d'<strong>Acide</strong> à la <strong>Santé</strong> chaque Round.</p>"
-        },
-        "earthProficiency": {
-            "name": "Maîtrise de la Terre",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Terre. Vous obtenez un <strong>Bonus de compétence de +1</strong> pour les sorts utilisant cette Rune.</p><h3 class=\"divider\">Notes de Playtest</h3><p> Ce talent permettra également éventuellement d'améliorer l'action @Action[Compendium.crucible.talent.Item.runeEarth0000000 mould], augmentant son efficacité ou incluant de nouvelles options quant à son utilisation.</p>"
-        },
-        "enchantingJourne": {
-            "name": "Enchantement : Compagnon",
-            "description": "<p>Vous avez un niveau d'expérience professionnel dans les arts de l'Enchantement et pouvez réaliser certains des rituels d'Enchantement les plus avancés avec suffisamment de temps.</p><p>Les propriétés de base de la plupart des composants imprégnés de glyphes courants vous sont faciles à retenir sans documents de référence, mais vous avez toujours besoin de livres pour les rituels rares et les matériaux compatibles.</p>"
-        },
-        "enchantingNovice": {
-            "name": "Enchantement : Novice",
-            "description": "<p>Vous avez reçu une formation dans les fondamentaux de l'Enchantement et êtes capable de travailler avec la plupart des charmes et enchantements courants.</p><p>Vous avez toujours besoin de consulter des recettes et des livres pour identifier les matériaux compatibles et leurs propriétés.</p>"
         },
         "evasiveArmor0000": {
             "name": "Armure évasive",
@@ -670,10 +542,6 @@
                 }
             }
         },
-        "flameProficiency": {
-            "name": "Maîtrise de la Flamme",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Flamme. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action @Action[Compendium.crucible.talent.Item.runeFlame0000000 enkindle], étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
-        },
         "flamingArrow0000": {
             "name": "Flèche enflammée",
             "description": "<p>Vous prenez le temps d'allumer et de décocher une flèche couverte de poix inflammable. Ce tir prend plus de temps mais est très dommageable pour les créatures ou les structures.</p>",
@@ -699,14 +567,6 @@
                 }
             }
         },
-        "fletchingJourney": {
-            "name": "Empennage : Compagnon",
-            "description": "<p>Vous avez un niveau d'expérience professionnel avec la compétence d'Empennage et pouvez travailler avec certaines des techniques d'archerie les plus avancées avec du temps.</p><p>Les propriétés de base de la plupart des composants d'empennage courants vous sont faciles à retenir sans documents de référence, mais vous avez toujours besoin de livres pour gérer les schémas et composants plus rares correctement.</p>"
-        },
-        "fletchingNovice0": {
-            "name": "Empennage : Novice",
-            "description": "<p>Vous avez reçu une formation dans les fondamentaux de l'Empennage et êtes capable de travailler avec la plupart des types courants d'arcs et leurs munitions.</p><p>Vous avez toujours besoin de consulter des schémas et des livres pour identifier les matériaux utiles et leurs propriétés.</p>"
-        },
         "flurry0000000000": {
             "name": "Déluge de coups",
             "description": "<p>Une technique martiale utilisant deux armes pour submerger une cible unique avec une séquence implacable d'attaques.</p>",
@@ -730,10 +590,6 @@
         "focusedanticipat": {
             "name": "Anticipation focalisée",
             "description": "L'anticipation mène à l'action décisive. Lorsque vous avez le score d'<strong>Initiative</strong> le plus élevé pour un Round de combat, vous gagnez <strong>+1 Focus</strong>.<p></p>"
-        },
-        "frostProficiency": {
-            "name": "Maîtrise du Givre",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Givre. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action @Action[Compendium.crucible.talent.Item.runeFrost0000000 condense], étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "fulcrum000000000": {
             "name": "Pivot",
@@ -814,14 +670,6 @@
             "name": "Gladiateur",
             "description": "<p>Une fois par Round, vous pouvez effectuer une Réaction qui incorpore une attaque de Frappe sans dépenser de Focus.</p>"
         },
-        "glyphweavingJour": {
-            "name": "Tissage de glyphe : Compagnon",
-            "description": "<p>Vous possédez une expérience professionnelle en sciences runiques et pouvez, avec suffisamment de temps, maîtriser certains des procédés de tissage de glyphe les plus avancés.</p><p>Les propriétés de base des glyphes les plus courants et de leurs phrases vous sont faciles à mémoriser sans documents de référence, mais vous aurez tout de même besoin de livres pour les idéogrammes rares et leurs composantes.</p>"
-        },
-        "glyphweavingNovi": {
-            "name": "Tissage de glyphe : Novice",
-            "description": "<p>Vous avez reçu une formation aux principes fondamentaux du tissage de glyphe et êtes capable de travailler avec la plupart des glyphes et gravures courants.</p><p>Vous devrez toujours consulter des recettes et des livres pour identifier les glyphes particuliers et leurs propriétés.</p>"
-        },
         "hamstring0000000": {
             "name": "Coupe-Jarret",
             "description": "<p>Vous utilisez une arme tranchante pour cibler les jambes d'un ennemi et paralyser son mouvement.</p>",
@@ -867,31 +715,9 @@
                 }
             }
         },
-        "heavyWeaponProfi": {
-            "name": "Armes lourdes : Maîtrise",
-            "description": "<p>Vous avez une éducation fluide dans l'utilisation de l'armement martial. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de compétence de +1</strong> avec les armes des catégories <strong>Simple</strong>, <strong>Lourde</strong> et <strong>Équilibrée</strong>.</p>"
-        },
-        "heavyWeaponTrain": {
-            "name": "Armes lourdes : Entraînement",
-            "description": "<p>Vous savez utiliser une arme lourde pour porter des coups dévastateurs, en mettant toute votre force dans chaque mouvement. Vous êtes <strong>Formé</strong> avec toutes les armes des catégories <strong>Lourdes</strong> et <strong>Équilibrées</strong>.</p>",
-            "actions": {
-                "heavyStrike": {
-                    "name": "Frappe lourde",
-                    "description": "<p>Vous libérez une <strong>Frappe</strong> puissante avec l'arme de votre main principale. L'attaque est plus lente à exécuter, mais est <strong>Améliorée</strong> pour délivrer des dégâts supplémentaires.</p>"
-                }
-            }
-        },
         "holdfast00000000": {
             "name": "Tenir bon",
             "description": "<p>Vous êtes une ancre calme dans la mer tourbillonnante du combat. Lorsque vous avez un Bouclier équipé, votre <strong>Engagement</strong> augmente de +1, vous permettant d'engager simultanément plus d'ennemis adjacents.</p>"
-        },
-        "illuminationProf": {
-            "name": "Maîtrise de l'Illumination",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune d'Illumination. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action @Action[Compendium.crucible.talent.Item.runeIllumination reveal], étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
-        },
-        "illusionProficie": {
-            "name": "Maîtrise de l'Illusion",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune d'Illusion. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action @Action[Compendium.crucible.talent.Item.runeIllusion0000 seeming], étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "impenetrableGuar": {
             "name": "Garde impénetrable",
@@ -1010,22 +836,6 @@
                 }
             }
         },
-        "intimidationAdep": {
-            "name": "Intimidation : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Intimidation</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
-        },
-        "intimidationJour": {
-            "name": "Intimidation : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Intimidation</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
-        },
-        "intimidationMast": {
-            "name": "Intimidation : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Intimidation</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
-        },
-        "intimidationNovi": {
-            "name": "Intimidation : Novice",
-            "description": "<p>Vous comprenez les fondamentaux de comment les menaces et la coercition peuvent atteindre les résultats souhaités. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Intimidation</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez comment utiliser de simples démonstrations de violence ou des menaces ouvertes pour amener les autres à suivre votre direction, mais vous n'êtes pas très subtil.</p>"
-        },
         "intimidator00000": {
             "name": "Intimidateur",
             "description": "Vous vous spécialisez dans l'exercice de votre présence intimidante pour briser le moral de vos ennemis.",
@@ -1058,21 +868,9 @@
             "name": "Esprit irrépressible",
             "description": "Votre ténacité vous donne un esprit irrépressible qui résiste à l'apparition du désespoir. Au début de votre tour, si vous n'êtes pas @Condition[broken], vous gagnez 1 de Moral."
         },
-        "jewelcraftJourne": {
-            "name": "Joaillerie : Compagnon",
-            "description": "<p>Vous avez un niveau d'expérience professionnel dans l'art de la Joaillerie et pouvez travailler avec certaines des tailles et conceptions les plus avancées avec du temps.</p><p>Les propriétés de base de la plupart des gemmes courantes et métaux ornés vous sont faciles à retenir sans documents de référence, mais vous avez toujours besoin de livres pour gérer les schémas et composants rares correctement.</p>"
-        },
-        "jewelcraftNovice": {
-            "name": "Joaillerie : Novice",
-            "description": "<p>Vous avez reçu une formation dans les fondamentaux de la Joaillerie et êtes capable de travailler avec la plupart des sertissages et conceptions courants.</p><p>Vous avez toujours besoin de consulter des schémas et des livres pour identifier les pierres précieuses, métaux ornés, et leurs propriétés.</p>"
-        },
         "justiciar0000000": {
             "name": "Inquisiteur",
             "description": "<p>Vous êtes un instrument de justice. Les attaques de Frappe critique infligent aussi la portion de Surplus des dégâts au Moral ennemi.</p>"
-        },
-        "kinesisProficien": {
-            "name": "Maîtrise de la Kinésie",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Kinésie. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action @Action[Compendium.crucible.talent.Item.runeKinesis00000 propel], étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "kineturge0000000": {
             "name": "Kinéthurge",
@@ -1116,27 +914,9 @@
             "name": "Régénération mineure",
             "description": "<p>Votre robustesse prodigieuse transmet une capacité surnaturelle à récupérer des blessures rapidement. Au début de votre tour, si vous n'êtes pas @Condition[weakened], vous gagnez <strong>+1 de Santé</strong>.</p>"
         },
-        "lifeProficiency0": {
-            "name": "Maîtrise de la Vie",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Vie. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action @Action[Compendium.crucible.talent.Item.runeLife00000000 bloom], étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
-        },
         "lightbringer0000": {
             "name": "Porteur de lumière",
             "description": "<p>Vous êtes hautement qualifié dans le tissage de la Rune d'Illumination. Lorsque vous lancez un Sort ou utilisez une action qui implique cette Rune, vos Coups critiques qui infligent des dégâts causent la condition @Condition[irradiated].</p><p>L'effet Irradié dure <strong>1 Round</strong> et inflige le score de caractéristique que votre <strong>Rune d'illumination</strong> utilise en tant que dégâts <strong>Radiants</strong> à la fois à la <strong>Santé</strong> et au <strong>Moral</strong>.</p>"
-        },
-        "lightWeaponProfi": {
-            "name": "Armes légères : Maîtrise",
-            "description": "<p>Vous avez une éducation fluide dans l'utilisation de l'armement martial. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de compétence de +1</strong> avec les armes des catégories <strong>Légère</strong> et <strong>Équilibrée</strong>.</p>"
-        },
-        "lightWeaponTrain": {
-            "name": "Armes légères : Entraînement",
-            "description": "<p>Vous savez manier les armes légères avec fluidité, une grande maniabilité et une grâce remarquable au combat. Vous êtes <strong>Formé</strong> avec toutes les armes des catégories <strong>Légère</strong> et <strong>Équilibrée</strong>.</p>",
-            "actions": {
-                "lunge": {
-                    "name": "Fente",
-                    "description": "<p>Vous vous élancez avec agilité, portant un coup d'une rapidité soudaine et inattendue pour effectuer une <strong>Frappe</strong> avec une arme basée sur la <strong>Dextérité</strong> contre une cible unique, à une portée accrue de <strong>+@[feet 2]</strong>.</p><p>L'attaque est <strong>Difficile</strong>, mais vous ne quittez pas votre position actuelle et elle ne provoque pas de Désengagement.</p>"
-                }
-            }
         },
         "markprey00000000": {
             "name": "Marquer la proie",
@@ -1156,36 +936,6 @@
         "martialartist000": {
             "name": "Artiste martial",
             "description": "Vous avez affiné votre corps en une arme dangereuse. Vos poings nus sont traités comme des armes de qualité Raffinée, augmentant leurs dégâts de +1."
-        },
-        "mechanicalProfic": {
-            "name": "Armes mécaniques : Maîtrise",
-            "description": "<p>Vous avez une éducation fluide dans l'utilisation des arbalètes, armes à feu et autres armes mécaniques. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de compétence de +1</strong> avec les armes de la catégorie <strong>Mécanique</strong>.</p>"
-        },
-        "mechanicalWeapon": {
-            "name": "Armes mécaniques : Entraînement",
-            "description": "<p>Vous connaissez bien la conception et l'utilisation des arbalètes, des armes à feu et autres armements similaires. Vous êtes <strong>Formé</strong> au maniement des armes de la catégorie <strong>Mécanique</strong>.</p>",
-            "actions": {
-                "rapidReload": {
-                    "name": "Rechargement rapide",
-                    "description": "<p>Vous vous concentrez intensément et calmez vos nerfs pour <strong>Recharger</strong> rapidement votre arme mécanique avec une rapidité exceptionnelle.</p>"
-                }
-            }
-        },
-        "medicineAdept000": {
-            "name": "Médecine : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Médecine</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
-        },
-        "medicineJourneym": {
-            "name": "Médecine : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Médecine</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
-        },
-        "medicineMaster00": {
-            "name": "Médecine : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Médecine</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
-        },
-        "medicineNovice00": {
-            "name": "Médecine : Novice",
-            "description": "<p>Vous avez une éducation de base en anatomie, physiologie et médecine. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Médecine</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous avez appris les bases du traitement des blessures et maladies courantes, et tenez une liste courante des composés alchimiques et à base de plantes connus qui peuvent être utilisés pour traiter des maladies particulières. Avec un peu de temps pour étudier un individu blessé, malade ou autrement souffrant, vous pouvez effectuer un diagnostic de base et traiter en conséquence.</p>"
         },
         "mender0000000000": {
             "name": "Vivificateur",
@@ -1219,20 +969,6 @@
                 }
             }
         },
-        "naturalWeaponPro": {
-            "name": "Armes naturelles : Maîtrise",
-            "description": "<p>Vous avez une familiarité fluide avec l'utilisation des armes corporelles naturelles. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de compétence de +1</strong> avec les armes de la catégorie <strong>Naturelle</strong>.</p>"
-        },
-        "naturalWeaponTra": {
-            "name": "Armes naturelles : Entraînement",
-            "description": "<p>Vous avez une familiarité développée avec l'utilisation de caractéristiques de votre propre corps comme armes naturelles incluant griffes, mâchoires, queues ou autres mécanismes d'autodéfense. Vous êtes <strong>Formé</strong> avec les armes de la catégorie <strong>Naturelle</strong>.</p>",
-            "actions": {
-                "wildStrike": {
-                    "name": "Frappe sauvage",
-                    "description": "<p>Immédiatement après avoir effectué une Frappe de base, vous effectuez une autre <strong>Frappe</strong> à coût réduit contre la même cible en utilisant une autre arme <strong>Naturelle</strong> à votre disposition.</p>"
-                }
-            }
-        },
         "necromancer00000": {
             "name": "Nécromancien",
             "description": "<p>Vous êtes hautement qualifié dans le tissage de la rune de Mort. Lorsque vous lancez un Sort ou utilisez une action qui implique cette rune, vos Coups critiques qui infligent des dégâts appliquent également la condition @Condition[decaying].</p><p>L'effet de Décomposition dure <strong>3 Rounds</strong> et inflige la moitié du score de caractéristique que votre <strong>Rune de mort</strong> utilise en tant que dégâts de <strong>Corruption</strong> à la <strong>Santé</strong> chaque Round.</p>"
@@ -1251,10 +987,6 @@
                     "description": "<p>Vous saisissez un ennemi et le mordez avec vos incisives acérées, drainant rapidement son sang pour guérir vos propres blessures. Cette attaque requière un main libre pour agripper votre cible alors que vous vous nourrissez, et recouvrez votre score de <strong>Robustesse</strong> à la <strong>Santé</strong>.</p>"
                 }
             }
-        },
-        "oblivionProficie": {
-            "name": "Maîtrise du Néant",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune de Néant. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action @Action[Compendium.crucible.talent.Item.runeOblivion0000 erase], étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "operator00000000": {
             "name": "Opérateur",
@@ -1308,22 +1040,6 @@
                     "description": "<p>Vous effectuez une attaque d'arme de @Rule[action.thrown] qui s'insinue pour toucher tous les ennemis sur une ligne droite.</p>"
                 }
             }
-        },
-        "performanceAdept": {
-            "name": "Performance : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Performance</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
-        },
-        "performanceJourn": {
-            "name": "Performance : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Performance</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
-        },
-        "performanceMaste": {
-            "name": "Performance : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Performance</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
-        },
-        "performanceNovic": {
-            "name": "Performance : Novice",
-            "description": "<p>Vous avez appris les pratiques de base de l'art et du divertissement. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Performance</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous connaissez quelques danses courantes, avez une collection de contes bien connus, et vous pourriez probablement chanter ou jouer quelques chansons populaires. Vous pouvez être formé à un instrument ou deux, et votre capacité avec un pinceau ou une plume est assez raisonnable pour que vous puissiez probablement créer une œuvre d'art passable.</p>"
         },
         "perspicacity0000": {
             "name": "Perspicacité",
@@ -1398,20 +1114,6 @@
         "preternaturalins": {
             "name": "Instinct surnaturel",
             "description": "Votre rapidité d'esprit et de corps sont également impressionnantes. Vous gagnez +2 Faveurs à tous les tests d'Initiative."
-        },
-        "projectileProfic": {
-            "name": "Armes de projectile : Maîtrise",
-            "description": "<p>Vous avez une éducation fluide dans l'utilisation de l'armement de projectile. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de compétence de +1</strong> avec les armes de la catégorie <strong>Projectile</strong>.</p>"
-        },
-        "projectileWeapon": {
-            "name": "Armes de projectile : Entraînement",
-            "description": "<p>Vous avez une éducation de base en archerie et autres armes à projectile. Vous n'êtes plus traité comme <strong>Non formé</strong> avec les armes des catégories <strong>Projectile</strong>.</p>",
-            "actions": {
-                "quickDraw": {
-                    "name": "Dégainage rapide",
-                    "description": "<p>Vous pouvez décocher un tir sous pression, mais avec une précision réduite. Vous effectuez une <strong>Frappe</strong> qui est <strong>Difficile</strong>, mais dont le coût en Action est réduit.</p>"
-                }
-            }
         },
         "provocateur00000": {
             "name": "Provocateur",
@@ -1604,22 +1306,6 @@
             "name": "Cambrioleur",
             "description": "<p>Vous êtes qualifié dans les arts du désarmement de pièges et du crochetage de serrures. Vous gagnez +1 Faveur sur les tests de <strong>Furtivité</strong> pour désactiver un dispositif ou ouvrir une serrure.</p>"
         },
-        "scienceAdept0000": {
-            "name": "Science : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Science</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
-        },
-        "scienceJourneyma": {
-            "name": "Science : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Science</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
-        },
-        "scienceMaster000": {
-            "name": "Science : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Science</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
-        },
-        "scienceNovice000": {
-            "name": "Science : Novice",
-            "description": "<p>Vous avez appris à étudier le monde autour de vous à travers l'observation structurée, les mathématiques, la physique, la chimie et d'autres disciplines. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Science</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous êtes familier avec les principes de base des mathématiques, de la physique, de la chimie ou d'autres études scientifiques. Vous savez comment construire et utiliser des machines simples dans le but de rendre les tâches physiques plus faciles. Vous connaissez certaines des théories scientifiques les plus communément comprises, et avec le temps approprié pour étudier des machines plus complexes, vous pourriez être capable au moins de les faire fonctionner.</p>"
-        },
         "seasonedveteran0": {
             "name": "Vétéran chevronné",
             "description": "<p>Votre expérience du champ de bataille vous rend habitué à engager plusieurs ennemis. Votre <strong>Engagement</strong> augmente de +1, vous permettant d'engager simultanément plus d'ennemis adjacents.</p>"
@@ -1663,25 +1349,6 @@
                 }
             }
         },
-        "shieldCombatProf": {
-            "name": "Combat au bouclier : Maîtrise",
-            "description": "<p>Vous avez une éducation fluide dans l'utilisation des boucliers au combat. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de compétence de +1</strong> avec les armes de la catégorie <strong>Bouclier</strong>.</p>"
-        },
-        "shieldCombatTrai": {
-            "name": "Combat au bouclier : Entraînement",
-            "description": "<p>Vous maîtrisez le combat au bouclier, l'utilisant pour percuter et déséquilibrer vos ennemis. Vous êtes <strong>Formé</strong> au maniement des armes de la catégorie <strong>Bouclier</strong>.</p>",
-            "actions": {
-                "shieldBash": {
-                    "name": "Coup de bouclier",
-                    "description": "<p>Après une Frappe de base avec votre arme principale, vous <strong>Frappez</strong> avec votre bouclier, infligeant la condition @Condition[staggered] pendant un Round.</p>",
-                    "effects": {
-                        "Shield Bash": {
-                            "name": "Coup de bouclier"
-                        }
-                    }
-                }
-            }
-        },
         "shieldward000000": {
             "name": "Protection de bouclier",
             "description": "<p>Vous avez maîtrisé une technique spécialisée pour incorporer un bouclier physique dans le signe de <strong>Protection</strong>. Vous pouvez ignorer l'exigence de main libre pour les sorts utilisant le signe de Protection tant que vous avez un <strong>Bouclier</strong> équipé.</p>"
@@ -1701,33 +1368,9 @@
                 }
             }
         },
-        "smithingJourneym": {
-            "name": "Forge : Compagnon",
-            "description": "<p>Vous avez un niveau d'expérience professionnel avec la compétence de Forgeron et pouvez travailler à travers certaines des techniques et schémas les plus avancés avec du temps.</p><p>Les propriétés de base de la plupart des métaux courants vous sont faciles à retenir sans documents de référence, mais vous avez toujours besoin de livres pour les schémas et alliages plus rares.</p>"
-        },
-        "smithingNovice00": {
-            "name": "Forge : Novice",
-            "description": "<p>Vous avez reçu une formation dans les fondamentaux de Forgeron et êtes capable de travailler avec la plupart des métaux courants.</p><p>Vous avez toujours besoin de consulter des schémas et des livres pour identifier des alliages particuliers et leurs propriétés.</p>"
-        },
         "snakeblood000000": {
             "name": "Sang de Serpent",
             "description": "Votre robustesse surnaturelle vous rend résistant aux venins et toxines. Vous gagnez +5 Résistance aux dégâts de Poison."
-        },
-        "societyAdept0000": {
-            "name": "Société : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Société</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
-        },
-        "societyJourneyma": {
-            "name": "Société : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Société</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
-        },
-        "societyMaster000": {
-            "name": "Société : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Société</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
-        },
-        "societyNovice000": {
-            "name": "Société : Novice",
-            "description": "<p>Vous avez appris les éléments fondamentaux de la Société, les mœurs, croyances, histoires et politiques qui informent directement la croissance de la culture. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Société</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous comprenez que l'histoire et la politique contribuent de manière proéminente à la façon dont les décisions sont prises aux plus hauts et plus bas niveaux de la société, et comment la tradition informe fréquemment les sous-groupes de la société pour les placer en opposition les uns aux autres.</p>"
         },
         "soothe0000000000": {
             "name": "Apaiser",
@@ -1742,10 +1385,6 @@
         "sorcerer00000000": {
             "name": "Sorcier",
             "description": "<p>Votre magie est profondément instinctive et votre pratique de la magie défie toute compréhension académique traditionnelle.</p><p>Vous ne pouvez pas lancer de <strong>Sorts iconique</strong>, mais lorsque vous lancez un sort en utilisant une <strong>Inflexion</strong>, il inflige <strong>+1 dégâts</strong> supplémentaires par emplacement de Sort iconique dont vous disposez.</p>"
-        },
-        "soulProficiency0": {
-            "name": "Maîtrise de l'Âme",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune d'Âme. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de test</h3><p>Ce talent fournira éventuellement une amélioration à l'action @Action[Compendium.crucible.talent.Item.runeSoul00000000 evoke], étendant son efficacité ou incluant de nouvelles options d'utilisation.</p>"
         },
         "spellblade000000": {
             "name": "Sorcelame",
@@ -1769,22 +1408,6 @@
                     }
                 }
             }
-        },
-        "stealthAdept0000": {
-            "name": "Furtivité : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Furtivité</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
-        },
-        "stealthJourneyma": {
-            "name": "Furtivité : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Furtivité</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
-        },
-        "stealthMaster000": {
-            "name": "Furtivité : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Furtivité</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
-        },
-        "stealthNovice000": {
-            "name": "Furtivité : Novice",
-            "description": "<p>Vous avez reçu une formation dans les bases de la furtivité, de l'infiltration et du subterfuge. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Furtivité</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez comment utiliser la lumière et l'ombre pour masquer votre présence, répartir votre poids en marchant afin de vous déplacer plus silencieusement, et vous avez appris quelques astuces de déguisement pour vous fondre dans une foule. Vous pouvez paraître non suspect lorsque vous êtes entouré par d'autres, vous cacher dans une pièce sombre, et vous déplacer assez silencieusement pour éviter d'être détecté par une personne lambda.</p>"
         },
         "stilllake0000000": {
             "name": "Lac impassible",
@@ -1864,28 +1487,6 @@
                 }
             }
         },
-        "tailoringJourney": {
-            "name": "Couture : Compagnon",
-            "description": "<p>Vous avez un niveau d'expérience professionnel dans l'art du tissage et pouvez maîtriser certaines des techniques de couture les plus avancées avec suffisamment de temps.</p><p>Les propriétés de base de la plupart des tissus et fils courants vous sont faciles à retenir sans documents de référence, mais vous avez toujours besoin de livres pour les patrons et matériaux plus rares.</p>"
-        },
-        "tailoringNovice0": {
-            "name": "Couture : Novice",
-            "description": "<p>Vous avez reçu une formation dans les fondamentaux de la Couture et êtes capable de travailler avec la plupart des tissus et patrons courants.</p><p>Vous avez toujours besoin de consulter des recettes et des livres pour identifier les tissus, les cuirs, et leurs propriétés.</p>"
-        },
-        "talismanWeaponPr": {
-            "name": "Talismans : Maîtrise",
-            "description": "<p>Vous avez une éducation fluide dans l'utilisation des talismans, orbes, focalisateurs ou autres armes similaires. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de compétence de +1</strong> avec les armes de la catégorie <strong>Talisman</strong>.</p>"
-        },
-        "talismanWeaponTr": {
-            "name": "Talismans : Entraînement",
-            "description": "<p>Vous comprenez l’utilisation ésotérique des talismans, des orbes, des focalisateurs ou d’autres instruments similaires pour canaliser ou renforcer l’art de la magie. Vous êtes <strong>Formé</strong> avec des armes appartenant aux catégories <strong>Talisman</strong>.</p>",
-            "actions": {
-                "refocus": {
-                    "name": "Canalisation",
-                    "description": "<p>Vous utilisez votre talisman équipé pour tenter de récupérer du <strong>Focus</strong>. Vous effectuez une <strong>Frappe inoffensive</strong> contre votre propre seuil de <strong>Ralliement</strong>.</p><p>En cas de réussite, vous récupérez <strong>+1 Focus</strong> si vous utilisez un talisman à une main et <strong>+2 Focus</strong> si vous utilisez un talisman à deux mains. En cas de réussite critique, la quantité de Focus récupérée augmente de +1.</p>"
-                }
-            }
-        },
         "testudo000000000": {
             "name": "Tortue",
             "description": "Vous êtes hautement qualifié dans l'utilisation des boucliers pour adopter une posture défensive. Vous gagnez le double du bénéfice de la condition @Condition[guarded] contre les <strong>Attaques d'Arme</strong> en maniant un bouclier."
@@ -1935,28 +1536,6 @@
         "unarmedblocking0": {
             "name": "Blocage à Mains nues",
             "description": "Vos réflexes affinés et votre robustesse physique vous permettent de bloquer les coups ennemis en utilisant vos membres nus. Tant que vous êtes <strong>À mains nues</strong> ou ne portez que des armes naturelles, la moitié de votre score de Robustesse contribue à votre défense de <strong>Blocage</strong>."
-        },
-        "unarmedCombatPro": {
-            "name": "Combat à mains nues : Maîtrise",
-            "description": "<p>Vous avez une éducation fluide dans le combat au corps à corps et autres arts martiaux. Vous obtenez le rang d'entraînement de <strong>Compagnon</strong> et un <strong>Bonus de compétence de +1</strong> avec les armes de la catégorie <strong>Mains nues</strong>.</p>"
-        },
-        "unarmedCombatTra": {
-            "name": "Combat à mains nues : Entraînement",
-            "description": "<p>Vous connaissez les arts martiaux de base et le combat au corps à corps. Vous savez comment maîtriser ou contraindre vos adversaires en utilisant votre force physique. Vous êtes <strong>Formé</strong> au maniement des armes dans la catégorie <strong>Mains nues</strong>.</p>",
-            "actions": {
-                "grapple": {
-                    "name": "Agripper",
-                    "description": "<p>Vous tentez de maîtriser physiquement un adversaire. Effectuez une attaque de compétence d'<strong>Athlétisme</strong> contre une cible adjacente. En cas de réussite, vous et votre cible êtes tous deux @Condition[restrained] pendant 1 Round.</p>",
-                    "effects": {
-                        "Grappled": {
-                            "name": "Agrippé"
-                        },
-                        "Grappling": {
-                            "name": "Lutte"
-                        }
-                    }
-                }
-            }
         },
         "unshakeablePoise": {
             "name": "Équilibre inébranlable",
@@ -2012,22 +1591,6 @@
         "weakpoints000000": {
             "name": "Points faibles",
             "description": "<p>Vous identifiez des moments d'opportunité pour frapper les points faibles d'un ennemi. Lors de l'attaque d'une cible @Condition[unaware], @Condition[flanked], ou @Condition[exposed] en utilisant une arme basée sur la <strong>Dextérité</strong>, vous gagnez +2 dégâts à toute Frappe.</p>"
-        },
-        "wildernessAdept0": {
-            "name": "Nature : Adepte",
-            "description": "<p>Vous obtenez le rang d'<strong>Adepte</strong> dans la compétence <strong>Nature</strong>, fournissant un <strong>Bonus de compétence de +2</strong>.</p>"
-        },
-        "wildernessJourne": {
-            "name": "Nature : Compagnon",
-            "description": "<p>Vous obtenez le rang de <strong>Compagnon</strong> dans la compétence <strong>Nature</strong>, fournissant un <strong>Bonus de compétence de +1</strong>.</p>"
-        },
-        "wildernessMaster": {
-            "name": "Nature : Maître",
-            "description": "<p>Vous obtenez le rang de <strong>Maître</strong> dans la compétence <strong>Nature</strong>, fournissant un <strong>Bonus de compétence de +3</strong>.</p>"
-        },
-        "wildernessNovice": {
-            "name": "Nature : Novice",
-            "description": "<p>Vous avez reçu une formation aux bases de la survie et de la traversée en milieu sauvage. Vous obtenez le rang de <strong>Novice</strong> dans la compétence <strong>Nature</strong> et n'êtes plus considéré comme <strong>Non formé</strong> dans cette compétence.</p><p>Vous savez comment trouver et construire un abri sûr contre les éléments, allumer un feu pour la chaleur, rester au frais dans des environnements chauds. Vous pouvez trouver de l'eau potable et sûre dans la plupart des endroits, et comment identifier quelles plantes et animaux peuvent servir de sources de nourriture sûres.</p>"
         },
         "wildspeaker00000": {
             "name": "Orateur sauvage",
@@ -2270,10 +1833,6 @@
         "spiritbreaker000": {
             "name": "Brise-esprit",
             "description": "<p>Vous menez une guerre contre l'esprit même, sapant la détermination de vos ennemis. Vos actions qui attaquent directement le <strong>Moral</strong> trouvent plus facilement les failles dans la volonté d'une créature, réduisant votre <strong>Seuil de critique</strong> de 2.</p><p>Lorsque vous amenez une cible à être @Condition[broken], le choc psychologique la laisse @Condition[stunned] jusqu'à la fin de son prochain tour.</p>"
-        },
-        "stormProficiency": {
-            "name": "Maîtrise de l'Orage",
-            "description": "<p>Vous avez une aisance à tisser la sorcellerie en utilisant la Rune d'Orage. Vous gagnez un <strong>Bonus de compétence de +1</strong> pour les sorts lancés avec cette Rune.</p><h3 class=\"divider\">Notes de Playtest</h3><p>Ce talent permettra à terme d'améliorer l'action @Action[Compendium.crucible.talent.Item.runeStorm0000000 energize], en augmentant son efficacité ou en proposant de nouvelles façons de l'utiliser.</p>"
         },
         "telekinetic00000": {
             "name": "Télékinésiste",
