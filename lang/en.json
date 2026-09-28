@@ -516,6 +516,7 @@
       "NoViewedScene": "A viewed Scene is required to acquire targets for this action.",
       "OncePerRound": "You may only perform the {action} action once per round.",
       "OncePerTurn": "You may only perform the {action} action once per turn.",
+      "PassThroughMaxOne": "You may move through the space of only one other creature.",
       "ReactionUnaware": "You may not use a reaction while Unaware!",
       "RequiresAlchemistsToolkit": "You must have an Alchemist's Toolkit equipped in your Toolbelt.",
       "RequiresElementalCondition": "{target} does not suffer an elemental condition which this action can affect.",
@@ -1000,6 +1001,11 @@
       "PointsGranted": "Trained",
       "PointsSpent": "Spent",
       "Resources": "Resources"
+    },
+    "SUBSTITUTION": {
+      "Confirm": "Choose Replacements",
+      "Hint": "Your Background grants Talents which your Ancestry also grants. Choose a replacement for each from the same node of the Talent Tree.",
+      "Title": "Duplicate Talent Grants"
     },
     "TABS": {
       "actions": "Actions",
