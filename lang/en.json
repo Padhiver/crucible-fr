@@ -67,6 +67,12 @@
         "Name": "Fall",
         "NameDistance": "Fall ({distance} feet)"
       },
+      "Interact": {
+        "CloseDoor": "Close Door",
+        "Description": "Interact with an object in your environment, such as opening a door, pulling a lever, or picking up an object. If your @Rule[movement.freeMovement] for the round is still available, it is spent in place of the @Rule[resource.action] cost.",
+        "Name": "Interact",
+        "OpenDoor": "Open Door"
+      },
       "Investiture": {
         "Description": "Spend time outside of Combat attuning to your equipped magic items, causing them to enter the Invested state.",
         "Name": "Investiture"
@@ -301,7 +307,7 @@
       "CostWeapon": "W",
       "CostWeaponAction": "W{action}A",
       "Deadly": "Deadly",
-      "DeadlyTooltip": "This action has the potential to deal a tremendous amount of damage, increasing the damage multiplier for any damage dealt by x1.",
+      "DeadlyTooltip": "This action has the potential to deal a tremendous amount of damage, increasing the Damage Multiplier applied to its Overflow by +1, for example from ×1 to ×2.",
       "Difficult": "Difficult",
       "DifficultTooltip": "This action is complicated or challenging to perform. You incur 1 additional bane when attempting the action.",
       "Disarm": "Disarm",
@@ -323,7 +329,7 @@
       "IconicSpell": "Iconic Spell",
       "IconicSpellTooltip": "This action is an Iconic Spell learned through mastery of its components.",
       "Keen": "Keen",
-      "KeenTooltip": "This action is precise, lowering its critical hit threshold by 2 and making a Critical Hit more likely.",
+      "KeenTooltip": "This action is precise, lowering its Critical Success Threshold by 2 and making a Critical Hit more likely.",
       "MainHand": "Main-Hand",
       "MainHandTooltip": "This action utilizes your main-hand weapon to make an attack.",
       "Maintained": "Maintained",
@@ -380,6 +386,8 @@
       "SkillTooltip": "This action involves a targeted or opposed Skill check.",
       "Spell": "Spell",
       "SpellTooltip": "This action involves spellcraft.",
+      "Strike": "Strike",
+      "StrikeTooltip": "This action makes one or more Strikes using an equipped weapon. Any action which attacks with a wielded weapon is a Strike, not only the basic Strike action.",
       "Subtle": "Subtle",
       "SubtleTooltip": "This action is generally un-noticeable, preserving stealth and invisibility when used.",
       "Summon": "Summon",
@@ -445,8 +453,7 @@
     "WARNINGS": {
       "SPECIFIC": {
         "DELAY": {
-          "AlreadyDelayed": "You may not delay your turn again this combat round.",
-          "WrongTurn": "You may only use the Delay action on your own turn in combat."
+          "AlreadyDelayed": "You may not delay your turn again this combat round."
         },
         "ESTOCADE": {
           "RequiresOpening": "Estocade requires a target who is Exposed, Prone, Slowed, Staggered, Paralyzed, or Disarmed."
@@ -468,7 +475,8 @@
         "other": "{name} must have {hands} free hands to use {action}!"
       },
       "CannotAffordMove": "{name} has insufficient action to move this distance which requires {cost}A!",
-      "CannotSpendAction": "{name} cannot spend Action because they are Incapacitated!",
+      "CannotConfirmTarget": "Cannot {change} {action} while the action it responds to is {state}.",
+      "CannotSpendAction":"{name} cannot spend Action because they are Incapacitated!",
       "CannotSpendFocus": "{name} cannot spend Focus because they are currently {status}!",
       "CannotTargetSelf": "You cannot target yourself with this Action!",
       "CannotThrow": "You cannot throw this weapon.",
@@ -480,6 +488,7 @@
       "GemConjuredFlameShoddy": "A Shoddy quality Gem of Conjured Flame fails to summon any elemental.",
       "HideObservers": "Additional Observers",
       "IncorrectTargets": "You may only designate up to {number} {type} targets for {action}!",
+      "InteractRange": "You are too far away to interact with that object.",
       "InvalidTarget": "You must designate at least one {type} target for {action}!",
       "InvalidTargetScope": "That creature is not a valid target for {action}.",
       "InvalidTargetsGeneric": "Invalid targets for this action!",
@@ -513,9 +522,11 @@
       "NonCombat": "You may not use {action} during Combat.",
       "NoReloadRequired": "Your weapons do not require reloading",
       "NotFlanked": "{action} requires a flanked target. Target \"{target}\" is not flanked.",
+      "NotYourTurn": "You may only use the {action} action on your own turn in combat.",
       "NoViewedScene": "A viewed Scene is required to acquire targets for this action.",
       "OncePerRound": "You may only perform the {action} action once per round.",
       "OncePerTurn": "You may only perform the {action} action once per turn.",
+      "PassThroughMaxOne": "You may move through the space of only one other creature.",
       "ReactionUnaware": "You may not use a reaction while Unaware!",
       "RequiresAlchemistsToolkit": "You must have an Alchemist's Toolkit equipped in your Toolbelt.",
       "RequiresElementalCondition": "{target} does not suffer an elemental condition which this action can affect.",
@@ -590,6 +601,9 @@
     "Challenge": {
       "Dominance": "Dominance"
     },
+    "DeathlessFury": {
+      "CannotUse": "{name} can only enter a Deathless Fury while their Health does not exceed their Wounds."
+    },
     "FieldStudy": {
       "Effect": "Field Study: {knowledge}",
       "Label": "Topic of Study",
@@ -610,6 +624,9 @@
       "AlreadyGrappling": "You are already Grappling another creature.",
       "TooLarge": "{name} is too large for you to Grapple."
     },
+    "Grudgebearer": {
+      "Grudge": "Grudge: {target}"
+    },
     "ImbueAffix": {
       "AffixLabel": "Affix",
       "Incompatible": "That affix cannot be applied to the chosen item.",
@@ -626,6 +643,10 @@
     },
     "Throw": {
       "NotGrappling": "You may only Throw a creature you are Grappling."
+    },
+    "VowOfAnimus": {
+      "VowDescription": "You vowed to vanquish a specific foe who became the subject of your animus.",
+      "VowName": "Sworn Vow: {target}"
     }
   },
   "ACTIVE_EFFECT": {
@@ -995,6 +1016,11 @@
       "PointsSpent": "Spent",
       "Resources": "Resources"
     },
+    "SUBSTITUTION": {
+      "Confirm": "Choose Replacements",
+      "Hint": "Your Background grants Talents which your Ancestry also grants. Choose a replacement for each from the same node of the Talent Tree.",
+      "Title": "Duplicate Talent Grants"
+    },
     "TABS": {
       "actions": "Actions",
       "attributes": "Attributes",
@@ -1012,6 +1038,7 @@
       "NoAncestry": "Choose an Ancestry",
       "NoBackground": "Choose a Background",
       "NoDragTalent": "Talents can only be added to a Hero Actor via the Talent Tree.",
+      "NoToken": "You must have a controlled Token or an assigned character to do that.",
       "OverspentAbility": "Too many Ability Points have been spent",
       "OverspentProficiency": "Too many Proficiency Points have been spent",
       "OverspentTalent": "Too many Talents have been taken",
@@ -1021,6 +1048,8 @@
     },
     "Details": "Details",
     "DisarmedStatus": "Disarmed!",
+    "FreeMovement": "Free Movement",
+    "FullyEngaged": "Fully Engaged",
     "KnowledgeSpecific": "Knowledge: {knowledge}",
     "LanguageSpecific": "Language: {language}",
     "LevelSpecific": "Level {level}",
@@ -1069,6 +1098,9 @@
     },
     "PROPERTIES": {
       "Cursed": "Cursed"
+    },
+    "SUPPRESSION": {
+      "Duplicate": "Superseded by another instance of the same affix"
     },
     "WARNINGS": {
       "CursedGamemasterOnly": "Only a Gamemaster may remove a Cursed affix from an item."
@@ -1249,11 +1281,8 @@
     },
     "PROPERTIES": {
       "Bulky": "Bulky",
-      "BulkyTooltip": "Armor that is <strong>Bulky</strong> is cumbersome to wield and conveys a penalty of +2 Banes to all Initiative rolls.",
       "Natural": "Natural",
-      "NaturalTooltip": "Natural armor is a feature of the being 'wearing' it. It cannot typically be unequipped.",
-      "Noisy": "Noisy",
-      "NoisyTooltip": "Armor that is <strong>Noisy</strong> makes it difficult to move quietly."
+      "Noisy": "Noisy"
     },
     "SHEET": {
       "ArmorBonus": "Armor Bonus",
@@ -1388,13 +1417,18 @@
   "BASE_EFFECT": {
     "Difficulty": "Difficulty {dc}",
     "Suspended": "Suspended",
+    "ACTIONS": {
+      "AddDoT": "Add Damage Over Time",
+      "DeleteDoT": "Remove Damage Over Time"
+    },
     "PROPERTIES": {
       "Magical": "Magical",
       "MagicalTooltip": "This effect is magical in nature and may be removed by anti-magic abilities."
     },
     "SECTIONS": {
-      "Removal": "Removal",
-      "General": "General"
+      "DoT": "Damage Over Time",
+      "General": "General",
+      "Removal": "Removal"
     },
     "FIELDS": {
       "dc": {
@@ -1497,8 +1531,7 @@
       }
     },
     "PROPERTIES": {
-      "Thrown": "Thrown",
-      "ThrownTooltip": "This consumable is designed to be thrown."
+      "Thrown": "Thrown"
     },
     "SCROLL": {
       "ComponentBudget": "This scroll may provide up to {budget} spellcraft component(s). Select which components this scroll provides.",
@@ -1707,6 +1740,8 @@
     },
     "CircumstanceBonus": "Circumstance Bonus",
     "Confirm": "Confirm",
+    "CriticalFailureThreshold": "Critical Failure Threshold",
+    "CriticalSuccessThreshold": "Critical Success Threshold",
     "Damage": "Damage",
     "DamageBase": "Base {type}",
     "DamageBonus": "Action Bonus",
@@ -1731,6 +1766,11 @@
     "Skill": "Skill",
     "SkillBonus": "Skill Bonus",
     "UnknownScore": "???"
+  },
+  "EFFECT": {
+    "TABS": {
+      "damage": "Damage"
+    }
   },
   "HOOKS": {
     "NoModuleHooks": "No module hooks are registered for this identifier.",
@@ -2288,7 +2328,6 @@
     "COUNTERSPELL": {
       "WARNINGS": {
         "BadTarget": "You can only Counterspell the caster of the last action, and that action must be a spell.",
-        "CannotConfirm": "Cannot {change} a Counterspell if the targeted spell is already {state}",
         "InvalidTerms": "Unable to parse {terms} as valid Counterspell terms.",
         "MissingComponents": "A Counterspell enricher must have at least 1 rune and 1 gesture.",
         "NoTalent": "{actor} does not have the Counterspell talent.",
@@ -2382,6 +2421,8 @@
       "CurseToxicity": "Curse of Toxicity"
     },
     "RUNES": {
+      "Blight": "Blight",
+      "BlightAdj": "Blighted",
       "Control": "Control",
       "ControlAdj": "Controlling",
       "Death": "Death",
@@ -2405,7 +2446,9 @@
       "Soul": "Soul",
       "SoulAdj": "Soulful",
       "Storm": "Storm",
-      "StormAdj": "Voltaic"
+      "StormAdj": "Voltaic",
+      "Torment": "Torment",
+      "TormentAdj": "Tormenting"
     },
     "SHEET": {
       "Knowledge": "Required Knowledge"
@@ -2908,35 +2951,22 @@
     },
     "TAGS": {
       "Ambush": "Ambush",
-      "AmbushTooltip": "This weapon is well-suited to striking before your opponents get a chance to react. When attacking a target lower than you in the initiative order you gain +1 Boon.",
       "Blocking": "Blocking",
-      "BlockingTooltip": "This weapon provides a bonus to your Block defense.",
       "DamageTooltip": "A shorthand representation of the offensive capabilities of this weapon, expressed as Attack Bonus / Damage Bonus / Damage Multiplier.",
       "Engaging": "Engaging",
-      "EngagingTooltip": "Weapons in this category allow you to better combat multiple foes, increasing your Engagement by +1.",
       "Intuitive": "Intuitive",
-      "IntuitiveTooltip": "This weapon is easily understood and can be used without formal training. You are treated as having one additional point of proficiency when wielding it.",
       "Keen": "Keen",
-      "KeenTooltip": "This weapon is particularly deadly when it achieves a critical hit. IMPORTANT NOTE - the keen property is not yet implemented in the playtest.",
       "Natural": "Natural",
-      "NaturalTooltip": "Natural weapons benefit from Natural Weapon Training rather than training from their actual category. Natural weapons cannot be dropped.",
       "Oversized": "Oversized",
-      "OversizedTooltip": "This item is over-sized or otherwise cumbersome to wield, preventing you from acting quickly. You have +2 banes to Initiative while this item is equipped.",
       "Parrying": "Parrying",
-      "ParryingTooltip": "This weapon provides a bonus to your Parry defense.",
       "Reach": "Reach",
-      "ReachTooltip": "This weapon provides a larger than normal effective range. You are able to perform basic Strike attacks at twice your normal range.",
       "Reliable": "Reliable",
-      "ReliableTooltip": "This weapon is trustworthy and almost never produces spectacularly bad outcomes. The critical failure threshold of the weapon is reduced by 2 making it less likely that unsuccessful Strikes yield a critical miss.",
       "Reload": "Reload",
       "ReloadTooltip": "This weapon requires reloading in order to strike. When the weapon is not loaded, any actions which use the weapon cost +1 Action Points.",
       "Returning": "Returning",
-      "ReturningTooltip": "This weapon is magically or mechanically engineered to return to your hand after being thrown. Using the Throw Weapon action with this weapon does not result in it becoming Dropped.",
       "Thrown": "Thrown",
-      "ThrownTooltip": "This weapon is designed to be suitable for throwing and does not suffer the Banes penalty that is usually applied to the Throw Weapon action.",
       "UntrainedTooltip": "Your character is not fully Trained in the use of {training} weapons, and suffers a penalty when attacking.",
-      "Versatile": "Versatile",
-      "VersatileTooltip": "This weapon can be wielded with either one or two hands, switching between grips without any Action Point cost. In its alternate grip it functions as the corresponding weapon of its kind: a one-handed weapon becomes the larger two-handed weapon, and a two-handed weapon becomes the smaller one-handed weapon."
+      "Versatile": "Versatile"
     }
   }
 }
