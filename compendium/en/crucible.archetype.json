@@ -48,6 +48,10 @@
             "name": "Telekinetic",
             "description": "<p>Telekinetic mages who weave the Rune of Kinesis to hurl, drag, and crush their foes with raw kinetic force, dominating the battlefield through relentless Push and Pull.</p>"
         },
+        "archGladiator000": {
+            "name": "Gladiator",
+            "description": "<p>Formidable warriors who are near peerless in the art of one-on-one combat, using a mixture of honed reflex and toughened grit to outlast and outmatch their opponents.</p>"
+        },
         "assassin00000000": {
             "name": "Assassin",
             "description": "<p>Merciless characters adept at infiltration and ruthless killing.</p>"
@@ -63,6 +67,10 @@
         "burrower00000000": {
             "name": "Burrower",
             "description": "<p>Beasts or beast-like creatures which are expert at burrowing through solid material.</p>"
+        },
+        "chirurgeon000000": {
+            "name": "Chirurgeon",
+            "description": "<p>Healers and sawbones, medical professionals and twisted poisoners.</p>"
         },
         "chomper000000000": {
             "name": "Chomper",
@@ -167,6 +175,10 @@
         "skirmisher000000": {
             "name": "Skirmisher",
             "description": "A relentless and determined melee combatant that uses a mix of agility and power to subdue foes."
+        },
+        "sorcerer00000000": {
+            "name": "Sorcerer",
+            "description": "A magic user which wields flame and electricity in battle."
         },
         "swashbuckler0000": {
             "name": "Swashbuckler",
