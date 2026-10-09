@@ -30,7 +30,7 @@
             "actions": {
                 "curseAtrophy": {
                     "name": "Malédiction de l'atrophie",
-                    "description": "<p>Touchez la cible pour l'affliger d'une malédiction débilitante qui réduit de façon permanente sa <strong>Force</strong> de 2.</p>",
+                    "description": "<p>Touchez la cible pour l'affliger d'une malédiction débilitante qui réduit de façon permanente sa @Rule[ability.strength] de 2.</p>",
                     "effects": {
                         "Curse of Atrophy": {
                             "name": "Malédiction de l'atrophie"
@@ -45,7 +45,7 @@
             "actions": {
                 "curseDelusion": {
                     "name": "Malédiction de l'illusion",
-                    "description": "<p>Touchez la cible pour obscurcir ses perceptions avec une malédiction qui réduit de façon permanente sa <strong>Sagesse</strong> de 2.</p>",
+                    "description": "<p>Touchez la cible pour obscurcir ses perceptions avec une malédiction qui réduit de façon permanente sa @Rule[ability.wisdom] de 2.</p>",
                     "effects": {
                         "Curse of Delusion": {
                             "name": "Malédiction de l'illusion"
@@ -60,7 +60,7 @@
             "actions": {
                 "curseDullness": {
                     "name": "Malédiction de l'ennui",
-                    "description": "<p>Touchez la cible pour ternir son esprit avec une malédiction qui réduit de façon permanente son <strong>Intellect</strong> de 2.</p>",
+                    "description": "<p>Touchez la cible pour ternir son esprit avec une malédiction qui réduit de façon permanente son @Rule[ability.intellect] de 2.</p>",
                     "effects": {
                         "Curse of Dullness": {
                             "name": "Malédiction de l'ennui"
@@ -75,7 +75,7 @@
             "actions": {
                 "curseExhaustion": {
                     "name": "Malédiction de l'épuisement",
-                    "description": "<p>Touchez la cible pour drainer sa vitalité grâce à une malédiction qui réduit de façon permanente sa <strong>Robustesse</strong> de 2.</p>",
+                    "description": "<p>Touchez la cible pour drainer sa vitalité grâce à une malédiction qui réduit de façon permanente sa @Rule[ability.toughness] de 2.</p>",
                     "effects": {
                         "Curse of Exhaustion": {
                             "name": "Malédiction de l'épuisement"
@@ -90,7 +90,7 @@
             "actions": {
                 "curseLethargy": {
                     "name": "Malédiction de la léthargie",
-                    "description": "<p>Touchez la cible pour l'affliger de léthargie, réduisant ainsi de façon permanente sa <strong>Dextérité</strong> de 2.</p>",
+                    "description": "<p>Touchez la cible pour l'affliger de léthargie, réduisant ainsi de façon permanente sa @Rule[ability.dexterity] de 2.</p>",
                     "effects": {
                         "Curse of Lethargy": {
                             "name": "Malédiction de la léthargie"
@@ -105,7 +105,7 @@
             "actions": {
                 "curseScorn": {
                     "name": "Malédiction du mépris",
-                    "description": "<p>Touchez la cible pour affaiblir sa volonté grâce à une malédiction qui réduit de façon permanente sa <strong>Présence</strong> de 2.</p>",
+                    "description": "<p>Touchez la cible pour affaiblir sa volonté grâce à une malédiction qui réduit de façon permanente sa @Rule[ability.presence] de 2.</p>",
                     "effects": {
                         "Curse of Scorn": {
                             "name": "Malédiction du mépris"
@@ -120,7 +120,7 @@
             "actions": {
                 "dawnBeacon": {
                     "name": "Balise de l'aube",
-                    "description": "<p>Vous créez un pilier de lumière magique centré sur votre position actuelle qui crée un cylindre de lumière générant @[feet 30] de lumière vive et @[feet 30] supplémentaires de lumière tamisée. Le pilier reste en place pendant 6 rounds ou jusqu'à ce qu'il soit dissipé.</p><p>Cette lumière magique contrecarre les ténèbres magiques et détruit toute source de ténèbres magiques dont l'origine est contenue dans sa zone.</p><p>Les ennemis dans la zone lorsque la lumière est créée pour la première fois doivent résister à une attaque contre leur <strong>Fortitude</strong> ou être @Condition[blinded] pendant un round.</p><p><strong>WIP : Ce sort ne crée pas encore automatiquement une source de lumière, ce qui doit être fait manuellement pour le moment. Cela sera éventuellement automatisé en utilisant une nouvelle capacité de Foundry VTT version 14 pour le placement de gabarit.</strong></p>",
+                    "description": "<p>Vous créez un pilier de lumière magique centré sur votre position actuelle qui crée un cylindre de lumière générant @[feet 30] de lumière vive et @[feet 30] supplémentaires de lumière tamisée. Le pilier reste en place pendant 6 rounds ou jusqu'à ce qu'il soit dissipé.</p><p>Cette lumière magique contrecarre les ténèbres magiques et détruit toute source de ténèbres magiques dont l'origine est contenue dans sa zone.</p><p>Les ennemis dans la zone lorsque la lumière est créée pour la première fois doivent résister à une attaque contre leur @Rule[defense.fortitude] ou être @Condition[blinded] pendant un round.</p><p><strong>WIP : Ce sort ne crée pas encore automatiquement une source de lumière, ce qui doit être fait manuellement pour le moment. Cela sera éventuellement automatisé en utilisant une nouvelle capacité de Foundry VTT version 14 pour le placement de gabarit.</strong></p>",
                     "effects": {
                         "Dawn Beacon": {
                             "name": "Balise de l'aube"
@@ -145,7 +145,7 @@
             "actions": {
                 "invisibility": {
                     "name": "Invisibilité",
-                    "description": "<p>Vous devenez @Condition[invisible] et ne pouvez pas être détecté par la perception visuelle. Vous ne pouvez être la cible directe d'aucune action. Ce sort doit être <strong>Maintenu</strong> pour rester actif.</p>",
+                    "description": "<p>Vous devenez @Condition[invisible] et ne pouvez pas être détecté par la perception visuelle. Vous ne pouvez être la cible directe d'aucune action. Ce sort doit être @Rule[action.maintained] pour rester actif.</p>",
                     "effects": {
                         "Invisibility": {
                             "name": "Invisibilité"
@@ -156,11 +156,11 @@
         },
         "lifebloom0000000": {
             "name": "Floraison vitale",
-            "description": "<p>Rares sont ceux qui peuvent servir de canal au sein du monde physique et permettre aux pouvoirs bruts de la Vie et de l'Âme de s'entremêler pour faire pencher la balance en leur faveur. Ce sort permet au lanceur de devenir une source jaillissante pour les forces abondantes qui donnent naissance à toute vie dotée d'une âme. Dans un bruissement d'air, le lanceur est entouré de particules dansantes d'énergies pures, telles des dizaines de lucioles ou des étincelles de foyer, et ceux présents dans le rayon sont envahis d'une sensation apaisante, comme s'ils étaient immergés dans une eau agréablement chaude. Toute la flore environnante croît immédiatement jusqu'à fleurir, et un parfum de pollen et de verdure luxuriante emplit l'air.</p>",
+            "description": "<p>Rares sont ceux qui peuvent servir de canal au sein du monde physique et permettre aux pouvoirs bruts de la <strong>Vie</strong> et de l'<strong>Âme</strong> de s'entremêler pour faire pencher la balance en leur faveur. Ce sort permet au lanceur de devenir une source jaillissante pour les forces abondantes qui donnent naissance à toute vie dotée d'une âme. Dans un bruissement d'air, le lanceur est entouré de particules dansantes d'énergies pures, telles des dizaines de lucioles ou des étincelles de foyer, et ceux présents dans le rayon sont envahis d'une sensation apaisante, comme s'ils étaient immergés dans une eau agréablement chaude. Toute la flore environnante croît immédiatement jusqu'à fleurir, et un parfum de pollen et de verdure luxuriante emplit l'air.</p>",
             "actions": {
                 "lifebloom": {
                     "name": "Floraison vitale",
-                    "description": "<p>Vous canalisez une magie vitale dans une aura qui restaure la Santé et le Moral de tous les alliés à moins de @[feet 30] de vous. À chaque round, les alliés commençant leur tour dans cette aura récupèrent votre score de <strong>Sagesse</strong> en <strong>Santé</strong> et en <strong>Moral</strong>. Le sort doit être maintenu.</p><p><strong>Note : Ce sort est actuellement traité comme une zone d'effet (AoE), accordant des soins sur la durée à ceux présents dans la zone initiale. La suppression manuelle de ces effets est nécessaire si le sort cesse d'être maintenu. Lorsque les auras seront automatisées par le système (Foundry VTT v14), l'implémentation mécanique correspondra à la description.</strong></p>",
+                    "description": "<p>Vous canalisez une magie vitale dans une aura qui restaure la @Rule[resource.health] et le @Rule[resource.morale] de tous les alliés à moins de <strong>@[feet 30]</strong> de vous. À chaque round, les alliés commençant leur tour dans cette aura récupèrent votre score de @Rule[ability.wisdom] en @Rule[resource.health] et en @Rule[resource.morale]. Le sort doit être @Rule[action.maintained].</p>",
                     "effects": {
                         "Lifebloom": {
                             "name": "Floraison vitale"
@@ -171,11 +171,11 @@
         },
         "protectiveMirage": {
             "name": "Mirage protecteur",
-            "description": "<p>Vous vous revêtez d'un <strong>Aspect </strong>dans un mirage d'<strong>Illumination</strong> et d'<strong>Ombre</strong> mouvant qui masque votre position actuelle et vous permet d'<strong>Éluder</strong> les coups entrants.</p>",
+            "description": "<p>Vous vous revêtez d'un <strong>Aspect</strong> dans un mirage d'<strong>Illumination</strong> et d'<strong>Ombre</strong> mouvant qui masque votre position actuelle et vous permet d'<strong>Éluder</strong> les coups entrants.</p>",
             "actions": {
                 "protectiveMirage": {
                     "name": "Mirage protecteur",
-                    "description": "<p>Vous vous entourez de trois duplicatas illusoires qui durent jusqu'à 10 Rounds. Toute <strong>Frappe</strong> entrante contre vous est faite avec un nombre de <strong>Fléaux</strong> égal à deux fois votre nombre de duplicatas restants. Chaque fois qu'une Frappe vous manque, un de vos duplicatas disparaît.</p>",
+                    "description": "<p>Vous vous entourez de trois duplicatas illusoires qui durent jusqu'à <strong>10 Rounds</strong>. Toute <strong>Frappe</strong> entrante contre vous est faite avec un nombre de @Rule[dice.bane]{Fléaux} égal à deux fois votre nombre de duplicatas restants. Chaque fois qu'une <strong>Frappe</strong> vous manque, un de vos duplicatas disparaît.</p>",
                     "effects": {
                         "Mirage": {
                             "name": "Mirage"
@@ -186,11 +186,11 @@
         },
         "revive0000000000": {
             "name": "Réanimation",
-            "description": "<p>Expression puissante des magies de Vie et de Contrôle, Réanimation permet au lanceur d'intervenir dans le processus naturel de la mort en insufflant une vague d'essence vitale dans le corps d'un défunt récent. Ceux qui ont vécu une Réanimation sont souvent réticents à en parler, mais la décrivent comme une sensation désagréable rappelant un réveil soudain d'un sommeil profond pour s'apercevoir que l'on est gelé ; la chair pique et élance, l'esprit vacille, et l'âme souffre du souvenir de son départ interrompu.</p>",
+            "description": "<p>Expression puissante des magies de <strong>Vie</strong> et de <strong>Contrôle</strong>, <strong>Réanimation</strong> permet au lanceur d'intervenir dans le processus naturel de la mort en insufflant une vague d'essence vitale dans le corps d'un défunt récent. Ceux qui ont vécu une Réanimation sont souvent réticents à en parler, mais la décrivent comme une sensation désagréable rappelant un réveil soudain d'un sommeil profond pour s'apercevoir que l'on est gelé ; la chair pique et élance, l'esprit vacille, et l'âme souffre du souvenir de son départ interrompu.</p>",
             "actions": {
                 "revive": {
                     "name": "Réanimation",
-                    "description": "<p>Vous ramenez à la vie une créature récemment devenue @Condition[dead], réduisant ses <strong>Lésions</strong> d'une valeur égale à votre score de <strong>Sagesse</strong>. En cas de réussite, la créature ranimée est @Condition[disoriented] et @Condition[staggered] pendant 10 minutes.</p>",
+                    "description": "<p>Vous ramenez à la vie une créature récemment devenue @Condition[dead], réduisant ses @Rule[resource.wounds] d'une valeur égale à votre score de @Rule[ability.wisdom]. En cas de réussite, la créature ranimée est @Condition[disoriented] et @Condition[staggered] pendant 10 minutes.</p>",
                     "effects": {
                         "Revived": {
                             "name": "Réanimé"
@@ -201,11 +201,11 @@
         },
         "telecognition000": {
             "name": "Télécognition",
-            "description": "<p>Exemple rudimentaire de l'art complexe consistant à pénétrer l'esprit d'autrui, la Télécognition effleure les pensées à la surface de l'esprit d'un sujet comme on ramasserait des feuilles à la surface d'un étang. Bien qu'elle ne soit pas perturbatrice, elle manque de subtilité ; tout comme l'étang ondule lorsqu'on touche sa surface, l'esprit en fait de même.</p>",
+            "description": "<p>Exemple rudimentaire de l'art complexe consistant à pénétrer l'esprit d'autrui, la <strong>Télécognition</strong> effleure les pensées à la surface de l'esprit d'un sujet comme on ramasserait des feuilles à la surface d'un étang. Bien qu'elle ne soit pas perturbatrice, elle manque de subtilité ; tout comme l'étang ondule lorsqu'on touche sa surface, l'esprit en fait de même.</p>",
             "actions": {
                 "telecognition": {
                     "name": "Télécognition",
-                    "description": "<p>Vous pénétrez l'esprit d'une créature <strong>Humanoïde</strong> ou d'un <strong>Géant</strong>, tentant de briser sa défense de <strong>Volonté</strong> pour comprendre ses pensées et ses motivations. La cible de ce sort est consciente de l'intrusion, même si elle ne peut pas vous percevoir.</p><p>En cas de réussite, le Maître du jeu (pour un Adversaire) ou le Joueur (pour un Héros) doit vous décrire en 3 mots ou moins l'idée ou le sentiment qui occupe le devant de ses pensées à l'instant présent.</p><p>Sur une Réussite critique, cette description peut aller jusqu'à 10 mots pour transmettre une compréhension plus profonde.</p>"
+                    "description": "<p>Vous pénétrez l'esprit d'une créature <strong>Humanoïde</strong> ou d'un <strong>Géant</strong>, tentant de briser sa défense de @Rule[defense.willpower] pour comprendre ses pensées et ses motivations. La cible de ce sort est consciente de l'intrusion, même si elle ne peut pas vous percevoir.</p><p>En cas de réussite, le <strong>Maître du jeu</strong> (pour une cible <strong>Adversaire</strong>) ou le <strong>Joueur</strong> (pour une cible <strong>Héros</strong>) doit vous décrire en 3 mots ou moins l'idée ou le sentiment qui occupe le devant de ses pensées à l'instant présent.</p><p>Sur une @Rule[dice.criticalSuccess], cette description peut aller jusqu'à 10 mots pour transmettre une compréhension plus profonde.</p>"
                 }
             }
         }

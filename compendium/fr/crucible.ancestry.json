@@ -5,14 +5,6 @@
             "name": "Diable",
             "description": "<p>Vous êtes né avec une influence magique inattendue sur votre création. Votre apparence physique montre des signes révélateurs que les superstitieux associent aux êtres planaires - chair cramoisie, ailes inefficaces ou cornes, yeux reptiliens. Votre aversion pour la lumière et votre résistance surnaturelle au feu ne font pas grand-chose pour dissuader les gens de penser que vous êtes un véritable diable.</p>"
         },
-        "dwarven000000000": {
-            "name": "Nain",
-            "description": "<p>Comme vos parents avant vous, vous êtes né avec la fortitude durable des Nains. Votre stature robuste et votre apparence physique costaude sont les marques d'un peuple né de la terre et de la pierre. Un héritage de résilience physique vous est légué, car dans votre poitrine bat un cœur de pierre.</p>"
-        },
-        "elvish0000000000": {
-            "name": "Elfe",
-            "description": "<p>Gracieux dans le mouvement et rapide dans la pensée, vous êtes né elfe à la longue vie. Votre carrure menue et agile ainsi que vos traits sculptés sont les attributs hérités d'un peuple pour qui l'élégance est un mode de vie. Votre prédisposition à la réflexion rapide et au mouvement précis sont les résultats d'une évolution de centaines d'années de tradition.</p>"
-        },
         "giantkin00000000": {
             "name": "Géant",
             "description": "<p>Des forces élémentaires ont présidé à votre naissance, vous insufflant une vigueur surnaturelle. Votre grande stature et votre constitution musculaire conduisent souvent les autres à croire que vous n'êtes qu'une masse de muscles irréfléchie, mais votre peuple est surtout connu pour sa résilience physique et le puits profond de ses connaissances. Vous avez hérité de la force des montagnes.</p>"
@@ -29,9 +21,137 @@
             "name": "Humain",
             "description": "<p>Trouvé parmi d'innombrables conditions et de lieux éloignés, vous êtes né humain toujours adaptable. Grand ou petit, mince, musclé ou rond, votre apparence physique peut être variée. Les humains sont surtout connus pour leur prédisposition génétique à la détermination, avec des traditions qui poussent à une volonté obstinée de survivre.</p>"
         },
-        "orcish0000000000": {
+        "devilkinLineage0": {
+            "name": "Lignée diabolique",
+            "description": "<p>Le feu infernal de votre héritage couve juste sous votre peau, attendant d'être libéré par vos coups.</p><p><strong>Vision thermique.</strong> Vous obtenez les bénéfices de la @UUID[Compendium.crucible.adversary-talents.thermalVision000] dans un rayon de @[feet 30].</p>",
+            "actions": {
+                "hellbrand": {
+                    "name": "Marque infernale",
+                    "description": "<p>Vous dépensez de l'@Rule[resource.heroism] pour envelopper vos attaques de feu infernal pour <strong>3 Rounds</strong>. Chacune de vos attaques qui inflige des dégâts à la @Rule[resource.health] inflige également des dégâts supplémentaires de <strong>Feu</strong> d'un montant égal à la moitié de votre @Rule[ability.presence]. Un @Rule[dice.criticalSuccess]{Coup critique} rend la cible @Condition[burning].</p>",
+                    "effects": {
+                        "Hellbrand": {
+                            "name": "Marque infernale"
+                        }
+                    }
+                }
+            }
+        },
+        "dwarf00000000000": {
+            "name": "Nain",
+            "description": "<p>Comme vos parents avant vous, vous êtes né avec la fortitude durable des Nains. Votre stature robuste et votre apparence physique costaude sont les marques d'un peuple né de la terre et de la pierre. Un héritage de résilience physique vous est légué, car dans votre poitrine bat un cœur de pierre.</p>"
+        },
+        "dwarfLineage0000": {
+            "name": "Lignée naine",
+            "description": "<p>Votre peuple n'oublie jamais une offense, et votre courroux envers un ennemi juré est aussi immuable que la pierre de vos demeures ancestrales.</p><p><strong>Vision dans le noir.</strong> Des générations passées sous terre ont adapté vos yeux à l'obscurité. Vous pouvez voir dans le noir comme s'il s'agissait d'une faible clarté jusqu'à <strong>@[feet 30]</strong> de distance, en percevant votre environnement en nuances de gris.</p>",
+            "actions": {
+                "grudgebearer": {
+                    "name": "Rancunier",
+                    "description": "<p>Vous dépensez de l'@Rule[resource.heroism] pour vouer une rancune à un ennemi que vous pouvez voir. Vos attaques contre cet ennemi infligent un bonus aux dégâts égal à votre @Rule[ability.wisdom].</p><p>La rancune s'achève si vous terminez votre tour sans avoir attaqué cet ennemi pendant le tour. Vous ne pouvez nourrir qu'une seule rancune à la fois ; en jurer une nouvelle met fin à la précédente.</p>",
+                    "effects": {
+                        "Grudge": {
+                            "name": "Rancune"
+                        }
+                    }
+                }
+            }
+        },
+        "elf0000000000000": {
+            "name": "Elfe",
+            "description": "<p>Gracieux dans le mouvement et rapide dans la pensée, vous êtes né elfe à la longue vie. Votre carrure menue et agile ainsi que vos traits sculptés sont les attributs hérités d'un peuple pour qui l'élégance est un mode de vie. Votre prédisposition à la réflexion rapide et au mouvement précis sont les résultats d'une évolution de centaines d'années de tradition.</p>"
+        },
+        "elfLineage000000": {
+            "name": "Lignée elfique",
+            "description": "<p>Des siècles de tradition elfique ont aiguisé votre œil pour déceler la faille de toute défense.</p><p><strong>Transe.</strong> Au lieu de dormir, vous vous reposez dans une transe méditative qui maintient votre esprit clair. Vous êtes immunisé aux conditions @Condition[asleep] et @Condition[disoriented].</p>",
+            "actions": {
+                "perfectPrecision": {
+                    "name": "Précision parfaite",
+                    "description": "<p>Vous dépensez de l'@Rule[resource.heroism] pour frapper avec une précision sans faille. Jusqu'à la fin de votre tour, votre @UUID[Compendium.crucible.rules.JournalEntry.QhZgmBrdLAGwYy5c.JournalEntryPage.lZfPVvBSsCEqlte4#critical-hits-and-misses]{Seuil de réussite critique} est réduit de <strong>3</strong>.</p>",
+                    "effects": {
+                        "Perfect Precision": {
+                            "name": "Précision parfaite"
+                        }
+                    }
+                }
+            }
+        },
+        "giantkinLineage0": {
+            "name": "Lignée géante",
+            "description": "<p>Les forces élémentaires qui ont présidé à votre naissance répondent encore lorsque vous les invoquez.</p><p><strong>Corpulence imposante.</strong> Votre stature massive supporte des charges qui accableraient d'autres. Votre capacité de charge est accrue de <strong>50%</strong>.</p>",
+            "actions": {
+                "elementalBirthright": {
+                    "name": "Droit de naissance élémentaire",
+                    "description": "<p>Vous dépensez de l'@Rule[resource.heroism] pour appeler les forces élémentaires de votre droit de naissance. Jusqu'au début de votre prochain tour, vous obtenez une résistance aux dégâts d'<strong>Acide</strong>, de <strong>Froid</strong>, <strong>Électriques</strong>, et de <strong>Feu</strong> d'un montant égal à votre @Rule[ability.wisdom], et tous dégâts d'<strong>Acide</strong>, de <strong>Froid</strong>, <strong>Électriques</strong>, ou de <strong>Feu</strong> que vous infligez sont augmentés de votre @Rule[ability.wisdom].</p>",
+                    "effects": {
+                        "Elemental Birthright": {
+                            "name": "Droit de naissance élémentaire"
+                        }
+                    }
+                }
+            }
+        },
+        "gnomeLineage0000": {
+            "name": "Lignée gnome",
+            "description": "<p>Le don d'improvisation du gnome vous permet de tirer un petit quelque chose de plus des outils et des concoctions que vous transportez.</p><p><strong>Ceinture de bricoleur.</strong> Votre équipement astucieusement agencé vous permet de garder davantage d'éléments à portée de main. vous avez <strong>+1</strong> emplacement à votre ceinture porte-outils.</p>",
+            "actions": {
+                "tinkersTrick": {
+                    "name": "Tour du bricoleur",
+                    "description": "<p>Vous dépensez de l'@Rule[resource.heroism] pour préparer un tour habile. Le prochain consommable que vous utilisez depuis votre ceinture porte-outils avant la fin de votre tour ne coûte aucune @Rule[resource.action] et n'est pas consommé.</p>",
+                    "effects": {
+                        "Tinker's Trick": {
+                            "name": "Tour du bricoleur"
+                        }
+                    }
+                }
+            }
+        },
+        "halflingLineage0": {
+            "name": "Lignée halfeline",
+            "description": "<p>Les Halfelins sont plus courageux que leur stature ne le laisse supposer, et votre esprit se remet rapidement même des épreuves les plus éprouvantes.</p><p><strong>Petit et agile.</strong> Votre silhouette menue se dérobe aisément, hors de vue et hors de portée. Vous obtenez @Rule[dice.boon]{+1 Faveur} lorsque vous utilisez les actions @Action[default escape], @Action[default hide], ou <strong>En douce</strong>.</p>",
+            "actions": {
+                "stoutHeart": {
+                    "name": "Cœur vaillant",
+                    "description": "<p>Vous dépensez de l'@Rule[resource.heroism] pour raffermir votre détermination, récupérant instantanément un montant de @Rule[resource.morale] égal à deux fois votre @Rule[ability.presence], ce qui peut vous rétablir si vous êtes @Condition[broken]. Vous mettez également un terme aux conditions @Condition[frightened] et @Condition[confused]. Vous pouvez effectuer cette action en dehors de votre tour de <strong>Combat</strong> avant de faire une @Rule[action.reaction].</p>"
+                }
+            }
+        },
+        "humanLineage0000": {
+            "name": "Lignée humaine",
+            "description": "<p>Les humains sont connus pour leur volonté tenace de survivre, persévérant à travers des épreuves qui arrêteraient n'importe qui d'autre.</p><p><strong>Adaptable.</strong> Votre peuple apprend rapidement tout ce que la situation exige. Vous obtenez <strong>+2</strong> points de Maîtrise.</p>",
+            "actions": {
+                "pushThrough": {
+                    "description": "<p>Vous dépensez de l'@Rule[resource.heroism] pour surmonter l'adversité. Jusqu'à la fin de votre tour, vos attaques et tests de compétence ignorent tous les @Rule[dice.bane]{Fléaux} qui leur sont appliqués. Les Fléaux que vous choisissez de subir ne sont pas ignorés.</p>",
+                    "name": "Laissé-passer",
+                    "effects": {
+                        "Push Through": {
+                            "name": "Laissé-passer"
+                        }
+                    }
+                }
+            }
+        },
+        "orc0000000000000": {
             "name": "Orque",
             "description": "<p>Votre naissance a été marquée par les étoiles et les traditions d'un peuple fier et endurant. Votre corps grand et tonique ainsi que votre propension naturelle à la robustesse ont des origines venant d'un peuple exposé à la lutte incessante d'un climat nordique rigoureux. Votre peuple est avant tout connu pour sa force et sa résilience.</p>"
+        },
+        "orcLineage000000": {
+            "name": "Lignée Orque",
+            "description": "<p>Le climat rigoureux du nord a forgé votre peuple pour qu'il livre ses combats les plus acharnés lorsque la mort approche.</p><p><strong>Peau balafrée.</strong> Plus vous êtes blessé grièvement, plus il est difficile de vous abattre. Vous gagnez une résistance aux dégâts <strong>Physiques</strong> égale à votre @Rule[ability.toughness] multipliée par la fraction de votre maximum de @Rule[resource.wounds] que vous avez subie, arrondi à l'entier inférieur.</p>",
+            "actions": {
+                "deathlessFury": {
+                    "name": "Fureur immortelle",
+                    "condition": "Tant que votre Santé n'excède pas vos Lésions",
+                    "description": "<p>Tant que votre @Rule[resource.health] n'excède pas vos @Rule[resource.wounds], vous pouvez dépensez de l'@Rule[resource.heroism] pour entrer en une fureur immortelle. Tant que dure la fureur, vous ignorez toutes les pénalités liées à l'état @Condition[weakened] et vos attaques de @Action[default strike] bénéficient de @Rule[dice.boon]{+1 Faveur}.</p><p>La fureur prend fin lorsque votre @Rule[resource.health] dépasse vos @Rule[resource.wounds] ou lorsque le <strong>Combat</strong> se termine.</p>",
+                    "effects": {
+                        "Deathless Fury": {
+                            "name": "Fureur immortelle"
+                        }
+                    }
+                }
+            }
         }
+    },
+    "folders": {
+        "Ancestries": "Ascendances",
+        "Ancestry Talents": "Talents ancestraux"
     }
 }
