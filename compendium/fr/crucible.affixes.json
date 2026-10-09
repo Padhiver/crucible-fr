@@ -38,18 +38,18 @@
         },
         "activating000000": {
             "name": "Activation",
-            "description": "<p>Fournit l'action <strong>Restauration d'action</strong>, permettant au porteur de récupérer de l' <strong>Action</strong> dans les moments difficiles. Le montant restauré dépend du <strong>Palier</strong> de ce préfixe.</p>",
+            "description": "<p>Confère l'action <strong>Restauration d'action</strong>, permettant au porteur de récupérer de l' @Rule[resource.action] dans les moments difficiles. Le montant restauré dépend du <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Activation",
             "actions": {
                 "affixActivating": {
                     "name": "Restauration d'action",
-                    "description": "<p>En cas de difficulté, vous pouvez puiser dans une réserve supplémentaire d'<strong>Actions</strong> depuis cet objet. Le montant d'Actions restauré dépend du <strong>Palier</strong> de cet affixe.</p><ul><li><p><strong>Palier 1 :</strong> <strong>1 Action</strong></p></li><li><p><strong>Palier 2 :</strong> <strong>2 Actions</strong></p></li><li><p><strong>Palier 3 :</strong> <strong>3 Actions</strong></p></li></ul>"
+                    "description": "<p>En cas de difficulté, vous pouvez puiser dans une réserve supplémentaire d'@Rule[resource.action] depuis cet objet. Le montant d'@Rule[resource.action] restauré dépend du <strong>Palier</strong> de cet affixe.</p><ul><li><p><strong>Palier 1</strong> : <strong>1 Action</strong></p></li><li><p><strong>Palier 2</strong> : <strong>2 Actions</strong></p></li><li><p><strong>Palier 3</strong> : <strong>3 Actions</strong></p></li></ul>"
                 }
             }
         },
         "arcanaSkill00000": {
             "name": "Arcanes",
-            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les jets de compétence d'<strong>Arcanes</strong> de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les tests de compétence @Rule[skill.arcana] de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Arcane"
         },
         "arrowSpellcraft0": {
@@ -64,7 +64,7 @@
         },
         "athleticsSkill00": {
             "name": "Athlétisme",
-            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les jets de compétence d'<strong>Athlétisme</strong> de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les tests de compétence @Rule[skill.athletics] de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Athlétique"
         },
         "auraSpellcraft00": {
@@ -74,12 +74,12 @@
         },
         "awarenessSkill00": {
             "name": "Vigilance",
-            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les jets de compétence de <strong>Vigilance</strong> de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les tests de compétence @Rule[skill.awareness] de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Perceptif"
         },
         "beastBane0000000": {
             "name": "Fléau des bêtes",
-            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Bête</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de <strong>Faveurs</strong> égal au <strong>Palier</strong> de ce préfixe.</p>",
+            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Bête</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de @Rule[dice.boon]{Faveurs} égal au <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Fléau-des-bêtes"
         },
         "blastSpellcraft0": {
@@ -99,7 +99,7 @@
         },
         "celestialBane000": {
             "name": "Fléau des célestes",
-            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Céleste</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de <strong>Faveurs</strong> égal au <strong>Palier</strong> de ce préfixe.</p>",
+            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Céleste</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de @Rule[dice.boon]{Faveurs} égal au <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Fléau-des-célestes"
         },
         "coldConv00000000": {
@@ -129,7 +129,7 @@
         },
         "constructBane000": {
             "name": "Fléau des artificiels",
-            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Artificiel</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de <strong>Faveurs</strong> égal au <strong>Palier</strong> de ce préfixe.</p>",
+            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Artificiel</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de @Rule[dice.boon]{Faveurs} égal au <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Fléau-des-artificiels"
         },
         "controlPtcy00000": {
@@ -139,7 +139,7 @@
         },
         "controlSpellcraf": {
             "name": "Sorcellerie de contrôle",
-            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Contrôle</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune de <strong>Contrôle</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Contrôle</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune de <strong>Contrôle</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent. Il accorde également <strong>2</strong> points de @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.proficiencies000]{Maîtrise} en <strong>Sorcellerie kinématique</strong>.</p>",
             "adjective": "Contrôle runique"
         },
         "corruptionConv00": {
@@ -169,32 +169,32 @@
         },
         "deathSpellcraft0": {
             "name": "Sorcellerie de la mort",
-            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Mort</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune de la <strong>Mort</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Mort</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune de la <strong>Mort</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent. Il accorde également <strong>2</strong> points de @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.proficiencies000]{Maîtrise} en <strong>Sorcellerie kinématique</strong>.</p>",
             "adjective": "Mort runique"
         },
         "deceptionSkill00": {
             "name": "Duperie",
-            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les jets de compétence de <strong>Duperie</strong> de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les tests de compétence @Rule[skill.deception] de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Dupeur"
         },
         "deflection000000": {
             "name": "Déviation",
-            "description": "<p>Augmente la défense de <strong>Parade</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
+            "description": "<p>Augmente la défense de @Rule[defense.parry] de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
             "adjective": "Déviation"
         },
         "determination000": {
             "name": "Détermination",
-            "description": "<p>Augmente la défense de <strong>Volonté</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
+            "description": "<p>Augmente la défense de @Rule[defense.willpower] de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
             "adjective": "Détermination"
         },
         "diplomacySkill00": {
             "name": "Diplomatie",
-            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les jets de compétence de <strong>Diplomatie</strong> de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les tests de compétence @Rule[skill.diplomacy] de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Diplomatique"
         },
         "disguise00000000": {
             "name": "Déguisement",
-            "description": "<p>Fournit l'action <strong>Déguisement</strong>, permettant au porteur de prendre une apparence illusoire une fois par repos.</p>",
+            "description": "<p>Confère l'action <strong>Déguisement</strong>, permettant au porteur de prendre une apparence illusoire une fois par repos.</p>",
             "adjective": "Déguisement",
             "actions": {
                 "affixDisguise": {
@@ -210,7 +210,7 @@
         },
         "dragonBane000000": {
             "name": "Fléau des dragons",
-            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Dragon</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de <strong>Faveurs</strong> égal au <strong>Palier</strong> de ce préfixe.</p>",
+            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Dragon</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de @Rule[dice.boon]{Faveurs} égal au <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Fléau-des-dragons"
         },
         "earthPtcy0000000": {
@@ -220,7 +220,7 @@
         },
         "earthSpellcraft0": {
             "name": "Sorcellerie de terre",
-            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Terre</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune de <strong>Terre</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Terre</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune de <strong>Terre</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent. Il accorde également <strong>2</strong> points de @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.proficiencies000]{Maîtrise} en <strong>Sorcellerie élémentaire</strong>.</p>",
             "adjective": "Terre runique"
         },
         "electricityConv0": {
@@ -240,27 +240,27 @@
         },
         "elementalEarthBa": {
             "name": "Fléau des élémentaires de terre",
-            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Élémentaire de terre</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de <strong>Faveurs</strong> égal au <strong>Palier</strong> de ce préfixe.</p>",
+            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Élémentaire de terre</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de @Rule[dice.boon]{Faveurs} égal au <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Fléau terrestre"
         },
         "elementalFireBan": {
             "name": "Fléau des élémentaires de feu",
-            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Élémentaire de feu</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de <strong>Faveurs</strong> égal au <strong>Palier</strong> de ce préfixe.</p>",
+            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Élémentaire de feu</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de @Rule[dice.boon]{Faveurs} égal au <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Fléau igné"
         },
         "elementalFrostBa": {
             "name": "Fléau des élémentaires de givre",
-            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Élémentaire de givre</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de <strong>Faveurs</strong> égal au <strong>Palier</strong> de ce préfixe.</p>",
+            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Élémentaire de givre</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de @Rule[dice.boon]{Faveurs} égal au <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Fléau givré"
         },
         "elementalStormBa": {
             "name": "Fléau des élémentaires d'orage",
-            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Élémentaire d'orage</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de <strong>Faveurs</strong> égal au <strong>Palier</strong> de ce préfixe.</p>",
+            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Élémentaire d'orage</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de @Rule[dice.boon]{Faveurs} égal au <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Fléau tempétueux"
         },
         "evasion000000000": {
             "name": "Dérobade",
-            "description": "<p>Augmente la défense d'<strong>Esquive</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
+            "description": "<p>Augmente la défense d'@Rule[defense.dodge] de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
             "adjective": "Dérobade"
         },
         "fanSpellcraft000": {
@@ -270,7 +270,7 @@
         },
         "feyBane000000000": {
             "name": "Fléau des fées",
-            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Fée</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de <strong>Faveurs</strong> égal au <strong>Palier</strong> de ce préfixe.</p>",
+            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Fée</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de @Rule[dice.boon]{Faveurs} égal au <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Fléau-des-fées"
         },
         "fireConv00000000": {
@@ -295,17 +295,17 @@
         },
         "flameSpellcraft0": {
             "name": "Sorcellerie de la flamme",
-            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Flamme</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune de la <strong>Flamme</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Flamme</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune de la <strong>Flamme</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent. Il accorde également <strong>2</strong> points de @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.proficiencies000]{Maîtrise} en <strong>Sorcellerie élémentaire</strong>.</p>",
             "adjective": "Flamme runique"
         },
         "focusing00000000": {
             "name": "Focalisation",
-            "description": "<p>Fournit l'action <strong>Restauration de focus</strong>, permettant au porteur de récupérer du <strong>Focus</strong> dans les moments difficiles. Le montant restauré dépend du <strong>Palier</strong> de ce préfixe.</p>",
+            "description": "<p>Confère l'action <strong>Restauration de focus</strong>, permettant au porteur de récupérer du @Rule[resource.focus] dans les moments difficiles. Le montant restauré dépend du <strong>Palier</strong> de cet affixe.</p>",
             "adjective": "Focalisation",
             "actions": {
                 "affixFocusing": {
                     "name": "Restauration de focus",
-                    "description": "<p>En cas de difficulté, vous pouvez puiser dans une réserve supplémentaire de <strong>Focus</strong> depuis cet objet. Le montant de Focus restauré dépend du <strong>Palier</strong> de ce préfixe.</p><ul><li><p><strong>Palier 1 :</strong> <strong>4 Focus</strong></p></li><li><p><strong>Palier 2 :</strong> <strong>6 Focus</strong></p></li><li><p><strong>Palier 3 :</strong> <strong>8 Focus</strong></p></li></ul>"
+                    "description": "<p>En cas de difficulté, vous pouvez puiser dans une réserve supplémentaire de @Rule[resource.focus] depuis cet objet. Le montant de @Rule[resource.focus] restauré dépend du <strong>Palier</strong> de ce préfixe.</p><ul><li><p><strong>Palier 1</strong> : <strong>4 Focus</strong></p></li><li><p><strong>Palier 2</strong> : <strong>6 Focus</strong></p></li><li><p><strong>Palier 3</strong> : <strong>8 Focus</strong></p></li></ul>"
                 }
             }
         },
@@ -316,33 +316,33 @@
         },
         "frostSpellcraft0": {
             "name": "Sorcellerie du givre",
-            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Givre</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune du <strong>Givre</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Givre</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune du <strong>Givre</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent. Il accorde également <strong>2</strong> points de @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.proficiencies000]{Maîtrise} en <strong>Sorcellerie élémentaire</strong>.</p>",
             "adjective": "Givre runique"
         },
         "giantBane0000000": {
             "name": "Fléau des géants",
-            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Géant</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de <strong>Faveurs</strong> égal au <strong>Palier</strong> de ce préfixe.</p>",
+            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Géant</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de @Rule[dice.boon]{Faveurs} égal au <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Fléau-des-géants"
         },
         "gliding000000000": {
             "name": "Planant",
-            "description": "<p>Fournit l'action <strong>Planant</strong>, permettant au porteur de planer latéralement durant une chute. La distance planée dépend du <strong>Palier</strong> de ce préfixe.</p>",
+            "description": "<p>Confère au porteur les bénéfices du talent @UUID[Compendium.crucible.adversary-talents.Item.glider0000000000]{Planeur} comme s'il s'agissait d'une créature dotée de cette caractéristique, transformant ce qui aurait autrement été des chutes en <strong>Vols planés</strong> contrôlés.</p>",
             "adjective": "Planant",
             "actions": {
-                "gliding": {
-                    "name": "Planant",
-                    "description": "<p>Utilisé durant une @Condition[falling], vous pouvez vous déplacer latéralement d'un nombre d'espaces depuis votre position initiale en planant. La distance planée dépend du <strong>Palier</strong> de ce préfixe.</p><ul><li><p><strong>Palier 1 :</strong> <strong>@[feet 1]</strong> par @[feet 20] de descente.</p></li><li><p><strong>Palier 2 :</strong> <strong>@[feet 2]</strong> par @[feet 20] de descente.</p></li><li><p><strong>Palier 3 :</strong> <strong>@[feet 4]</strong> par @[feet 20] de descente.</p></li></ul><p>Vous ne subissez aucun dégât de chute à l'atterrissage, et n'êtes pas @Condition[prone].</p>"
+                "fallGlide": {
+                    "name": "Vol plané",
+                    "description": "<p>Vous planez au lieu de tomber, volant vers le bas avec contrôle. Le déplacement doit être descendant et n'inflige aucun dégât de chute. Si vous terminez votre vol plané en l'air, vous obtenez la condition @Condition[flying].</p>"
                 }
             }
         },
         "guarding00000000": {
             "name": "Protecteur",
-            "description": "<p>Augmente la défense de <strong>Blocage</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
+            "description": "<p>Augmente la défense de @Rule[defense.block] de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
             "adjective": "Protecteur"
         },
         "hale000000000000": {
             "name": "Vigoureux",
-            "description": "<p>Augmente le maximum de <strong>Santé</strong> de 6 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "description": "<p>Augmente le maximum de @Rule[resource.health] de 6 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Vigoureux"
         },
         "illuminationPtcy": {
@@ -352,7 +352,7 @@
         },
         "illuminationSpel": {
             "name": "Sorcellerie d'illumination",
-            "description": "<p>Cet objet est imprégné de l'essence de magie d'<strong>Illumination</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune de l'<strong>Illumination</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "description": "<p>Cet objet est imprégné de l'essence de magie d'<strong>Illumination</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune de l'<strong>Illumination</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent. Il accorde également <strong>2</strong> points de @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.proficiencies000]{Maîtrise} en <strong>Sorcellerie spirituelle</strong>.</p>",
             "adjective": "Illumination runique"
         },
         "illusionPtcy0000": {
@@ -362,7 +362,7 @@
         },
         "illusionSpellcra": {
             "name": "Sorcellerie d'illusion",
-            "description": "<p>Cet objet est imprégné de l'essence de magie d'<strong>Illusion</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune de l'<strong>Illusion</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "description": "<p>Cet objet est imprégné de l'essence de magie d'<strong>Illusion</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune de l'<strong>Illusion</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent. Il accorde également <strong>2</strong> points de @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.proficiencies000]{Maîtrise} en <strong>Sorcellerie spirituelle</strong>.</p>",
             "adjective": "Illusion runique"
         },
         "influenceSpellcr": {
@@ -372,7 +372,7 @@
         },
         "keen000000000000": {
             "name": "Aiguisée",
-            "description": "<p>Reduit le <strong>Seuil de critique</strong> nécessaire pour obtenir un <strong>Coup critique</strong> sur une Frappe réussie. Ce seuil est réduit de 1 pour chaque <strong>Palier</strong> de cet affixe.</p>",
+            "description": "<p>Reduit le @Rule[dice.criticalSuccessThreshold] nécessaire pour obtenir un @Rule[dice.criticalSuccess]{Coup critique} sur une <strong>Frappe</strong> réussie. Ce seuil est réduit de 1 pour chaque <strong>Palier</strong> de cet affixe.</p>",
             "adjective": "Aiguisée"
         },
         "kinesisPtcy00000": {
@@ -382,7 +382,7 @@
         },
         "kinesisSpellcraf": {
             "name": "Sorcellerie de kinésie",
-            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Kinésie</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune de <strong>Kinésie</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Kinésie</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune de <strong>Kinésie</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent. Il accorde également <strong>2</strong> points de @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.proficiencies000]{Maîtrise} en <strong>Sorcellerie kinématique</strong>.</p>",
             "adjective": "Kinésie runique"
         },
         "lifePtcy00000000": {
@@ -392,12 +392,12 @@
         },
         "lifeSpellcraft00": {
             "name": "Sorcellerie de vie",
-            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Vie</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune de <strong>Vie</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Vie</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune de <strong>Vie</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent. Il accorde également <strong>2</strong> points de @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.proficiencies000]{Maîtrise} en <strong>Sorcellerie kinématique</strong>.</p>",
             "adjective": "Vie runique"
         },
         "luminary00000000": {
             "name": "Astre",
-            "description": "<p>Obtient des Faveurs pour les actions <strong>Composées</strong> qui incluent une <strong>Inflexion</strong>. Le nombre de faveurs obtenues est égal au <strong>Palier</strong> de ce préfixe. Un seul Affixe peut prodiguer ce bénéfice.</p>",
+            "description": "<p>Obtient des Faveurs pour les actions <strong>Composées</strong> qui incluent une <strong>Inflexion</strong>. Le nombre de faveurs obtenues est égal au <strong>Palier</strong> de ce préfixe. Un seul <strong>Affixe</strong> peut prodiguer ce bénéfice.</p>",
             "adjective": "Astral"
         },
         "luminous00000000": {
@@ -418,27 +418,27 @@
         },
         "medicineSkill000": {
             "name": "Médecine",
-            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les jets de compétence de <strong>Médecine</strong> de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les tests de compétence @Rule[skill.medicine] de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Médical"
         },
         "mending000000000": {
             "name": "Réparation",
-            "description": "<p>Réduit le seuil de défense de <strong>Lésions</strong> de 1 pour chaque <strong>Palier</strong> de ce préfixe, rendant le porteur plus facile à guérir malgré les lésions.</p>",
+            "description": "<p>Réduit le @Rule[defense.wounds] de 1 pour chaque <strong>Palier</strong> de ce préfixe, rendant le porteur plus facile à guérir malgré les lésions.</p>",
             "adjective": "Vivifié"
         },
         "monstrosityBane0": {
             "name": "Fléau des monstruosités",
-            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Monstruosité</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de <strong>Faveurs</strong> égal au <strong>Palier</strong> de ce préfixe.</p>",
+            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Monstruosité</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de @Rule[dice.boon]{Faveurs} égal au <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Fléau-des-monstruosités"
         },
         "nimbleness000000": {
             "name": "Agilité",
-            "description": "<p>Augmente la défense de <strong>Réflexe</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
+            "description": "<p>Augmente la défense de @Rule[defense.reflex] de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
             "adjective": "Agilité"
         },
         "nonchalant000000": {
             "name": "Nonchalant",
-            "description": "<p>Les Frappes contre votre <strong>Moral</strong> nécessitent un surplus important pour accomplir un <strong>Coup critique</strong>. Le seuil de critique est augmenté de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "description": "<p>Les <strong>Frappes</strong> contre votre @Rule[resource.morale] nécessitent un surplus important pour accomplir un @Rule[dice.criticalSuccess]{Coup critique}. Le @Rule[dice.criticalSuccessThreshold] est augmenté de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Nonchalant"
         },
         "oblivionPtcy0000": {
@@ -448,27 +448,27 @@
         },
         "oblivionSpellcra": {
             "name": "Sorcellerie du néant",
-            "description": "<p>Cet objet est imprégné de l'essence de magie du <strong>Néant</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune du <strong>Néant</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "description": "<p>Cet objet est imprégné de l'essence de magie du <strong>Néant</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune du <strong>Néant</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent. Il accorde également <strong>2</strong> points de @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.proficiencies000]{Maîtrise} en <strong>Sorcellerie spirituelle</strong>.</p>",
             "adjective": "Néant runique"
         },
         "oozeBane00000000": {
             "name": "Fléau des vases",
-            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Vase</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de <strong>Faveurs</strong> égal au <strong>Palier</strong> de ce préfixe.</p>",
+            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Vase</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de @Rule[dice.boon]{Faveurs} égal au <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Fléau-des-vases"
         },
         "oRLsHj98S4a4xr2G": {
             "name": "Intimidation",
-            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les jets de compétence d'<strong>Intimidation</strong> de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les tests de compétence @Rule[skill.intimidation] de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Intimidant"
         },
         "outsiderBane0000": {
             "name": "Fléau des extérieurs",
-            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Extérieur</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de <strong>Faveurs</strong> égal au <strong>Palier</strong> de ce préfixe.</p>",
+            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Extérieur</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de @Rule[dice.boon]{Faveurs} égal au <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Fléau-des-extérieurs"
         },
         "performanceSkill": {
             "name": "Performance",
-            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les jets de compétence de <strong>Performance</strong> de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les tests de compétence @Rule[skill.performance] de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Performatif"
         },
         "piercingDmg00000": {
@@ -483,7 +483,7 @@
         },
         "plantBane0000000": {
             "name": "Fléau des plantes",
-            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Plante</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de <strong>Faveurs</strong> égal au <strong>Palier</strong> de ce préfixe.</p>",
+            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Plante</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de @Rule[dice.boon]{Faveurs} égal au <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Fléau-des-plantes"
         },
         "poisonConv000000": {
@@ -548,17 +548,17 @@
         },
         "reach00000000000": {
             "name": "Portée",
-            "description": "<p>Augmente la portée effective de cette arme. Les armes de mêlée obtiennent <strong>+1 de portée par Palier</strong>. Les armes à distance obtiennent <strong>+10 de portée par Palier</strong>.</p>",
+            "description": "<p>Augmente la portée effective de cette arme. Les armes de <strong>Mêlée</strong> obtiennent <strong>+1 de portée par Palier</strong>. Les armes à <strong>Distance</strong> obtiennent <strong>+10 de portée par Palier</strong>.</p>",
             "adjective": "Allongé"
         },
         "reinforcement000": {
             "name": "Renforcement",
-            "description": "<p>Augmente la défense d'<strong>Armure</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
+            "description": "<p>Augmente la défense d'@Rule[defense.armor] de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
             "adjective": "Renforcement"
         },
         "reliable00000000": {
             "name": "Fiable",
-            "description": "<p>Réduit le <strong>Seuil d'échec critique</strong> pour les jets d'attaque effectués avec cette arme. Le seuil diminue de <strong>1 par Palier</strong>.</p>",
+            "description": "<p>Réduit le @Rule[dice.criticalFailureThreshold] pour les jets d'attaque effectués avec cette arme. Le seuil diminue de <strong>1 par Palier</strong>.</p>",
             "adjective": "Fiable"
         },
         "returning0000000": {
@@ -568,7 +568,7 @@
         },
         "scienceSkill0000": {
             "name": "Science",
-            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les jets de compétence de <strong>Science</strong> de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les tests de compétence @Rule[skill.science] de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Scientifique"
         },
         "senseSpellcraft0": {
@@ -588,7 +588,7 @@
         },
         "societySkill0000": {
             "name": "Société",
-            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les jets de compétence de <strong>Société</strong> de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les tests de compétence @Rule[skill.society] de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Sociale"
         },
         "soulPtcy00000000": {
@@ -598,23 +598,23 @@
         },
         "soulSpellcraft00": {
             "name": "Sorcellerie d'âme",
-            "description": "<p>Cet objet est imprégné de l'essence de magie de l'<strong>Âme</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune de l'<strong>Âme</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "description": "<p>Cet objet est imprégné de l'essence de magie de l'<strong>Âme</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune de l'<strong>Âme</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent. Il accorde également <strong>2</strong> points de @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.proficiencies000]{Maîtrise} en <strong>Sorcellerie spirituelle</strong>.</p>",
             "adjective": "Âme runique"
         },
         "spirited00000000": {
             "name": "Fougueux",
-            "description": "<p>Augmente le maximum de <strong>Moral</strong> de 6 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "description": "<p>Augmente le maximum de @Rule[resource.morale] de 6 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Fougueux"
         },
         "stealthSkill0000": {
             "name": "Furtivité",
-            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les jets de compétence de <strong>Furtivité</strong> de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les tests de compétence @Rule[skill.stealth] de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Furtif"
         },
         "stepSpellcraft00": {
-            "name": "Sorcellerie de charge",
-            "description": "<p>Cet objet est imprégné de l'essence de magie de <strong>Charge</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance du signe <strong>Charge</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir appris par l'intermédiaire d'un talent.</p>",
-            "adjective": "Charge"
+            "name": "Sorcellerie d'enjambée",
+            "description": "<p>Cet objet est imprégné de l'essence de magie d'<strong>Enjambée</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance du signe <strong>Enjambée</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir appris par l'intermédiaire d'un talent.</p>",
+            "adjective": "Enjambée"
         },
         "strikeSpellcraft": {
             "name": "Sorcellerie de frappe",
@@ -628,17 +628,17 @@
         },
         "tenacity00000000": {
             "name": "Ténacité",
-            "description": "<p>Augmente la défense de <strong>Fortitude</strong> de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
+            "description": "<p>Augmente la défense de @Rule[defense.fortitude] de 1 pour chaque <strong>Palier</strong> de ce suffixe.</p>",
             "adjective": "Ténacité"
         },
         "undeadBane000000": {
             "name": "Fléau des morts-vivants",
-            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Mort-vivant</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de <strong>Faveurs</strong> égal au <strong>Palier</strong> de ce préfixe.</p>",
+            "description": "<p>Cette arme est particulièrement efficace contre les créatures de type <strong>Mort-vivant</strong>. En réalisant une <strong>Frappe</strong> contre une cible de ce type de créature, l'attaquant obtient un bonus de @Rule[dice.boon]{Faveurs} égal au <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Fléau-des-morts-vivants"
         },
         "unshakeable00000": {
             "name": "Indéfectible",
-            "description": "<p>Les Frappes contre votre <strong>Santé</strong> nécessitent un surplus important pour accomplir un <strong>Coup critique</strong>. Le seuil de critique est augmenté de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "description": "<p>Les <strong>Frappes</strong> contre votre @Rule[resource.health] nécessitent un surplus important pour accomplir un @Rule[dice.criticalSuccess]{Coup critique}. Le @Rule[dice.criticalSuccessThreshold] est augmenté de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Indéfectible"
         },
         "voidConv00000000": {
@@ -663,12 +663,12 @@
         },
         "weaponPotency000": {
             "name": "Puissance",
-            "description": "<p>Ajoute un <strong>Bonus d'enchantement</strong> à toutes les Frappes utilisant cette arme en fonction du <strong>Palier</strong> de cet affixe.</p>",
+            "description": "<p>Ajoute un <strong>Bonus d'enchantement</strong> à toutes les <strong>Frappes</strong> utilisant cette arme en fonction du <strong>Palier</strong> de cet affixe.</p>",
             "adjective": "Puissant"
         },
         "wildernessSkill0": {
             "name": "Nature",
-            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les jets de compétence de <strong>Nature</strong> de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
+            "description": "<p>Augmente le <strong>Bonus d'enchantement</strong> pour les tests de compétence @Rule[skill.wilderness] de 1 pour chaque <strong>Palier</strong> de ce préfixe.</p>",
             "adjective": "Survivaliste"
         },
         "composeSpellcraf": {
@@ -728,13 +728,18 @@
         },
         "stormSpellcraft0": {
             "name": "Sorcellerie de l'orage",
-            "description": "<p>Cet objet est imprégné de l'essence de sorcellerie de l'<strong>Orage</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune d' <strong>Orage</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent.</p>",
+            "description": "<p>Cet objet est imprégné de l'essence de sorcellerie de l'<strong>Orage</strong>. En étant équipé, le porteur bénéficie instinctivement d'une connaissance de la rune d' <strong>Orage</strong>, lui permettant de composer des sorts en l'utilisant, sans l'avoir apprise par l'intermédiaire d'un talent. Il accorde également <strong>2</strong> points de @UUID[Compendium.crucible.rules.JournalEntry.characterMechani.JournalEntryPage.proficiencies000]{Maîtrise} en <strong>Sorcellerie élémentaire</strong>.</p>",
             "adjective": "Orage runique"
         },
         "vicious000000000": {
             "name": "Vicieuse",
-            "description": "<p>Une Frappe qui obtient un <strong>Coup critique</strong> avec cette arme exploite brutalement la blessure.</p><ul><li><p>Les armes qui infligent des dégâts <strong>Perforants</strong> ou <strong>Tranchants</strong> amènent la cible à se retrouver @Condition[bleeding].</p></li><li><p>Les armes qui infligent des dégâts <strong>Contondants</strong> amènent la cible à se retrouver @Condition[staggered].</p></li></ul>",
+            "description": "<p>Une <strong>Frappe</strong> qui obtient un @Rule[dice.criticalSuccess]{Coup critique} avec cette arme exploite brutalement la blessure.</p><ul><li><p>Les armes qui infligent des dégâts <strong>Perforants</strong> ou <strong>Tranchants</strong> amènent la cible à se retrouver @Condition[bleeding].</p></li><li><p>Les armes qui infligent des dégâts <strong>Contondants</strong> amènent la cible à se retrouver @Condition[staggered].</p></li></ul>",
             "adjective": "Vicieuse"
+        },
+        "inspection000000": {
+            "name": "Inspection",
+            "description": "<p>Les tests de @Action[default search] obtiennent @Rule[dice.boon]{+2 Faveurs}.</p>",
+            "adjective": "Inspection"
         }
     }
 }

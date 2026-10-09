@@ -15,7 +15,7 @@
     "entries": {
         "amphibian0000000": {
             "name": "Amphibien",
-            "description": "<p>Bêtes qui habitent dans ou près de l'eau. Les Amphibiens sont généralement habiles, mais certaines variétés sont puissantes ou de grande taille.</p><ul><li><p><strong>Taille</strong> : variable</p></li><li><p><strong>Foulée</strong> : variable</p></li></ul>"
+            "description": "<p>Bêtes qui habitent dans ou près de l'eau. Les Amphibiens sont généralement habiles, mais certaines variétés sont puissantes ou de grande taille.</p><ul><li><p>@Rule[movement.size] : variable</p></li><li><p>@Rule[movement.stride] : variable</p></li></ul>"
         },
         "apparatus0000000": {
             "name": "Mécanisme",
@@ -23,7 +23,7 @@
         },
         "arachnid00000000": {
             "name": "Arachnide",
-            "description": "<p>Bêtes de la famille des arachnides qui tissent des toiles pour piéger et chasser de petites créatures ou des insectes. Les arachnides sont généralement agiles et patients, mais certaines variétés privilégient la puissance ou l'agression.</p><ul><li><p><strong>Taille</strong> : variable</p></li><li><p><strong>Foulée</strong> : variable</p></li></ul>"
+            "description": "<p>Bêtes de la famille des arachnides qui tissent des toiles pour piéger et chasser de petites créatures ou des insectes. Les arachnides sont généralement agiles et patients, mais certaines variétés privilégient la puissance ou l'agression.</p><ul><li><p>@Rule[movement.size] : variable</p></li><li><p>@Rule[movement.stride] : variable</p></li></ul>"
         },
         "automaton0000000": {
             "name": "Automate",
@@ -124,6 +124,10 @@
         "stoneElemental00": {
             "name": "Élémentaire de pierre",
             "description": "<p>Élémentaires colossaux de roche vivante et solide : massifs, inébranlables et éternels. Ils canalisent la puissance brute de la terre à travers leur propre masse immense.</p>"
+        },
+        "moose00000000000": {
+            "name": "Élan",
+            "description": "<p>Une tête au nez busqué et à l'air un brin loufoque n'enlève rien à la stature imposante et à la masse de cet ongulé.</p>"
         }
     }
 }

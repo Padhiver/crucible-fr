@@ -187,6 +187,18 @@
         "prankster0000000": {
             "name": "Farceur",
             "description": "<p>Créatures humanoïdes qui se nourrissent de nuisances, de contrariétés, de ruses et de tromperies.</p>"
+        },
+        "archGladiator000": {
+            "name": "Gladiateur",
+            "description": "<p>Redoutables guerriers, quasi inégalés dans l'art du combat en duel, qui allient réflexes aiguisés et ténacité à toute épreuve pour surpasser leurs adversaires et triompher par l'usure.</p>"
+        },
+        "chirurgeon000000": {
+            "name": "Chirurgien",
+            "description": "<p>Guérisseurs et charcutiers, professionnels de santé et empoisonneurs pervers.</p>"
+        },
+        "sorcerer00000000": {
+            "name": "Sorcier",
+            "description": "Un utilisateur de magie qui manie la flamme et l'électricité au combat."
         }
     }
 }
