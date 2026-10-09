@@ -1,1 +1,69 @@
-{}
+{
+    "label": "Effets système",
+    "folders": {
+        "Healing Over Time": "Guérison sur la durée",
+        "Damage Over Time": "Dégâts sur la durée"
+    },
+    "entries": {
+        "068mIGKUF7M7BkMR": {
+            "name": "Asphyxié",
+            "description": "<p>Une créature @Condition[suffocating]{Asphyxiée} subit des dégâts de <strong>Vide</strong> aux @Rule[resource.wounds] et à la @Rule[resource.madness] au début de chaque tour, représentant un traumatisme pulmonaire physique et la panique liée à la privation d'air respirable. En étant Asphyxiée, une créature est également @Condition[silenced].</p>"
+        },
+        "eTAmzJQibUArS6sw": {
+            "name": "Ensanglanté (Perforant)",
+            "description": "<p>Une créature @Condition[bleeding]{Ensanglantée} (Perforant) subit des dégâts <strong>Perforants</strong> supplémentaires à la @Rule[resource.health] au début de ses prochains tours.</p>"
+        },
+        "GsoKq6lpnyq5jA1v": {
+            "name": "Inspiré",
+            "description": "<p>Une créature @Condition[inspired]{Inspirée} recouvre progressivement du @Rule[resource.morale] au début de chacun de ses tours.</p>"
+        },
+        "Kx68df8e1SZYQm3W": {
+            "name": "Vivifié",
+            "description": "<p>Une créature @Condition[mending]{Vivifiée} recouvre progressivement de la @Rule[resource.health] au début de chacun de ses tours.</p>"
+        },
+        "Nna7DKUrlbjkFBFk": {
+            "name": "Putréfié",
+            "description": "<p>Une créature @Condition[decaying]{Putréfiée} subit des dégâts supplémentaires de <strong>Corruption</strong> à la @Rule[resource.health] au début de ses prochains tours.</p>"
+        },
+        "OtDGXpWdNCzqD5RL": {
+            "name": "Enflammé",
+            "description": "<p>Une créature @Condition[burning]{Enflammée} subit des dégâts supplémentaires de <strong>Feu</strong> à la @Rule[resource.health] et au @Rule[resource.morale] au début de ses prochains tours.</p>"
+        },
+        "pa9bqudf0ALKNt6r": {
+            "name": "Empoisonné",
+            "description": "<p>Une créature @Condition[poisoned]{Empoisonnée} subit des dégâts supplémentaires de <strong>Poison</strong> à la @Rule[resource.health] au début de ses prochains tours.</p>"
+        },
+        "Q2YcvPyAmV9OUroM": {
+            "name": "Dominé",
+            "description": "<p>Une créature @Condition[dominated]{Dominée} subit des dégâts <strong>Psychiques</strong> au @Rule[resource.morale] au début de chaque tour.</p>"
+        },
+        "sWe4vyh3QCi2d91v": {
+            "name": "Confus",
+            "description": "<p>Une créature @Condition[confused]{Confuse} subit des dégâts <strong>Psychiques</strong> au @Rule[resource.morale] au début de chaque tour, et est également traitée comme étant @Condition[disoriented]{Désorientée}.</p>"
+        },
+        "tz0mlqM0pp78EhVG": {
+            "name": "Électrocuté",
+            "description": "<p>Une créature @Condition[shocked]{Électrocutée} subit des dégâts <strong>Électriques</strong> au @Rule[resource.morale] au début de chaque tour.</p>"
+        },
+        "u5HDaSNZ7eMvolB8": {
+            "name": "Irradié",
+            "description": "<p>Une créature @Condition[irradiated]{Irradiée} subit des dégâts <strong>Radiants</strong> supplémentaires à la @Rule[resource.health] et au @Rule[resource.morale] au début de ses prochains tours.</p>"
+        },
+        "UC1h8m95M7D6nv8W": {
+            "name": "Dérangé",
+            "description": "<p>Une créature @Condition[entropy]{Dérangée} subit des dégâts de <strong>Vide</strong> à la @Rule[resource.health] au début de chaque tour, et est également traité comme étant @Condition[frightened]{Paniquée}.</p>"
+        },
+        "x7i9Id8GzdIlBbqL": {
+            "name": "Corrodé",
+            "description": "<p>Une créature @Condition[corroding]{Corrodée} subit des dégâts supplémentaires d'<strong>Acide</strong> à la @Rule[resource.health] au début de ses prochains tours.</p>"
+        },
+        "ZCMFlR5rkQdYE6xt": {
+            "name": "Ensanglanté (Tranchant)",
+            "description": "<p>Une créature @Condition[bleeding]{Ensanglantée} (Tranchant) subit des dégâts <strong>Tranchants</strong> supplémentaires à la @Rule[resource.health] au début de ses prochains tours.</p>"
+        },
+        "ZpvCgjPdpDdMuu7X": {
+            "name": "Gelé",
+            "description": "<p>Une créature @Condition[freezing]{Gelée} subit des dégâts supplémentaires de <strong>Froid</strong> à la @Rule[resource.health] au début de ses prochains tours.</p>"
+        }
+    }
+}
