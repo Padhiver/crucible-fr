@@ -1529,7 +1529,8 @@
         "Rules": "Règles Crucible",
         "Scaled": "Évolué",
         "Scaling": "Évolution",
-        "Syncing": "Synchronisation des Talents & Sorts"
+        "Syncing": "Synchronisation des Talents & Sorts",
+        "SendChatReadaloud": "Envoyer dans la discution"
     },
     "CURRENCY_DENOMINATIONS": {
         "CP": {
@@ -1697,7 +1698,8 @@
         "UnknownScore": "???",
         "ReplayAnimation": "Rejouer l'animation",
         "CriticalFailureThreshold": "Seuil d'échec critique",
-        "CriticalSuccessThreshold": "Seuil de réussite critique"
+        "CriticalSuccessThreshold": "Seuil de réussite critique",
+        "DCMinimum": "{dc}+"
     },
     "HOOKS": {
         "NoModuleHooks": "Aucun hook de module n'est enregistré pour cet identifiant.",
