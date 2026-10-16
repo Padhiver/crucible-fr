@@ -1047,12 +1047,15 @@
       "UnderspentTalent": "Spend Talent Points"
     },
     "Details": "Details",
+    "DifficultTerrain": "Difficult Terrain",
     "DisarmedStatus": "Disarmed!",
+    "ExtremeTerrain": "Extreme Terrain",
     "FreeMovement": "Free Movement",
     "FullyEngaged": "Fully Engaged",
     "KnowledgeSpecific": "Knowledge: {knowledge}",
     "LanguageSpecific": "Language: {language}",
     "LevelSpecific": "Level {level}",
+    "NormalTerrain": "Normal Terrain",
     "ProgressionRequirements": "Progression Requirements",
     "TrainingSpecific": "{training} {points}",
     "ResistanceSpecific": "Resistance: {resistance}",
@@ -1774,6 +1777,18 @@
       "damage": "Damage"
     }
   },
+  "ENCOUNTER": {
+    "DIFFICULTIES": {
+      "Challenging": "Challenging",
+      "Deadly": "Deadly",
+      "Easy": "Easy",
+      "Hopeless": "Hopeless",
+      "Moderate": "Moderate",
+      "Trivial": "Trivial"
+    },
+    "Threat": "Threat {threat}",
+    "ThreatDifficulty": "Threat {threat} ({difficulty})"
+  },
   "FOOTFALLS": {
     "FIELDS": {
       "material": {
@@ -1788,7 +1803,9 @@
     "Legend": "Footfalls",
     "MATERIALS": {
       "Grass": "Grass",
+      "Ice": "Ice",
       "Metal": "Metal",
+      "Snow": "Snow",
       "Stone": "Stone",
       "Water": "Water",
       "Wood": "Wood"
