@@ -2549,7 +2549,10 @@
       "PurchaseTitle": "Purchase Talent: {name}",
       "Remove": "<p>Remove talent <strong>{name}</strong>, reclaiming 1 Talent Point?</p>",
       "RemoveTitle": "Remove Talent: {name}",
-      "Reset": "Reset"
+      "Reset": "Reset",
+      "ShowTalents": "Show Compendium Talents",
+      "ShowSheet": "Show Character Sheet",
+      "ToggleSearch": "Toggle Talent Search"
     },
     "FIELDS": {
       "actions": {
@@ -2566,6 +2569,10 @@
       "iconicSpells": {
         "hint": "A number of Iconic Spell slots that are granted by this Talent.",
         "label": "Iconic Spells"
+      },
+      "keywords": {
+        "hint": "Playstyles this Talent is especially valuable for, used to find Talents in the Talent Tree. Assign a keyword only when the Talent is clearly more valuable to a character built around it than to a typical character.",
+        "label": "Keywords"
       },
       "nodes": {
         "hint": "Assign this Talent to be purchased from one or more particular nodes in the Talent Tree.",
@@ -2586,6 +2593,31 @@
         "label": "Provided Training"
       }
     },
+    "FILTER": {
+      "Clear": "Clear Filters",
+      "FIELDS": {
+        "ability": {
+          "label": "Ability"
+        },
+        "keywords": {
+          "label": "Keywords"
+        },
+        "levels": {
+          "label": "Level"
+        },
+        "query": {
+          "label": "Search"
+        },
+        "playstyle": {
+          "label": "Playstyle"
+        },
+        "training": {
+          "label": "Proficiency"
+        }
+      },
+      "Matches": "{talents} Talents in {nodes} Nodes",
+      "QueryPlaceholder": "Talent or action name"
+    },
     "HOOKS": {
       "GroupAction": "Action Usage",
       "GroupCombat": "Combat Turns",
@@ -2593,6 +2625,37 @@
       "GroupPreparation": "Actor Data Preparation",
       "GroupSpellcraft": "Spellcraft Preparation",
       "Register": "Register Hook Function"
+    },
+    "KEYWORDS": {
+      "Defensive": "Defensive",
+      "HeavyArmor": "Heavy Armor",
+      "Initiative": "Initiative",
+      "LightArmor": "Light Armor",
+      "MediumArmor": "Medium Armor",
+      "Melee": "Melee",
+      "Ranged": "Ranged",
+      "Rest": "Rest",
+      "Senses": "Senses",
+      "Spellcraft": "Spellcraft",
+      "Toolbelt": "Toolbelt",
+      "Unarmored": "Unarmored",
+      "Utility": "Utility"
+    },
+    "KEYWORD_GROUPS": {
+      "Armor": "Armor",
+      "Damage": "Damage",
+      "Defense": "Defense",
+      "FightingStyle": "Fighting Style",
+      "Playstyle": "Playstyle",
+      "Resources": "Resources",
+      "Restoration": "Restoration",
+      "SpellComponents": "Spell Components",
+      "Tactics": "Tactics",
+      "TargetDefense": "Target Defense",
+      "TargetResource": "Target Resource",
+      "Time": "Time",
+      "Toolbelt": "Toolbelt",
+      "Weapons": "Weapons"
     },
     "LABELS": {
       "Points": {
