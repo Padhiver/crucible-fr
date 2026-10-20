@@ -279,6 +279,12 @@
                 "public": "<p>The @ref[actor.name]{creature} strikes with a limb of grasping darkness.</p>"
             }
         },
+        "spines0000000000": {
+            "name": "Spines",
+            "description": {
+                "public": "<p>A dense coat of barbed spines covers the back and flanks of the @ref[actor.name]{creature}, turning aside blows.</p>"
+            }
+        },
         "stinger000000000": {
             "name": "Stinger",
             "description": {

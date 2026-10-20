@@ -18,7 +18,8 @@
         "Flight": "Flight",
         "Death": "Death",
         "Breath": "Breath",
-        "Senses": "Senses"
+        "Senses": "Senses",
+        "Companion": "Companion"
     },
     "entries": {
         "acidAbsorption00": {
@@ -112,6 +113,22 @@
                 }
             }
         },
+        "burningDeathBurs": {
+            "name": "Burning Death Burst",
+            "description": "<p>When the @ref[actor.name]{creature} dies, it explodes in a volatile burst of flame.</p>",
+            "actions": {
+                "burningDeathBurst": {
+                    "name": "Burning Death Burst",
+                    "condition": "The creature becomes Dead.",
+                    "description": "<p>When the @ref[actor.name]{creature} becomes @Condition[dead], it explodes in a pulse of <strong>Flame</strong> which attacks the @Rule[defense.reflex] defense of all nearby creatures that fail to resist the effect and upon critical success afflicting them with the @Condition[burning] condition for <strong>3 rounds</strong>.</p>",
+                    "effects": {
+                        "Burning Death Burst": {
+                            "name": "Burning Death Burst"
+                        }
+                    }
+                }
+            }
+        },
         "burnout000000000": {
             "name": "Burnout",
             "description": "<p>Steam-powered constructs store dangerous amounts of superheated steam within their bodies that, if not discharged safely, can cause serious injury.</p>",
@@ -162,6 +179,38 @@
             "name": "Cold Absorption",
             "description": "<p>The @ref[actor.name]{creature} has an exceptional ability to thrive within frigid environments. Its <strong>Cold</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
         },
+        "concussiveDeathB": {
+            "name": "Concussive Death Burst",
+            "description": "<p>When the @ref[actor.name]{creature} dies, it explodes in a volatile burst of concussive force.</p>",
+            "actions": {
+                "concussiveDeathBurst": {
+                    "name": "Concussive Death Burst",
+                    "condition": "The creature becomes Dead.",
+                    "description": "<p>When the @ref[actor.name]{creature} becomes @Condition[dead], it explodes in a concussive blast of <strong>Bludgeoning</strong> force which attacks the @Rule[defense.reflex] defense of all nearby creatures that fail to resist the effect and upon critical success afflicts them with the @Condition[staggered] condition for <strong>3 rounds</strong>.</p>",
+                    "effects": {
+                        "Concussive Death Burst": {
+                            "name": "Concussive Death Burst"
+                        }
+                    }
+                }
+            }
+        },
+        "corrodingDeathBu": {
+            "name": "Corroding Death Burst",
+            "description": "<p>When the @ref[actor.name]{creature} dies, it explodes in a volatile burst of corrosive acid.</p>",
+            "actions": {
+                "corrodingDeathBurst": {
+                    "name": "Corroding Death Burst",
+                    "condition": "The creature becomes Dead.",
+                    "description": "<p>When the @ref[actor.name]{creature} becomes @Condition[dead], it explodes in a pulse of <strong>Acid</strong> which attacks the @Rule[defense.fortitude] defense of all nearby creatures that fail to resist the effect and upon critical success afflicting them with the @Condition[corroding] condition for <strong>3 rounds</strong>.</p>",
+                    "effects": {
+                        "Corroding Death Burst": {
+                            "name": "Corroding Death Burst"
+                        }
+                    }
+                }
+            }
+        },
         "corrosiveStrikes": {
             "name": "Corrosive Strikes",
             "description": "<p>The @ref[actor.name]{creature}'s caustic body sears whatever it strikes. When it scores a @Rule[dice.criticalSuccess]{Critical Hit} with a melee attack that deals damage to @Rule[resource.health], the target becomes @Condition[corroding] for <strong>3 Rounds</strong>.</p>"
@@ -205,6 +254,22 @@
             "name": "Darkvision",
             "description": "<p>The @ref[actor.name]{creature} can see in darkness as though it were dim light up to 60 feet away, perceiving its surroundings in shades of grey. Darkvision does not function while the @ref[actor.name]{creature} is @Condition[blinded].</p>"
         },
+        "disorientingDeat": {
+            "name": "Disorienting Death Burst",
+            "description": "<p>When the @ref[actor.name]{creature} dies, it explodes in a volatile burst of disorienting energy.</p>",
+            "actions": {
+                "disorientingDeathBurst": {
+                    "name": "Disorienting Death Burst",
+                    "condition": "The creature becomes Dead.",
+                    "description": "<p>When the @ref[actor.name]{creature} becomes @Condition[dead], it explodes in a pulse of <strong>Psychic</strong> energy which attacks the @Rule[defense.willpower] defense of all nearby creatures that fail to resist the effect and upon critical success afflicting them with the @Condition[confused] condition for <strong>3 rounds</strong>.</p>",
+                    "effects": {
+                        "Disorienting Death Burst": {
+                            "name": "Disorienting Death Burst"
+                        }
+                    }
+                }
+            }
+        },
         "dyingCall0000000": {
             "name": "Dying Call",
             "description": "<p>When @ref[actor.name]{this creature} is in the throes of death, it emits one last call, alerting others nearby that it has been killed and calling for vengeance.</p>",
@@ -216,6 +281,16 @@
                 }
             }
         },
+        "earthmeld0000000": {
+            "name": "Earthmeld",
+            "description": "<p>The @ref[actor.name]{creature} is able to move instantaneously through stone.</p>",
+            "actions": {
+                "earthmeld": {
+                    "name": "Earthmeld",
+                    "description": "<p>When the @ref[actor.name]{creature} is touching solid stone, it can instantaneously transport itself to any unoccupied space in contact with the same rock formation up to <strong>30 feet</strong> away. It does not need to be able to see the destination to make this <strong>Move</strong>.</p>"
+                }
+            }
+        },
         "echolocation0000": {
             "name": "Echolocation",
             "description": "<p>@ref[actor.name]{This creature} perceives the world through the emission of sonic pulses that detect shapes with precision, allowing it to locate creatures that are moving or otherwise emitting sound, up to 60 feet away as long as they are not behind total cover. If the creature is @Condition[deafened], this sense may not be used.</p><p>A creature detected using @ref[name] is treated as visible for the purposes of actions which require you to see your target.</p>"
@@ -223,6 +298,22 @@
         "electricityAbsor": {
             "name": "Electricity Absorption",
             "description": "<p>The @ref[actor.name]{creature} has an exceptional ability to take lightning blasts in stride. Its <strong>Electricity</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
+        },
+        "electrostaticDea": {
+            "name": "Electrostatic Death Burst",
+            "description": "<p>When the @ref[actor.name]{creature} dies, it explodes in a volatile burst of electrostatic energy.</p>",
+            "actions": {
+                "electrostaticDeathBurst": {
+                    "name": "Electrostatic Death Burst",
+                    "condition": "The creature becomes Dead.",
+                    "description": "<p>When the @ref[actor.name]{creature} becomes @Condition[dead], it explodes in a pulse of <strong>Electricity</strong> which attacks the @Rule[defense.reflex] defense of all nearby creatures that fail to resist the effect and upon critical success afflicting them with the @Condition[shocked] condition for <strong>3 rounds</strong>.</p>",
+                    "effects": {
+                        "Electrostatic Death Burst": {
+                            "name": "Electrostatic Death Burst"
+                        }
+                    }
+                }
+            }
         },
         "elusiveFlight000": {
             "name": "Elusive Flight",
@@ -243,6 +334,22 @@
                 }
             }
         },
+        "entropicDeathBur": {
+            "name": "Entropic Death Burst",
+            "description": "<p>When the @ref[actor.name]{creature} dies, it explodes in a volatile burst of void energy.</p>",
+            "actions": {
+                "entropicDeathBurst": {
+                    "name": "Entropic Death Burst",
+                    "condition": "The creature becomes Dead.",
+                    "description": "<p>When the @ref[actor.name]{creature} becomes @Condition[dead], it explodes in a pulse of <strong>Void</strong> energy which attacks the @Rule[defense.willpower] defense of all nearby creatures that fail to resist the effect and upon critical success afflicting them with the @Condition[entropy] condition for <strong>3 rounds</strong>.</p>",
+                    "effects": {
+                        "Entropic Death Burst": {
+                            "name": "Entropic Death Burst"
+                        }
+                    }
+                }
+            }
+        },
         "extendedBreath00": {
             "name": "Extended Breath",
             "description": "<p>The @ref[actor.name]{creature} can hold its breath for <strong>15 minutes</strong>.</p>"
@@ -251,9 +358,50 @@
             "name": "False Appearance",
             "description": "<p>While it remains motionless, the @ref[actor.name]{creature} is indistinguishable from some other object or material.</p>"
         },
+        "fieldRepairs0000": {
+            "name": "Field Repairs",
+            "description": "<p>The @ref[actor.name]{engineer} can quickly repair some damage on an allied <strong>Construct</strong>.</p>",
+            "actions": {
+                "fieldRepairs": {
+                    "name": "Field Repairs",
+                    "description": "<p>You rapidly repair the damage of an allied construct within <strong>4 feet</strong>. Perform a @Rule[skill.science]{Science Check} against the target's @Rule[defense.wounds]. Your ally's @Rule[resource.health] is increased by overflow of the check.</p>"
+                }
+            }
+        },
         "fireAbsorption00": {
             "name": "Fire Absorption",
             "description": "<p>The @ref[actor.name]{creature} has an exceptional ability to thrive within scorching environments. Its <strong>Fire</strong> resistance is doubled and if that resistance would reduce an amount of damage below zero, the negative amount is received as <strong>Healing</strong> instead.</p>"
+        },
+        "flankingManeuver": {
+            "name": "Flanking Maneuver",
+            "description": "<p>Working in tandem with its master, @ref[actor.name]{the companion} can create openings in the defenses of even the most attentive opponents.</p>",
+            "actions": {
+                "flankingManeuver": {
+                    "name": "Flanking Maneuver",
+                    "description": "<p>@ref[actor.name]{The companion} makes a deliberate strike at an opponent who is currently being engaged by its master. On a hit, the opponent becomes @Condition[overrun] until the start of its next turn.</p>",
+                    "effects": {
+                        "Flanking Maneuver": {
+                            "name": "Flanking Maneuver"
+                        }
+                    }
+                }
+            }
+        },
+        "freezingDeathBur": {
+            "name": "Freezing Death Burst",
+            "description": "<p>When the @ref[actor.name]{creature} dies, it explodes in a volatile burst of freezing energy.</p>",
+            "actions": {
+                "freezingDeathBurst": {
+                    "name": "Freezing Death Burst",
+                    "condition": "The creature becomes Dead.",
+                    "description": "<p>When the @ref[actor.name]{creature} becomes @Condition[dead], it explodes in a pulse of <strong>Cold</strong> air which attacks the @Rule[defense.fortitude] defense of all nearby creatures that fail to resist the effect and upon critical success afflicting them with the @Condition[freezing] condition for <strong>3 rounds</strong>.</p>",
+                    "effects": {
+                        "Freezing Death Burst": {
+                            "name": "Freezing Death Burst"
+                        }
+                    }
+                }
+            }
         },
         "glider0000000000": {
             "name": "Glider",
@@ -372,6 +520,21 @@
         "livingBoulder000": {
             "name": "Living Boulder",
             "description": "<p>The @ref[actor.name]{creature} channels earth through its own physical mass rather than its mind. Its usage of the <strong>Rune of Earth</strong> scales with @Rule[ability.toughness] instead of @Rule[ability.wisdom].</p>"
+        },
+        "loyalProtector00": {
+            "name": "Loyal Protector",
+            "description": "<p>@ref[actor.name]{The companion} is fiercely loyal to its master, and will move to their side and provide defensive assistance immediately upon request.</p>",
+            "actions": {
+                "loyalProtector": {
+                    "name": "Loyal Protector",
+                    "description": "<p>@ref[actor.name]{The companion} moves adjacent to its master, providing them with the @Condition[guarded] condition until the start of their next turn.</p>",
+                    "effects": {
+                        "Loyal Protector": {
+                            "name": "Loyal Protector"
+                        }
+                    }
+                }
+            }
         },
         "maddeningShriek0": {
             "name": "Maddening Shriek",
@@ -621,6 +784,22 @@
                 }
             }
         },
+        "shreddingDeathBu": {
+            "name": "Shredding Death Burst",
+            "description": "<p>When the @ref[actor.name]{creature} dies, it explodes in a volatile burst of piercing fragments.</p>",
+            "actions": {
+                "shreddingDeathBurst": {
+                    "name": "Shredding Death Burst",
+                    "condition": "The creature becomes Dead.",
+                    "description": "<p>When the @ref[actor.name]{creature} becomes @Condition[dead], it explodes in a pulse of <strong>Piercing</strong> fragments which attacks the @Rule[defense.reflex] defense of all nearby creatures that fail to resist the effect and upon critical success afflicting them with the @Condition[bleeding] condition for <strong>3 rounds</strong>.</p>",
+                    "effects": {
+                        "Shredding Death Burst": {
+                            "name": "Shredding Death Burst"
+                        }
+                    }
+                }
+            }
+        },
         "slipperyForm0000": {
             "name": "Slippery Form",
             "description": "<p>This creature is permanently slippery, giving it the ability to elude capture by physical restraints.</p>",
@@ -740,6 +919,22 @@
                     "name": "Thrash",
                     "condition": "The target is Restrained by this creature.",
                     "description": "<p>The creature deals @Rule[action.deadly] damage to a target that it currently has @Condition[restrained].</p>"
+                }
+            }
+        },
+        "toxicDeathBurst0": {
+            "name": "Toxic Death Burst",
+            "description": "<p>When the @ref[actor.name]{creature} dies, it explodes in a volatile burst of poisonous energy.</p>",
+            "actions": {
+                "toxicDeathBurst": {
+                    "name": "Toxic Death Burst",
+                    "condition": "The creature becomes Dead.",
+                    "description": "<p>When the @ref[actor.name]{creature} becomes @Condition[dead], it explodes in a pulse of <strong>Poison</strong> which attacks the @Rule[defense.fortitude] defense of all nearby creatures that fail to resist the effect and upon critical success afflicting them with the @Condition[poisoned] condition for <strong>3 rounds</strong>.</p>",
+                    "effects": {
+                        "Toxic Death Burst": {
+                            "name": "Toxic Death Burst"
+                        }
+                    }
                 }
             }
         },

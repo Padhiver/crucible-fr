@@ -115,6 +115,18 @@
                 "public": "<p>A bastard sword, also known as a hand-and-a-half sword, is a versatile weapon with a straight, double-edged blade around 40 inches long. This weapon is forged for both single-handed agility and two-handed power.</p>"
             }
         },
+        "batteringSnare00": {
+            "name": "Battering Snare",
+            "description": {
+                "public": "<p>This snare consists of a flat rock or metal plate held in place with a spring or flexible branch.</p>"
+            },
+            "actions": {
+                "batteringSnareArm": {
+                    "name": "Arm Battering Snare",
+                    "description": "<p>Setting the trap places a hazard that causes its effect if triggered. The area of the trap is a circle with a radius of 2 feet.</p><p>When triggered, the creature that set the trap makes a @Rule[skill.wilderness] skill attack against the @Rule[defense.reflex] defense of the creature which triggered it. If not resisted, the flat object swings wide and smacks the creature, dealing @Rule[damageType.bludgeoning] damage. If the attack is a @Rule[dice.criticalSuccess], the creature is also @Condition[stunned] until the end of its next turn. The base damage dealt by the trap varies according to the quality of the trap.</p><ul><li><p><strong>Shoddy</strong> - 2 damage</p></li><li><p><strong>Standard</strong> - 4 damage</p></li><li><p><strong>Fine</strong> - 8 damage</p></li><li><p><strong>Superior</strong> - 12 damage</p></li><li><p><strong>Masterwork</strong> - 20 damage</p></li></ul>"
+                }
+            }
+        },
         "battleAxe0000000": {
             "name": "Battle Axe",
             "description": {
@@ -175,6 +187,18 @@
             "name": "Buckler",
             "description": {
                 "public": "<p>A small, round metal shield roughly the size of a dinner plate, the buckler is a duelist’s tool for deflecting blades and controlling space, worn on the forearm or gripped like a weapon.</p>"
+            }
+        },
+        "caltropSnare0000": {
+            "name": "Caltrop Snare",
+            "description": {
+                "public": "<p>This snare consists of a hidden canister of caltrops attached to a trip wire. When the snare is triggered, it flings the caltrops into the nearby area.</p>"
+            },
+            "actions": {
+                "caltropSnareArm": {
+                    "name": "Arm Caltrop Snare",
+                    "description": "<p>Setting the trap places a hazard that causes its effect if triggered. The area of the trap is a circle with a radius of 2 feet.</p><p>When triggered, the snare flings its caltrops and the area remains hazardous. The creature that set the trap makes a @Rule[skill.wilderness] skill attack against the @Rule[defense.reflex] defense of a creature which enters or begins its turn within the area, at most once per round. If not resisted, it deals @Rule[damageType.piercing] damage and inflicts @Condition[bleeding] and @Condition[slowed]. The bleeding damage and the duration of both conditions vary according to the quality of the trap.</p><ul><li><p><strong>Shoddy</strong> - 1 damage, 1 round</p></li><li><p><strong>Standard</strong> - 2 damage, 2 rounds</p></li><li><p><strong>Fine</strong> - 3 damage, 3 rounds</p></li><li><p><strong>Superior</strong> - 4 damage, 4 rounds</p></li><li><p><strong>Masterwork</strong> - 6 damage, 6 rounds</p></li></ul>"
+                }
             }
         },
         "candle0000000000": {
@@ -332,6 +356,12 @@
             "name": "Common Clothing",
             "description": {
                 "public": "<p>A shirt, pair of pants, undergarments, socks and shoes or boots suitable for menial labor or travel.</p>"
+            }
+        },
+        "compass000000000": {
+            "name": "Compass",
+            "description": {
+                "public": "<p>A piece of ferrous metal suspended in a liquid dial, when held parallel to the ground it provides a reasonable bearing for navigation.</p><p></p><p>This Tool grants @Advantage[2] for navigation tasks on land or at sea.</p>"
             }
         },
         "cookingOil000000": {
@@ -876,7 +906,7 @@
         "net0000000000000": {
             "name": "Net",
             "description": {
-                "public": "<p>These thickly woven fibers are reinforced for use in combat to entrap and entangle even the most dangerous foes, rendering them vulnerable.</p>"
+                "public": "<p>These thickly woven fibers are reinforced for use in combat to entrap and entangle even the most dangerous foes, rendering them helpless.</p>"
             },
             "actions": {
                 "net": {
@@ -976,6 +1006,18 @@
             "name": "Plate Mail",
             "description": {
                 "public": "<p>The pinnacle of personal protection, plate mail encases the body in carefully fitted steel plates, offering near-complete protection while allowing impressive mobility for a trained wearer.</p>"
+            }
+        },
+        "poisonBarbSnare0": {
+            "name": "Poison Barb Snare",
+            "description": {
+                "public": "<p>A circlet of venom-tipped barbs disguised to blend in with the nearby terrain. Once armed, a creature who steps within the trap area triggers it.</p>"
+            },
+            "actions": {
+                "poisonBarbSnareArm": {
+                    "name": "Arm Poison Barb Snare",
+                    "description": "<p>Setting the trap places a hazard that causes its effect if triggered. The area of the trap is a circle with a radius of 2 feet.</p><p>When triggered, the creature that set the trap makes a @Rule[skill.wilderness] skill attack against the @Rule[defense.reflex] defense of the creature which triggered it. If not resisted, the envenomed barbs bite into the creature with a @Rule[action.weakened] attack, dealing @Rule[damageType.poison] damage and inflicting @Condition[poisoned]. The poison damage and duration of the condition vary according to the quality of the trap.</p><ul><li><p><strong>Shoddy</strong> - 1 damage, 1 round</p></li><li><p><strong>Standard</strong> - 2 damage, 2 rounds</p></li><li><p><strong>Fine</strong> - 3 damage, 3 rounds</p></li><li><p><strong>Superior</strong> - 4 damage, 4 rounds</p></li><li><p><strong>Masterwork</strong> - 6 damage, 6 rounds</p></li></ul>"
+                }
             }
         },
         "poisonersToolkit": {
@@ -1375,12 +1417,12 @@
         "steeljawTrap0000": {
             "name": "Steel-Jaw Trap",
             "description": {
-                "public": "<p>A particularly cruel and sharp mechanical trap designed to immobilize and kill the unwary. A saw-toothed steel ring that snaps shut when a creature steps on a pressure plate in the center</p>"
+                "public": "<p>A particularly cruel and sharp mechanical trap designed to immobilize and kill the unwary. A saw-toothed steel ring that snaps shut when a creature steps on a pressure plate in the center.</p>"
             },
             "actions": {
                 "steelJawArm": {
                     "name": "Arm Steel-Jaw Trap",
-                    "description": "<p>Setting the trap places a dangerous hazard that deals significant damage if triggered. It must be affixed by heavy chain to an immobile object, such as a tree or spike driven into the ground. The area of the trap is a circle with a radius of 2 feet.</p><p>When triggered, the creature that set the trap makes a @Rule[skill.wilderness] skill attack against the @Rule[defense.reflex] defense of a single target which triggered the trap. If not resisted, it deals <strong>Piercing</strong> damage and applies the @Condition[restrained] condition. The base damage dealt by the trap varies according to the quality of the trap.</p><ul><li><p><strong>Shoddy</strong> - 1 damage</p></li><li><p><strong>Standard</strong> - 2 damage</p></li><li><p><strong>Fine</strong> - 4 damage</p></li><li><p><strong>Superior</strong> - 8 damage</p></li><li><p><strong>Masterwork</strong> - 16 damage</p></li></ul>"
+                    "description": "<p>Setting the trap places a hazard that causes its effect if triggered. The area of the trap is a circle with a radius of 2 feet.</p><p>When triggered, the creature that set the trap makes a @Rule[skill.wilderness] skill attack against the @Rule[defense.reflex] defense of the creature which triggered it. If not resisted, it deals @Rule[damageType.piercing] damage and applies the @Condition[restrained] condition. The base damage dealt by the trap varies according to the quality of the trap.</p><ul><li><p><strong>Shoddy</strong> - 1 damage</p></li><li><p><strong>Standard</strong> - 2 damage</p></li><li><p><strong>Fine</strong> - 4 damage</p></li><li><p><strong>Superior</strong> - 8 damage</p></li><li><p><strong>Masterwork</strong> - 16 damage</p></li></ul>"
                 }
             }
         },

@@ -2,6 +2,7 @@
     "label": "Taxonomies",
     "folders": {
         "Dragon": "Dragon",
+        "Companion": "Companion",
         "Elemental": "Elemental",
         "Monstrosity": "Monstrosity",
         "Undead": "Undead",
@@ -28,6 +29,18 @@
         "automaton0000000": {
             "name": "Automaton",
             "description": "<p>Constructs designed as a reflection of humanoids to serve in the completion of simple labor tasks.</p>"
+        },
+        "beastAir00000000": {
+            "name": "Beast of the Air",
+            "description": "<p>Companion beasts who take to the skies. Their view from above can provide their masters a strong tactical advantage, and they remain dexterous enough to aid in combat when necessary.</p>"
+        },
+        "beastLand0000000": {
+            "name": "Beast of the Land",
+            "description": "<p>Companion beasts who stride across land. Their strength and pack hunter tactics serve their masters well, often acting as another frontline team member.</p>"
+        },
+        "beastSea00000000": {
+            "name": "Beast of the Sea",
+            "description": "<p>Companion beasts who dwell in the deep. Their blindsight can reveal to their masters the location of would-be hidden enemies, and woe unto any who find themselves ensnared by such beasts.</p>"
         },
         "boar000000000000": {
             "name": "Boar",
@@ -85,6 +98,14 @@
             "name": "Ogre",
             "description": "<p>Hulking giantkin which are reknowned for their brute strength and direct problem-solving approach.</p>"
         },
+        "porcupine0000000": {
+            "name": "Porcupine",
+            "description": "<p>A stout, waddling forager of the deep woods, the porcupine is armored in a mantle of barbed quills that bristle at the first hint of danger. When threatened, it turns its back, rattles its quills like a dry reed fence, and waits for its foe to make the mistake.</p>"
+        },
+        "raven00000000000": {
+            "name": "Raven",
+            "description": "<p>Flying beasts of the corvid family. Ravens are highly intelligent and social creatures able to emulate speech, and are more than capable of acting as both hunter and scavenger.</p>"
+        },
         "rodent0000000000": {
             "name": "Rodent",
             "description": "<p>Beasts which typically congregate in high populations in and around humanoid settlements and are opportunistic scavengers. </p>"
@@ -112,6 +133,10 @@
         "taxonomyWarMachi": {
             "name": "War Machine",
             "description": "<p>Constructs built for the purpose of being instruments of war or formidable guardians.</p>"
+        },
+        "waterElemental00": {
+            "name": "Water Elemental",
+            "description": "<p>Elemental creatures corresponding to the element of Frost.</p>"
         },
         "werewolf00000000": {
             "name": "Werewolf",

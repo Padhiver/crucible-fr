@@ -104,6 +104,10 @@
                 }
             }
         },
+        "adroitKinesis000": {
+            "name": "Adroit Kinesis",
+            "description": "<p>You wield kinetic power with unbridled speed, hurling myriad projectiles with nimble finger-work. Your use of the <strong>Rune of Kinesis</strong> scales with @Rule[ability.dexterity] instead of @Rule[ability.presence].</p>"
+        },
         "alchemicalresolv": {
             "name": "Alchemical Resolve",
             "description": "You rapidly apply alchemical vapours which instill your ally with supplemental bravery in the face of horror.",
@@ -259,7 +263,21 @@
         },
         "beastmaster00000": {
             "name": "Beastmaster",
-            "description": "<p>You have trained your animal companion to aid you in combat. Your companion may participate in encounters as an allied combatant.</p><h3 class=\"divider\">Playtest Notes</h3><p>This talent is not yet automated.</p>"
+            "description": "<p>You have trained your animal companion to aid you in combat. Your companion may participate in encounters as an allied combatant, and you have developed techniques for teaming up on enemies.</p><p>Your companion is a <strong>Minion</strong>-threat Adversary, its level equal to half of yours, rounding up. Your companion is marked <strong>Important</strong>, meaning that they use the reserve resources of @Rule[resource.wounds] and @Rule[resource.madness].</p>",
+            "actions": {
+                "bondCompanion": {
+                    "name": "Bond Companion",
+                    "description": "<p>You form a bond with a beast, and it becomes your loyal companion.</p>"
+                },
+                "releaseCompanion": {
+                    "name": "Release Companion",
+                    "description": "<p>It is time for you and your companion to part ways. You release it back to the wilds.</p>"
+                },
+                "exploitOpening": {
+                    "name": "Exploit Opening",
+                    "description": "<p>You focus and make an @Rule[action.accurate] <strong>Strike</strong> with your weapon against a target that is @Condition[flanked] and engaged by your Companion.</p>"
+                }
+            }
         },
         "berserker0000000": {
             "name": "Berserker",
@@ -339,7 +357,7 @@
         },
         "bulwark000000000": {
             "name": "Bulwark",
-            "description": "<p>You have expertise in using a <strong>Shield</strong> to defend yourself and others.</p><p>Once per turn while you have a <strong>Shield</strong> equipped, the @Rule[resource.action] cost of using the @Action[default defend] action is reduced by 1.</p>"
+            "description": "<p>You have expertise in using a <strong>Shield</strong> to defend yourself and others.</p><p>While you have a <strong>Shield</strong> equipped, you may sacrifice your @Rule[movement.freeMovement] for the Round to reduce the @Rule[resource.action] cost of the @Action[default defend] action by 1.</p>"
         },
         "cadence000000000": {
             "name": "Cadence",
@@ -477,6 +495,10 @@
                 }
             }
         },
+        "compellingIllusi": {
+            "name": "Compelling Illusion",
+            "description": "<p>To you, the key to a successful illusion is not in its meticulous construction, but in the conviction of your self-belief. Your usage of the <strong>Rune of Illusion</strong> scales with @Rule[ability.presence] instead of @Rule[ability.intellect].</p>"
+        },
         "concussiveblows0": {
             "name": "Concussive Blows",
             "description": "<p>Your physical power wielding melee weapons which deal <strong>Bludgeoning</strong> damage can cause the @Condition[staggered] condition on @Rule[dice.criticalSuccess]{Critical Hits} which deal damage to @Rule[resource.health].</p><p>The @Condition[staggered] effect lasts for <strong>1 Round</strong> and reduces your target's maximum @Rule[resource.action] by 2.</p>"
@@ -529,7 +551,7 @@
                 "counterStrike": {
                     "name": "Counter Strike",
                     "condition": "You Block an incoming melee Strike.",
-                    "description": "<p>When you defend against a melee attack with a @Rule[defense.block] you may expend @Rule[resource.focus] to retaliate with a reduced-cost <strong>Strike</strong> using your mainhand weapon.</p>"
+                    "description": "<p>When you defend against a melee attack with a @Rule[defense.block] you may expend @Rule[resource.focus] to retaliate with a reduced-cost <strong>Strike</strong> using a melee weapon.</p>"
                 }
             }
         },
@@ -586,7 +608,7 @@
         },
         "dirtytricks00000": {
             "name": "Dirty Tricks",
-            "description": "You have pouches of sand and dust that you use to temporarily distract or blind an enemy.",
+            "description": "<p>You know how to turn the dirt beneath your feet into a weapon. Whether flung from a pouch of sand, scooped up in a handful, or kicked up from the earth, a well-placed spray of grit can temporarily distract or blind an enemy.</p>",
             "actions": {
                 "dirtyTricks": {
                     "name": "Dirty Tricks",
@@ -698,6 +720,10 @@
                     }
                 }
             }
+        },
+        "expeditiousIllum": {
+            "name": "Expeditious Illumination",
+            "description": "<p>You manifest illumination with a speed almost rivaling that of the light itself, deploying it precisely where and when it will have the greatest effect. Your usage of the <strong>Rune of Illumination</strong> scales with @Rule[ability.intellect] instead of @Rule[ability.presence].</p>"
         },
         "exploitDespair00": {
             "name": "Exploit Despair",
@@ -1444,6 +1470,10 @@
             "name": "Patient Deflection",
             "description": "<p>Your expertise with martial arts allows you to dodge or deflect blows as effectively as a heavily armored fighter. While <strong>Unarmed</strong> or wielding only <strong>Natural</strong> weapons, half your @Rule[ability.wisdom] score contributes to your @Rule[defense.parry] defense.</p>"
         },
+        "patientSoul00000": {
+            "name": "Patient Soul",
+            "description": "<p>Your breadth of experience has taught you that healing wounds to the soul cannot be rushed, but requires methodical effort. Your usage of the <strong>Rune of Soul</strong> scales with @Rule[ability.wisdom] instead of @Rule[ability.presence].</p>"
+        },
         "peltast000000000": {
             "name": "Peltast",
             "description": "<p>A thrown weapon that departs your hand is guided by an arcane discipline which bends its path to your will, lending your throws a reach and precision that no unaided arm could match. Weapons you throw are returned unerringly back to your grasp. You gain the following benefits:</p><ul><li><p>You can use @Action[default throwWeapon] with any melee weapon or shield with full effectiveness, even those not designed to be thrown.</p></li><li><p>A weapon designed for throwing with the <strong>Thrown</strong> property gains <strong>+10 feet</strong> of range in your hands, reaching <strong>20 feet</strong>.</p></li><li><p>Weapons you throw automatically and immediately return to your hand.</p></li></ul>",
@@ -2150,6 +2180,10 @@
                 }
             }
         },
+        "tenaciousControl": {
+            "name": "Tenacious Control",
+            "description": "<p>Your raw physicality provides an anchor from which you gain the leverage to bend the wills of your enemies. Your usage of the <strong>Rune of Control</strong> scales with @Rule[ability.toughness] instead of @Rule[ability.wisdom].</p>"
+        },
         "testudo000000000": {
             "name": "Testudo",
             "description": "You are highly skilled in using shields to adopt a defensive posture. You gain double the benefit of the @Condition[guarded] condition against <strong>Weapon Attacks</strong> while wielding a shield."
@@ -2219,6 +2253,10 @@
             "name": "Undaunted",
             "description": "<p>Despair takes your voice and your courage, but never your command of the arcane. You may continue to spend @Rule[resource.focus] even while you are @Condition[broken].</p>"
         },
+        "undeniableOblivi": {
+            "name": "Undeniable Oblivion",
+            "description": "<p>You need not fear the destructive power of wielding the void, so powerful is your sense of self; instead, all the more effort may be focused on your unfortunate targets. Your usage of the <strong>Rune of Oblivion</strong> scales with @Rule[ability.presence] instead of @Rule[ability.intellect].</p>"
+        },
         "unravelGlyph0000": {
             "name": "Unravel Glyph",
             "description": "<p>You can take a finished glyph apart stroke by stroke and see exactly how it was made. What you learn stays with you. The glyph does not.</p><p>You may spend <strong>1 hour</strong> to unravel a glyph in your possession, destroying it. You thereafter know the schematic which produces that glyph and may craft it without holding a physical copy, as though you had already crafted it successfully.</p><h3 class=\"divider\">Playtest Notes</h3><p>The crafting system is in early development and schematic knowledge is not yet tracked. This talent describes how Glyphweaving will behave once it is.</p>"
@@ -2250,6 +2288,10 @@
         "versatileTransla": {
             "name": "Versatile Translator",
             "description": "<p>You have a scholarly background in linguistics or an intuitive knack for languages. Your capabilities enable you to decipher the basic meaning of text written in a variety of languages.</p><p>You can translate text of a language you do not know that is written using a common set of glyphs or characters to a language that you do know. Creating such a translation requires spending one minute per word to transcribe the text into a language which you understand.</p><p>Your translations are rudimentary and often lack nuance, but they do contain all essential points of the text.</p>"
+        },
+        "visceralDeath000": {
+            "name": "Visceral Death",
+            "description": "<p>Your deliverance of death is less the introduction of decay, and more the physical wrenching of life force out of your enemies. Your usage of the <strong>Rune of Death</strong> scales with @Rule[ability.strength] instead of @Rule[ability.presence].</p>"
         },
         "voidcaller000000": {
             "name": "Voidcaller",
@@ -2394,6 +2436,10 @@
                     "description": "<p>Immediately after you perform a basic @Action[default strike], you perform a reduced-cost follow-up <strong>Strike</strong> against the same target using a different <strong>Natural</strong> weapon that you have access to.</p>"
                 }
             }
+        },
+        "willfulLife00000": {
+            "name": "Willful Life",
+            "description": "<p>You know you can heal any ally's physical ailments; your self confidence drives the flow of mending magic when you attend their needs. Your use of the <strong>Rune of Life</strong> scales with @Rule[ability.presence] instead of @Rule[ability.wisdom].</p>"
         },
         "witheringBolt000": {
             "name": "Withering Bolt",
