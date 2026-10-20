@@ -121,7 +121,8 @@
     },
     "EFFECTS": {
       "Add": "Add Effect",
-      "Delete": "Remove Effect"
+      "Delete": "Remove Effect",
+      "RemovableHint": "This effect may be removed by overcoming its removal difficulty. Leave the DC blank to derive it from the action's roll."
     },
     "FIELDS": {
       "actionHooks": {
@@ -451,17 +452,6 @@
       "Wall": "Wall"
     },
     "WARNINGS": {
-      "SPECIFIC": {
-        "DELAY": {
-          "AlreadyDelayed": "You may not delay your turn again this combat round."
-        },
-        "ESTOCADE": {
-          "RequiresOpening": "Estocade requires a target who is Exposed, Prone, Slowed, Staggered, Paralyzed, or Disarmed."
-        },
-        "REVIVE": {
-          "RequiresDead": "Revive requires a Dead target."
-        }
-      },
       "AlreadyConfirmed": "The action against you has already been confirmed and can no longer be reacted to.",
       "AuraNoToken": "You cannot use a self-emanating action without having a token on the scene!",
       "BadStatus": "You may not perform {action} while {status}.",
@@ -564,8 +554,6 @@
     "DurationSeconds": "{value}S",
     "DurationUntilEnded": "Until Ended",
     "EffectSpecific": "Effect: {effect}",
-    "MaintainContent": "<p>Spend {cost} Focus to maintain {effect}?</p>",
-    "MaintainTitle": "Maintain Focus: {effect}",
     "NoTargets": "No Targets",
     "Overview": "Action Overview",
     "PlanMovement": "Plan Movement",
@@ -598,17 +586,33 @@
       "Required": "You must choose an affix to amplify.",
       "Title": "Amplify Affix"
     },
+    "Beastmaster": {
+      "AlreadyBonded": "You already have a bonded companion.",
+      "NoCompanion": "You do not have a companion to release.",
+      "NoneChosen": "No companion selected.",
+      "NotEngagedByCompanion": "The target must be engaged by your companion.",
+      "WhichBond": "Which type of beast will you bond?"
+    },
     "Challenge": {
       "Dominance": "Dominance"
     },
     "DeathlessFury": {
       "CannotUse": "{name} can only enter a Deathless Fury while their Health does not exceed their Wounds."
     },
+    "Delay": {
+      "AlreadyDelayed": "You may not delay your turn again this combat round."
+    },
+    "Estocade": {
+      "RequiresOpening": "Estocade requires a target who is Exposed, Prone, Slowed, Staggered, Paralyzed, or Disarmed."
+    },
     "FieldStudy": {
       "Effect": "Field Study: {knowledge}",
       "Label": "Topic of Study",
       "Required": "You must choose a field of Knowledge to study.",
       "Title": "Field Study"
+    },
+    "FlankingManeuver": {
+      "NotEngaged": "The target must be engaged by the companion's master."
     },
     "Gambit": {
       "AnteWon": "Gambit (+{count})",
@@ -637,6 +641,12 @@
       "Required": "You must choose both an item and an affix.",
       "TierTooHigh": "That affix cannot be imbued at Tier 1.",
       "Title": "Imbue Affix"
+    },
+    "LoyalProtector": {
+      "NotMaster": "You must target the companion's master."
+    },
+    "Revive": {
+      "RequiresDead": "Revive requires a Dead target."
     },
     "Swallow": {
       "AlreadySwallowing": "You are already Swallowing another creature."
@@ -1435,16 +1445,38 @@
     "Suspended": "Suspended",
     "ACTIONS": {
       "AddDoT": "Add Damage Over Time",
-      "DeleteDoT": "Remove Damage Over Time"
+      "DeleteDoT": "Remove Damage Over Time",
+      "Maintain": "Maintain",
+      "MaintainCost": "Maintain ({cost} Focus)",
+      "MaintainDetail": "Expend Focus to maintain {effect}.",
+      "MaintainName": "Maintain {effect}"
     },
     "PROPERTIES": {
       "Magical": "Magical",
-      "MagicalTooltip": "This effect is magical in nature and may be removed by anti-magic abilities."
+      "MagicalTooltip": "This effect is magical in nature and may be removed by anti-magic abilities.",
+      "Maintained": "Maintained",
+      "MaintainedTooltip": "This effect lapses at the end of your turn unless you spend Focus to maintain it.",
+      "Removable": "Removable",
+      "RemovableTooltip": "This effect may be removed by overcoming its removal difficulty."
     },
     "SECTIONS": {
       "DoT": "Damage Over Time",
       "General": "General",
       "Removal": "Removal"
+    },
+    "SUPPRESSION": {
+      "Maintenance": "Requires Maintenance"
+    },
+    "MAINTENANCE": {
+      "EndConfirm": "Maintaining {effect} will end {effects}, which you can no longer maintain.",
+      "EndHint": "You cannot maintain more effects. Choose {count} to end so that you can maintain {effect}.",
+      "EndLabel": "Effects to End",
+      "EndTitle": "End Maintained Effects"
+    },
+    "WARNINGS": {
+      "MaintainedCancelled": "{action} was cancelled; no maintained effects were ended.",
+      "MaintainOwnTurn": "{name} can only maintain effects during their own turn.",
+      "MaintenanceNotDue": "{effect} does not require maintenance right now."
     },
     "FIELDS": {
       "dc": {
@@ -1476,6 +1508,7 @@
       },
       "maintenance": {
         "cost": {
+          "hint": "The Focus spent each turn to keep this effect from lapsing.",
           "label": "Maintenance Cost"
         },
         "hands": {
@@ -1495,6 +1528,10 @@
       "summons": {
         "hint": "The summoned Tokens dependent on this effect.",
         "label": "Summons"
+      },
+      "suppression": {
+        "hint": "Reasons this effect is currently suppressed.",
+        "label": "Suppression"
       }
     }
   },
@@ -1510,7 +1547,6 @@
       "EffectGainedDuration": "Gained ({duration})",
       "HeaderEnd": "{actor} - Turn End",
       "HeaderStart": "{actor} - Turn Start",
-      "Maintaining": "{effect} (Maintaining)",
       "TableTitleEffects": "Effect Changes",
       "TableTitleResources": "Resource Changes"
     },
