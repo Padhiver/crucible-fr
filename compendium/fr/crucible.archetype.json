@@ -5,7 +5,8 @@
         "Dragons": "Dragons",
         "Constructs": "Artificiels",
         "Elementals": "Élémentaires",
-        "Beasts": "Bêtes"
+        "Beasts": "Bêtes",
+        "Companions": "Compagnons"
     },
     "entries": {
         "adultDrake000000": {
@@ -199,6 +200,26 @@
         "sorcerer00000000": {
             "name": "Sorcier",
             "description": "Un utilisateur de magie qui manie la flamme et l'électricité au combat."
+        },
+        "archDruid0000000": {
+            "name": "Druide",
+            "description": "<p>Dédié à des magies qui enrichissent la terre et ses habitants, maniant un pouvoir qui exprime la majesté et la fureur de la nature.</p>"
+        },
+        "bestialCompanion": {
+            "name": "Compagnon bestial",
+            "description": "<p>Bêtes qui, par des moyens magiques ou grâce à un dressage, sont devenues des compagnons loyaux.</p>"
+        },
+        "elementalScamp00": {
+            "name": "Petit élémentaire",
+            "description": "<p>Esprits élémentaires facétieux qui prennent plaisir aux espiègleries et à la tromperie.</p>"
+        },
+        "harrier000000000": {
+            "name": "Harceleur",
+            "description": "<p>Ennemis volants qui excellent à menacer leurs adversaires depuis les airs, engageant et rompant le combat à leur guise, sans jamais leur laisser le moindre répit.</p>"
+        },
+        "seer000000000000": {
+            "name": "Prophète",
+            "description": "<p>Oracles et devins qui pratiquent l’art de la divination.</p>"
         }
     }
 }

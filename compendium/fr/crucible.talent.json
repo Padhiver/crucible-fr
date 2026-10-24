@@ -196,7 +196,21 @@
         },
         "beastmaster00000": {
             "name": "Maître des bêtes",
-            "description": "<p>Vous avez dressé votre compagnon animal pour vous aider au combat. Votre compagnon peut participer aux rencontres en tant que combattant allié.</p><h3 class=\"divider\">Notes de playtest</h3><p>Ce talent n'est pas encore automatisé.</p>"
+            "description": "<p>Vous avez dressé votre compagnon animal pour vous aider au combat. Votre compagnon peut participer aux rencontres en tant que combattant allié,et vous avez mis au point des techniques pour faire équipe contre vos ennemis.</p><p>Votre compagnon est un adversaire de menace <strong>Minion</strong>, son niveau est équivalent à la moitié du votre, arrondi au supérieur. Votre compagnon est marqué <strong>Important</strong>, ce qui signifie qu'il utilise les ressources de réserve de @Rule[resource.wounds] et @Rule[resource.madness].</p>",
+            "actions": {
+                "bondCompanion": {
+                    "name": "Compagnon lié",
+                    "description": "<p>Vous formez un lien avec une bête, qui devient votre loyal compagnon.</p>"
+                },
+                "releaseCompanion": {
+                    "name": "Libérer le compagnon",
+                    "description": "<p>Il est temps pour vous et votre compagnon de vous séparer. Vous le relâchez dans la nature.</p>"
+                },
+                "exploitOpening": {
+                    "name": "Exploiter une ouverture",
+                    "description": "<p>Vous vous concentrez et effectuez une <strong>Frappe</strong> @Rule[action.accurate] avec votre arme contre une cible @Condition[flanked] et engagée par votre compagnon.</p>"
+                }
+            }
         },
         "berserker0000000": {
             "name": "Berserker",
@@ -264,7 +278,7 @@
         },
         "bulwark000000000": {
             "name": "Rempart",
-            "description": "<p>Vous êtes expert dans l'utilisation d'un <strong>Bouclier</strong> pour vous défendre et défendre les autres.</p><p>Une fois par tour tant que vous avez un <strong>Bouclier</strong> équipé, le coût de l'utilisation de l'@Rule[resource.action] @Action[default defend] est réduit de 1.</p>"
+            "description": "<p>Vous êtes expert dans l'utilisation d'un <strong>Bouclier</strong> pour vous défendre et défendre les autres.</p><p>Tant que vous avez un <strong>Bouclier</strong> équipé, vous devez sacrifier votre @Rule[movement.freeMovement] pour le Round pour réduire le coût de l'@Rule[resource.action] @Action[default defend] de 1.</p>"
         },
         "cadence000000000": {
             "name": "Cadence",
@@ -376,7 +390,7 @@
                 "counterStrike": {
                     "name": "Contre-Attaque",
                     "condition": "Vous Bloquez une Frappe de mêlée.",
-                    "description": "<p>Lorsque vous vous défendez d'une attaque de mêlée avec un @Rule[defense.block] vous pouvez dépenser du @Rule[resource.focus] pour riposter par une <strong>Frappe</strong> à coût réduit avec l'arme de votre main principale.</p>"
+                    "description": "<p>Lorsque vous vous défendez d'une attaque de mêlée avec un @Rule[defense.block] vous pouvez dépenser du @Rule[resource.focus] pour riposter par une <strong>Frappe</strong> à coût réduit avec une arme de mêlée.</p>"
                 }
             }
         },
@@ -425,7 +439,7 @@
         },
         "dirtytricks00000": {
             "name": "Coups bas",
-            "description": "Vous avez des bourses de sable et de poussière que vous utilisez pour distraire ou aveugler temporairement un ennemi.",
+            "description": "<p>Vous savez transformer la terre sous vos pieds en arme. Qu’elle soit projetée depuis une sacoche, saisie à pleines mains ou soulevée d’un coup de pied, une volée de poussière bien placée peut distraire ou aveugler temporairement un ennemi.</p>",
             "actions": {
                 "dirtyTricks": {
                     "name": "Coups bas",
@@ -2439,6 +2453,38 @@
         "tormentor0000000": {
             "name": "Tourmenteur",
             "description": "<p>Un esprit capable d'être élevé peut tout aussi sûrement être brisé. Les Sorts que vous composez avec la <strong>Rune d'Âme</strong> deviennent des sorts de tourment. Ils infligent des dégâts @Rule[damageType.psychic] au @Rule[resource.morale] plutôt que de le restaurer, et sont opposés à la @Rule[defense.willpower].</p>"
+        },
+        "adroitKinesis000": {
+            "description": "<p>Vous maniez une puissance cinétique avec une rapidité effrénée, projetant une multitude de projectiles grâce à l’agilité de vos doigts. Votre utilisation de la <strong>Rune de Kinésie</strong> est basée sur la @Rule[ability.dexterity] au lieu de la @Rule[ability.presence].</p>",
+            "name": "Kinésie adroite"
+        },
+        "compellingIllusi": {
+            "name": "Illusion convaincante",
+            "description": "<p>Pour vous, la clé d’une illusion réussie ne réside pas dans sa construction minutieuse, mais dans la conviction que vous avez en vous-même. Votre utilisation de la <strong>Rune d'Illusion</strong> est basée sur la @Rule[ability.presence] au lieu de l'@Rule[ability.intellect].</p>"
+        },
+        "expeditiousIllum": {
+            "name": "Illumination expéditive",
+            "description": "<p>Vous faites apparaître une illumination avec une rapidité qui rivalise presque avec celle de la lumière elle-même, en la déployant précisément où et quand elle aura le plus grand effet. Votre utilisation de la <strong>Rune d'Illumination</strong> est basée sur l'@Rule[ability.intellect] au lieu de la @Rule[ability.presence].</p>"
+        },
+        "patientSoul00000": {
+            "name": "Âme patiente",
+            "description": "<p>Votre riche expérience vous a appris que la guérison des blessures de l’âme ne saurait être précipitée, mais qu’elle exige un effort méthodique. Votre utilisation de la <strong>Rune d'Âme</strong> est basée sur la @Rule[ability.wisdom] au lieu de la @Rule[ability.presence].</p>"
+        },
+        "tenaciousControl": {
+            "name": "Contrôle tenace",
+            "description": "<p>Votre physicalité brute constitue un point d’ancrage qui vous confère le levier nécessaire pour plier la volonté de vos ennemis. Votre utilisation de la <strong>Rune de Contrôle</strong> est basée sur la @Rule[ability.toughness] au lieu de la @Rule[ability.wisdom].</p>"
+        },
+        "undeniableOblivi": {
+            "name": "Oubli indéniable",
+            "description": "<p>Vous n’avez pas à craindre le pouvoir destructeur lié au maniement du vide, tant votre conscience de vous-même est solide ; vous pouvez, au contraire, concentrer tous vos efforts sur vos infortunées cibles. Votre utilisation de la <strong>Rune de Néant</strong> est basée sur la @Rule[ability.presence] au lieu de l'@Rule[ability.intellect].</p>"
+        },
+        "visceralDeath000": {
+            "name": "Mort viscérale",
+            "description": "<p>La mort que vous infligez ne s’apparente pas tant à l’introduction de la décomposition qu’à l’arrachement physique de la force vitale de vos ennemis. Votre utilisation de la <strong>Rune de Mort</strong> est basée sur la @Rule[ability.strength] au lieu de la @Rule[ability.presence].</p>"
+        },
+        "willfulLife00000": {
+            "name": "Vie volontaire",
+            "description": "<p>Vous savez que vous pouvez soigner les maux physiques de n'importe quel allié ; votre confiance en vous insuffle le flux de la magie curative lorsque vous vous occupez de ses besoins. Votre utilisation de la <strong>Rune de Vie</strong> est basée sur la @Rule[ability.presence] au lieu de la @Rule[ability.wisdom].</p>"
         }
     }
 }

@@ -121,7 +121,8 @@
         },
         "EFFECTS": {
             "Add": "Ajouter un Effet",
-            "Delete": "Retirer l'Effet"
+            "Delete": "Retirer l'Effet",
+            "RemovableHint": "Cet effet peut être supprimé en surmontant sa difficulté de suppression. Laissez le DD vide pour le déterminer à partir du jet associé à l'action."
         },
         "FIELDS": {
             "actionHooks": {
@@ -444,17 +445,6 @@
             "Wall": "Mur"
         },
         "WARNINGS": {
-            "SPECIFIC": {
-                "DELAY": {
-                    "AlreadyDelayed": "Vous ne pouvez plus retarder votre tour à ce round de combat."
-                },
-                "REVIVE": {
-                    "RequiresDead": "Ranimer requiert une cible morte."
-                },
-                "ESTOCADE": {
-                    "RequiresOpening": "L'estocade nécessite une cible Exposée, À terre, Ralentie, Ébranlée, Paralysée ou Désarmée."
-                }
-            },
             "AuraNoToken": "Vous ne pouvez pas utiliser une action de type émanation personnelle sans qu'il y ait un token sur la scène !",
             "BadStatus": "Vous ne pouvez pas utiliser l'action {action} en étant {status}.",
             "CannotAffordCost": "{name} a une valeur insuffisante de {resource} pour utiliser {action} !",
@@ -576,8 +566,6 @@
         "Unconfirmed": "Non confirmé",
         "UseAction": "Utiliser l'Action",
         "DragToHotbar": "Glissez dans la barre de raccourcis pour créer une Macro de cette action.",
-        "MaintainContent": "<p>Dépenser {cost} Focus pour maintenir l'effet {effect} ?</p>",
-        "MaintainTitle": "Maintenir le Focus : {effect}",
         "TABS": {
             "description": "Description",
             "effects": "Effets",
@@ -691,7 +679,9 @@
         "ADVERSARY": {
             "ACTIONS": {
                 "DecreaseLevel": "Réduire le Niveau",
-                "IncreaseLevel": "Augmenter le Niveau"
+                "IncreaseLevel": "Augmenter le Niveau",
+                "CycleRank": "Cycler le rang",
+                "ResetAdjustment": "Réinitialiser le Niveau et le Rang"
             },
             "THREAT_RANKS": {
                 "Boss": "Boss",
@@ -874,6 +864,17 @@
             "WARNINGS": {
                 "NoAddSelf": "Vous ne pouvez pas ajouter votre propre groupe !",
                 "NotWorldActor": "Vous ne pouvez ajouter qu'un Acteur du Monde"
+            },
+            "MILESTONES": {
+                "Award": "Attribuer un Échelon",
+                "Cumulative": "Cumulatif",
+                "None": "Aucun Échelon n'a encore été acquis.",
+                "Number": "Nombre",
+                "Reason": "Raison"
+            },
+            "TABS": {
+                "members": "Membres",
+                "milestones": "Échelons"
             }
         },
         "LABELS": {
@@ -995,7 +996,10 @@
             "Title": "Talents conférés en double"
         },
         "FreeMovement": "Déplacement gratuit",
-        "FullyEngaged": "Engagement total"
+        "FullyEngaged": "Engagement total",
+        "DifficultTerrain": "Terrain difficile",
+        "ExtremeTerrain": "Terrain extrême",
+        "NormalTerrain": "Terrain normal"
     },
     "AFFIX": {
         "FIELDS": {
@@ -1101,6 +1105,10 @@
                 "stride": {
                     "hint": "La vitesse de déplacement de départ de cette Ascendance en nombre de cases.",
                     "label": "Foulée"
+                },
+                "heightRatio": {
+                    "hint": "La hauteur en se tenant debout de cette Ascendance, en tant que multiple de sa Taille. La Hauteur correspond à la Taille multipliée par ce ratio, arrondie au pied le plus proche.",
+                    "label": "Ratio de hauteur"
                 }
             },
             "resistances": {
@@ -1374,7 +1382,8 @@
             },
             "maintenance": {
                 "cost": {
-                    "label": "Coût de maintient"
+                    "label": "Coût de maintient",
+                    "hint": "Le Focus utilisé chaque tour pour empêcher cet effet de prendre fin."
                 },
                 "label": "Maintient",
                 "hands": {
@@ -1401,13 +1410,21 @@
             "lights": {
                 "hint": "Les sources de lumière dépendant de cet effet.",
                 "label": "Lumières"
+            },
+            "suppression": {
+                "hint": "Raisons de la suppression actuelle de cet effet.",
+                "label": "Suppression"
             }
         },
         "Difficulty": "Difficulté {dc}",
         "Suspended": "Suspendu",
         "PROPERTIES": {
             "Magical": "Magique",
-            "MagicalTooltip": "Cet effet est de nature magique et peut être annulé par des pouvoirs anti-magie."
+            "MagicalTooltip": "Cet effet est de nature magique et peut être annulé par des pouvoirs anti-magie.",
+            "Maintained": "Maintenu",
+            "MaintainedTooltip": "Cet effet prend fin à la fin de votre tour, à moins que vous ne dépensiez du Focus pour le maintenir.",
+            "Removable": "Révocable",
+            "RemovableTooltip": "Cet effet peut être supprimé en surmontant la difficulté de suppression."
         },
         "SECTIONS": {
             "Removal": "Suppression",
@@ -1416,7 +1433,25 @@
         },
         "ACTIONS": {
             "AddDoT": "Ajouter des Dégâts sur la durée",
-            "DeleteDoT": "Enlever des Dégâts sur la durée"
+            "DeleteDoT": "Enlever des Dégâts sur la durée",
+            "Maintain": "Maintenir",
+            "MaintainCost": "Maintenir ({cost} Focus)",
+            "MaintainDetail": "Dépenser du Focus pour maintenir {effect}.",
+            "MaintainName": "Maintenir {effect}"
+        },
+        "SUPPRESSION": {
+            "Maintenance": "Nécessite d'être maintenu"
+        },
+        "MAINTENANCE": {
+            "EndConfirm": "Le maintien de {effect} mettra fin à {effects}, que vous ne pouvez plus maintenir.",
+            "EndHint": "Vous ne pouvez pas maintenir plus d'effets. Choisissez {count} à interrompre pour pouvoir maintenir {effect}.",
+            "EndLabel": "Effets à interrompre",
+            "EndTitle": "Interrompre les effets maintenus"
+        },
+        "WARNINGS": {
+            "MaintainedCancelled": "L'action {action} a été annulée ; aucun effet maintenu n'a été interrompu.",
+            "MaintainOwnTurn": "{name} ne peut maintenir des effets que pendant son propre tour.",
+            "MaintenanceNotDue": "{effect} ne nécessite pas d'être maintenu en ce moment."
         }
     },
     "COMBAT": {
@@ -1431,7 +1466,6 @@
             "EffectGainedDuration": "Obtenu ({duration})",
             "HeaderEnd": "{actor} - Fin du tour",
             "HeaderStart": "{actor} - Début du tour",
-            "Maintaining": "{effect} (Maintenu)",
             "TableTitleEffects": "Changements de l'effet",
             "TableTitleResources": "Changements de ressource"
         },
@@ -1529,7 +1563,8 @@
         "Rules": "Règles Crucible",
         "Scaled": "Évolué",
         "Scaling": "Évolution",
-        "Syncing": "Synchronisation des Talents & Sorts"
+        "Syncing": "Synchronisation des Talents & Sorts",
+        "SendChatReadaloud": "Envoyer dans la discution"
     },
     "CURRENCY_DENOMINATIONS": {
         "CP": {
@@ -1697,7 +1732,8 @@
         "UnknownScore": "???",
         "ReplayAnimation": "Rejouer l'animation",
         "CriticalFailureThreshold": "Seuil d'échec critique",
-        "CriticalSuccessThreshold": "Seuil de réussite critique"
+        "CriticalSuccessThreshold": "Seuil de réussite critique",
+        "DCMinimum": "{dc}+"
     },
     "HOOKS": {
         "NoModuleHooks": "Aucun hook de module n'est enregistré pour cet identifiant.",
@@ -1881,7 +1917,7 @@
         "EnchantmentMinor": "Mineur",
         "EnchantmentMundane": "Trivial",
         "QualityFine": "Raffinée",
-        "QualityMasterwork": "Chef-d’œuvre",
+        "QualityMasterwork": "Magistrale",
         "QualityShoddy": "Bâclée",
         "QualityStandard": "Commune",
         "QualitySuperior": "Supérieure",
@@ -1896,7 +1932,8 @@
             "secrets": "Secrets",
             "spells": "Sorts",
             "talents": "Talents"
-        }
+        },
+        "QuantityMultiple": "(&fois;{quantity})"
     },
     "KEYBINDINGS": {
         "ConfirmAction": "Confirmer l'Action",
@@ -2421,7 +2458,10 @@
             "PurchaseTitle": "Acquérir le talent : {name}",
             "Reset": "Réinitialiser",
             "Remove": "<p>Retirer le talent <strong>{name}</strong> afin de récupérer 1 point de talent ?</p>",
-            "RemoveTitle": "Retirer le talent : {name}"
+            "RemoveTitle": "Retirer le talent : {name}",
+            "ShowTalents": "Afficher le compendium des Talents",
+            "ShowSheet": "Afficher la fiche du personnage",
+            "ToggleSearch": "Basculer la recherche de Talent"
         },
         "FIELDS": {
             "actions": {
@@ -2456,6 +2496,10 @@
             "spellcraft": {
                 "hint": "Obtenir ce Talent confère la connaissance d'une composante de sorcellerie : une Rune, un Signe, ou une Inflexion.",
                 "label": "Composante de sorcellerie"
+            },
+            "keywords": {
+                "hint": "Styles de jeu pour lesquels ce talent est particulièrement utile, utiles pour trouver des Talents dans l’arbre des Talents. N’attribuez un mot-clé que si le Talent présente un véritable intérêt pour un personnage conçu autour de celui-ci, par rapport à un personnage type.",
+                "label": "Mots-clés"
             }
         },
         "HOOKS": {
@@ -2527,7 +2571,63 @@
         "Tier": "Palier {tier}",
         "SignatureLimit": "Limite de Signatures atteinte",
         "SignatureNext": "Prochaine au niveau {level}",
-        "TrainingGrant": "{training} +1"
+        "TrainingGrant": "{training} +1",
+        "FILTER": {
+            "Clear": "Effacer les filtres",
+            "FIELDS": {
+                "ability": {
+                    "label": "Caractéristique"
+                },
+                "keywords": {
+                    "label": "Mots-clés"
+                },
+                "levels": {
+                    "label": "Niveau"
+                },
+                "query": {
+                    "label": "Rechercher"
+                },
+                "playstyle": {
+                    "label": "Style de jeu"
+                },
+                "training": {
+                    "label": "Maîtrise"
+                }
+            },
+            "Matches": "Talents {talents} dans les Nodes {nodes}",
+            "QueryPlaceholder": "Talent ou nom d'action"
+        },
+        "KEYWORDS": {
+            "Defensive": "Défensif",
+            "HeavyArmor": "Armure lourde",
+            "Initiative": "Initiative",
+            "LightArmor": "Armure légère",
+            "MediumArmor": "Armure intermédiaire",
+            "Melee": "Mêlée",
+            "Ranged": "À Distance",
+            "Rest": "Repos",
+            "Senses": "Sens",
+            "Spellcraft": "Sorcellerie",
+            "Toolbelt": "Ceinture porte-outils",
+            "Unarmored": "Sans Armure",
+            "Utility": "Utilitaire"
+        },
+        "KEYWORD_GROUPS": {
+            "Armor": "Armure",
+            "Damage": "Dégâts",
+            "Defense": "Défense",
+            "FightingStyle": "Style de combat",
+            "Playstyle": "Style de jeu",
+            "Resources": "Ressources",
+            "Restoration": "Restauration",
+            "SpellComponents": "Composantes de sort",
+            "Tactics": "Tactique",
+            "TargetDefense": "Défense ciblée",
+            "TargetResource": "Ressource ciblée",
+            "Time": "Durée",
+            "Toolbelt": "Ceinture porte-outils",
+            "Weapons": "Armes"
+        }
     },
     "TAXONOMY": {
         "CATEGORIES": {
@@ -2581,6 +2681,10 @@
                 "stride": {
                     "label": "Foulée",
                     "tooltip": "Distance de déplacement par point d'Action dépensé."
+                },
+                "heightRatio": {
+                    "hint": "La hauteur en se tenant debout de cette créature, en tant que multiple de sa Taille. La Hauteur correspond à la Taille multipliée par ce ratio, arrondie au pied le plus proche.",
+                    "label": "Ratio de hauteur"
                 }
             },
             "resistances": {
@@ -2887,6 +2991,28 @@
         "VowOfAnimus": {
             "VowDescription": "Vous prêtez serment de vaincre un ennemi spécifique qui devient le sujet de votre animosité.",
             "VowName": "Serment solennel : {target}"
+        },
+        "Beastmaster": {
+            "AlreadyBonded": "Vous avez déjà un compagnon lié.",
+            "NoCompanion": "Vous n’avez pas de compagnon à libérer.",
+            "NoneChosen": "Aucun compagnon sélectionné.",
+            "NotEngagedByCompanion": "La cible doit être engagée par votre compagnon.",
+            "WhichBond": "Quel type de bête voulez-vous lier ?"
+        },
+        "Delay": {
+            "AlreadyDelayed": "Vous ne pouvez plus retarder votre tour à ce round de combat."
+        },
+        "Estocade": {
+            "RequiresOpening": "L'estocade nécessite une cible Exposée, À terre, Ralentie, Ébranlée, Paralysée ou Désarmée."
+        },
+        "FlankingManeuver": {
+            "NotEngaged": "La cible doit être engagée par le maître du compagnon."
+        },
+        "LoyalProtector": {
+            "NotMaster": "Vous devez cibler le maître du compagnon."
+        },
+        "Revive": {
+            "RequiresDead": "Ranimer nécessite une cible morte."
         }
     },
     "TRAINING": {
@@ -2962,6 +3088,43 @@
     "EFFECT": {
         "TABS": {
             "damage": "Dégâts"
+        }
+    },
+    "ENCOUNTER": {
+        "DIFFICULTIES": {
+            "Challenging": "Défi",
+            "Deadly": "Mortel",
+            "Easy": "Facile",
+            "Hopeless": "Désespéré",
+            "Moderate": "Modérée",
+            "Trivial": "Triviale"
+        },
+        "AdversaryThreat": "Menace d'adversaire",
+        "OngoingCombat": "Combat en cours",
+        "PartyThreat": "Menace de groupe",
+        "Threat": "Menace {threat}",
+        "ThreatDifficulty": "Menace {threat} ({difficulty})"
+    },
+    "FOOTFALLS": {
+        "FIELDS": {
+            "material": {
+                "hint": "La composition de cette surface, qui détermine la sonorité des pas que l’on y fait.",
+                "label": "Matériau"
+            },
+            "materialVolume": {
+                "hint": "Le matériau occupe toute la plage d’altitude de la région, à l’instar d’une masse d’eau, plutôt que de se limiter à ses seules surfaces.",
+                "label": "Le matériau remplit le volume"
+            }
+        },
+        "Legend": "Bruits de pas",
+        "MATERIALS": {
+            "Grass": "Herbe",
+            "Ice": "Glace",
+            "Metal": "Métal",
+            "Snow": "Neige",
+            "Stone": "Pierre",
+            "Water": "Eau",
+            "Wood": "Bois"
         }
     }
 }

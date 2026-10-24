@@ -332,6 +332,12 @@
                 "public": "<p>@ref[actor.name]{La créature} possède des bois imposants qu'elle utilise pour se défendre et empaler ses ennemis.</p>"
             },
             "name": "Bois"
+        },
+        "spines0000000000": {
+            "name": "Épines",
+            "description": {
+                "public": "<p>Un revêtement dense d’épines barbelées recouvre le dos et les flancs de @ref[actor.name]{la créature}, détournant des coups.</p>"
+            }
         }
     }
 }
