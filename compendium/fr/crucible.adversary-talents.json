@@ -18,7 +18,8 @@
         "Death": "Mort",
         "Breath": "Souffle",
         "Senses": "Senses",
-        "General": "Général"
+        "General": "Général",
+        "Companion": "Compagnon"
     },
     "entries": {
         "acidAbsorption00": {
@@ -161,7 +162,7 @@
         },
         "echolocation0000": {
             "name": "Écholocalisation",
-            "description": "<p>@ref[actor.name]{Cette créature} perçoit le monde grâce à l'émission d'impulsions sonores qui détectent les formes avec précision, ce qui lui permet de localiser les créatures en mouvement ou émettant un son, jusqu'à 18 mètres de distance, à condition qu'elles n'aient pas une couverture totale. Si la créature est @Condition[deafened], ce sens ne peut être utilisé.</p><p>Une créature détectée par l'@ref[name] est concidérée comme visible pour les actions nécessitant que vous voyiez votre cible.</p>"
+            "description": "<p>@ref[actor.name]{Cette créature} perçoit le monde grâce à l'émission d'impulsions sonores qui détectent les formes avec précision, ce qui lui permet de localiser les créatures en mouvement ou émettant un son, jusqu'à @[feet 60] de distance, à condition qu'elles n'aient pas une couverture totale. Si la créature est @Condition[deafened], ce sens ne peut être utilisé.</p><p>Une créature détectée par l'@ref[name] est concidérée comme visible pour les actions nécessitant que vous voyiez votre cible.</p>"
         },
         "electricityAbsor": {
             "name": "Absorption d'Électricité",
@@ -401,16 +402,16 @@
             "description": "<p>@ref[actor.name]{La créature} n'est pas étrangère à la force chaotique de la lumière. Sa résistance <strong>Radiante</strong> est doublée et si cette résistance réduit une quantité de dégâts en dessous de zéro, le montant négatif est reçu comme <strong>Guérison</strong> à la place.</p>"
         },
         "radiantDeathBurs": {
-            "name": "Flamboiement funeste",
+            "name": "Explosion radiante mortelle",
             "description": "<p>À sa mort, @ref[actor.name]{la créature} explose en une déflagration instable d’énergie radiante.</p>",
             "actions": {
                 "radiantDeathBurst": {
-                    "name": "Flamboiement funeste",
+                    "name": "Explosion radiante mortelle",
                     "condition": "La créature meurt.",
-                    "description": "<p>Lorsque @ref[actor.name]{la créature} devient @Condition[dead], elle explose en une impulsion d’énergie <strong>Radiante</strong> qui attaque la défense de @Rule[defense.fortitude] de toutes les créatures proches ayant échoué à résister à l’effet, et sur une réussite critique, les afflige de la condition @Condition[irradiated] pour <strong>3 rounds</strong>.</p>",
+                    "description": "<p>Lorsque @ref[actor.name]{la créature} devient @Condition[dead], elle explose en une onde d’énergie <strong>Radiante</strong> qui attaque la défense de @Rule[defense.fortitude] de toutes les créatures proches ayant échoué à résister à l’effet, et sur une réussite critique, les afflige de la condition @Condition[irradiated] pour <strong>3 rounds</strong>.</p>",
                     "effects": {
                         "Radiant Death Burst": {
-                            "name": "Flamboiement funeste"
+                            "name": "Explosion radiante mortelle"
                         }
                     }
                 }
@@ -801,6 +802,200 @@
                     "effects": {
                         "Rake": {
                             "name": "Ratissage"
+                        }
+                    }
+                }
+            }
+        },
+        "burningDeathBurs": {
+            "name": "Explosion incandescente mortelle",
+            "description": "<p>À sa mort, @ref[actor.name]{la créature} explose en une déflagration instable de flammes.</p>",
+            "actions": {
+                "burningDeathBurst": {
+                    "name": "Explosion incandescente mortelle",
+                    "condition": "La créature meurt.",
+                    "description": "<p>Lorsque @ref[actor.name]{la créature} devient @Condition[dead], elle explose en une onde de <strong>Flamme</strong> qui attaque la défense de @Rule[defense.reflex] de toutes les créatures proches ayant échoué à résister à l’effet, et sur une réussite critique, les afflige de la condition @Condition[burning] pour <strong>3 rounds</strong>.</p>",
+                    "effects": {
+                        "Burning Death Burst": {
+                            "name": "Explosion incandescente mortelle"
+                        }
+                    }
+                }
+            }
+        },
+        "concussiveDeathB": {
+            "name": "Explosion commotionnelle mortelle",
+            "description": "<p>À sa mort, @ref[actor.name]{la créature} explose en une déflagration instable de force commotionnelle.</p>",
+            "actions": {
+                "concussiveDeathBurst": {
+                    "name": "Explosion commotionnelle mortelle",
+                    "condition": "La créature meurt.",
+                    "description": "<p>Lorsque @ref[actor.name]{la créature} devient @Condition[dead], elle éclate en une explosion commotionnelle de force <strong>Contondante</strong> qui attaque la défense de @Rule[defense.reflex] de toutes les créatures proches ayant échoué à résister à l’effet, et sur une réussite critique, les afflige de la condition @Condition[staggered] pour <strong>3 rounds</strong>.</p>",
+                    "effects": {
+                        "Concussive Death Burst": {
+                            "name": "Explosion commotionnelle mortelle"
+                        }
+                    }
+                }
+            }
+        },
+        "corrodingDeathBu": {
+            "name": "Explosion corrosive mortelle",
+            "description": "<p>À sa mort, @ref[actor.name]{la créature} explose en une déflagration instable d'acide corrosif.</p>",
+            "actions": {
+                "corrodingDeathBurst": {
+                    "name": "Explosion corrosive mortelle",
+                    "condition": "La créature meurt.",
+                    "description": "<p>Lorsque @ref[actor.name]{la créature} devient @Condition[dead], elle explose en une onde d’<strong>Acide</strong> qui attaque la défense de @Rule[defense.fortitude] de toutes les créatures proches ayant échoué à résister à l’effet, et sur une réussite critique, les afflige de la condition @Condition[corroding] pour <strong>3 rounds</strong>.</p>",
+                    "effects": {
+                        "Corroding Death Burst": {
+                            "name": "Explosion corrosive mortelle"
+                        }
+                    }
+                }
+            }
+        },
+        "disorientingDeat": {
+            "name": "Explosion désorientante mortelle",
+            "description": "<p>À sa mort, @ref[actor.name]{la créature} explose en une déflagration instable d’énergie de désorientation.</p>",
+            "actions": {
+                "disorientingDeathBurst": {
+                    "name": "Explosion désorientante mortelle",
+                    "condition": "La créature meurt.",
+                    "description": "<p>Lorsque @ref[actor.name]{la créature} devient @Condition[dead], elle explose en une onde d’énergie <strong>Psychique</strong> qui attaque la défense de @Rule[defense.willpower] de toutes les créatures proches ayant échoué à résister à l’effet, et sur une réussite critique, les afflige de la condition @Condition[confused] pour <strong>3 rounds</strong>.</p>",
+                    "effects": {
+                        "Disorienting Death Burst": {
+                            "name": "Explosion désorientante mortelle"
+                        }
+                    }
+                }
+            }
+        },
+        "earthmeld0000000": {
+            "name": "Fusion tellurique",
+            "description": "<p>@ref[actor.name]{La créature} est capable de se déplacer instantanément à travers la pierre.</p>",
+            "actions": {
+                "earthmeld": {
+                    "name": "Fusion tellurique",
+                    "description": "<p>Lorsque @ref[actor.name]{la créature} touche de la pierre solide, elle peut se transporter instantanément vers n'importe quel espace inoccupé en contact avec même formation rocheuse jusqu'à <strong>@[feet 30]</strong> de distance. Elle n'a pas besoin de voir la destination pour effectuer ce <strong>Déplacement</strong>.</p>"
+                }
+            }
+        },
+        "electrostaticDea": {
+            "name": "Explosion électrostatique mortelle",
+            "description": "<p>À sa mort, @ref[actor.name]{la créature} explose en une déflagration instable d’énergie électrostatique.</p>",
+            "actions": {
+                "electrostaticDeathBurst": {
+                    "name": "Explosion électrostatique mortelle",
+                    "condition": "La créature meurt.",
+                    "description": "<p>Lorsque @ref[actor.name]{la créature} devient @Condition[dead], elle explose en une onde <strong>Électrique</strong> qui attaque la défense de @Rule[defense.reflex] de toutes les créatures proches ayant échoué à résister à l’effet, et sur une réussite critique, les afflige de la condition @Condition[shocked] pour <strong>3 rounds</strong>.</p>",
+                    "effects": {
+                        "Electrostatic Death Burst": {
+                            "name": "Explosion électrostatique mortelle"
+                        }
+                    }
+                }
+            }
+        },
+        "entropicDeathBur": {
+            "name": "Explosion entropique mortelle",
+            "description": "<p>À sa mort, @ref[actor.name]{la créature} explose en une déflagration instable d’énergie du vide.</p>",
+            "actions": {
+                "entropicDeathBurst": {
+                    "name": "Explosion entropique mortelle",
+                    "condition": "La créature meurt.",
+                    "description": "<p>Lorsque @ref[actor.name]{la créature} devient @Condition[dead], elle explose en une onde d’énergie du <strong>Vide</strong> qui attaque la défense de @Rule[defense.willpower] de toutes les créatures proches ayant échoué à résister à l’effet, et sur une réussite critique, les afflige de la condition @Condition[entropy] pour <strong>3 rounds</strong>.</p>",
+                    "effects": {
+                        "Entropic Death Burst": {
+                            "name": "Explosion entropique mortelle"
+                        }
+                    }
+                }
+            }
+        },
+        "fieldRepairs0000": {
+            "name": "Réparations sur le terrain",
+            "description": "<p>@ref[actor.name]{L'ingénieur} peut réparer rapidement certains dommages sur un <strong>Artificiel</strong> allié.</p>",
+            "actions": {
+                "fieldRepairs": {
+                    "name": "Réparations sur le terrain",
+                    "description": "<p>Vous réparez rapidement les dommages d'un artificiel allié à <strong>@[feet 4]</strong>. Effectuez un @Rule[skill.science]{test de Science} contre les @Rule[defense.wounds] de la cible. La @Rule[resource.health] de votre allié est augmentée du montant du surplus du test.</p>"
+                }
+            }
+        },
+        "flankingManeuver": {
+            "name": "Prise en tenailles",
+            "description": "<p>Travaillant de concert avec son maître, @ref[actor.name]{le compagnon} peut créer des brèches dans les défenses, même face aux adversaires les plus attentifs.</p>",
+            "actions": {
+                "flankingManeuver": {
+                    "name": "Prise en tenailles",
+                    "description": "<p>@ref[actor.name]{Le compagnon} effectue une frappe délibérée à un adversaire qui est actuellement aux prises avec son maître. En cas de réussite, l'adversaire devient @Condition[overrun] jusqu'au début de son prochain tour.</p>",
+                    "effects": {
+                        "Flanking Maneuver": {
+                            "name": "Prise en tenailles"
+                        }
+                    }
+                }
+            }
+        },
+        "freezingDeathBur": {
+            "name": "Explosion glaciale mortelle",
+            "description": "<p>À sa mort, @ref[actor.name]{la créature} explose en une déflagration instable d’énergie glaciale.</p>",
+            "actions": {
+                "freezingDeathBurst": {
+                    "name": "Explosion glaciale mortelle",
+                    "condition": "La créature meurt.",
+                    "description": "<p>Lorsque @ref[actor.name]{la créature} devient @Condition[dead], elle explose en une onde de <strong>Froid</strong> qui attaque la défense de @Rule[defense.fortitude] de toutes les créatures proches ayant échoué à résister à l’effet, et sur une réussite critique, les afflige de la condition @Condition[freezing] pour <strong>3 rounds</strong>.</p>",
+                    "effects": {
+                        "Freezing Death Burst": {
+                            "name": "Explosion glaciale mortelle"
+                        }
+                    }
+                }
+            }
+        },
+        "loyalProtector00": {
+            "name": "Protecteur loyal",
+            "description": "<p>@ref[actor.name]{Le compagnon} fait preuve d’une loyauté farouche envers son maître ; il se placera à ses côtés et lui apportera une assistance défensive dès que cela lui sera demandé.</p>",
+            "actions": {
+                "loyalProtector": {
+                    "name": "Protecteur loyal",
+                    "description": "<p>@ref[actor.name]{Le compagnon} se déplace à côté de son maître, lui conférant la condition @Condition[guarded] jusqu’au début de son prochain tour.</p>",
+                    "effects": {
+                        "Loyal Protector": {
+                            "name": "Protecteur loyal"
+                        }
+                    }
+                }
+            }
+        },
+        "shreddingDeathBu": {
+            "name": "Explosion déchiquetante mortelle",
+            "description": "<p>À sa mort, @ref[actor.name]{la créature} explose en une déflagration instable de fragments perforants.</p>",
+            "actions": {
+                "shreddingDeathBurst": {
+                    "name": "Explosion déchiquetante mortelle",
+                    "condition": "La créature meurt.",
+                    "description": "<p>Lorsque @ref[actor.name]{la créature} devient @Condition[dead], elle explose en une onde de fragments <strong>Perforants</strong> qui attaque la défense de @Rule[defense.reflex] de toutes les créatures proches ayant échoué à résister à l’effet, et sur une réussite critique, les afflige de la condition @Condition[bleeding] pour <strong>3 rounds</strong>.</p>",
+                    "effects": {
+                        "Shredding Death Burst": {
+                            "name": "Explosion déchiquetante mortelle"
+                        }
+                    }
+                }
+            }
+        },
+        "toxicDeathBurst0": {
+            "name": "Explosion toxique mortelle",
+            "description": "<p>À sa mort, @ref[actor.name]{la créature} explose en une déflagration instable d’énergie empoisonnée.</p>",
+            "actions": {
+                "toxicDeathBurst": {
+                    "name": "Explosion toxique mortelle",
+                    "condition": "La créature meurt.",
+                    "description": "<p>Lorsque @ref[actor.name]{la créature} devient @Condition[dead], elle explose en une onde de <strong>Poison</strong> qui attaque la défense de @Rule[defense.fortitude] de toutes les créatures proches ayant échoué à résister à l’effet, et sur une réussite critique, les afflige de la condition @Condition[poisoned] pour <strong>3 rounds</strong>.</p>",
+                    "effects": {
+                        "Toxic Death Burst": {
+                            "name": "Explosion toxique mortelle"
                         }
                     }
                 }

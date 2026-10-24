@@ -10,7 +10,8 @@
         "Construct": "Artificiel",
         "Beast": "Bête",
         "Outsiders": "Extérieurs",
-        "Ooze": "Vase"
+        "Ooze": "Vase",
+        "Companion": "Compagnon"
     },
     "entries": {
         "amphibian0000000": {
@@ -128,6 +129,30 @@
         "moose00000000000": {
             "name": "Élan",
             "description": "<p>Une tête au nez busqué et à l'air un brin loufoque n'enlève rien à la stature imposante et à la masse de cet ongulé.</p>"
+        },
+        "beastAir00000000": {
+            "name": "Bête de l'air",
+            "description": "<p>Compagnons bestiaux qui prennent leur envol. Leur point de vue depuis les airs peut offrir à leurs maîtres un avantage tactique considérable, tout en leur permettant de conserver une agilité suffisante pour prêter main-forte au combat si nécessaire.</p>"
+        },
+        "beastLand0000000": {
+            "name": "Bête de la terre",
+            "description": "<p>Compagnons bestiaux qui parcourent les terres. Leur force et leurs tactiques de chasse en meute sont précieuses pour leurs maîtres ; elles font souvent office de membre supplémentaire au sein de l'équipe en première ligne.</p>"
+        },
+        "beastSea00000000": {
+            "name": "Bête de la mer",
+            "description": "<p>Compagnons bestiaux qui habitent les profondeurs. Leur vision aveugle peut révéler à leurs maîtres la position d’ennemis cherchant à se dissimuler ; malheur à quiconque se retrouve pris au piège par de telles bêtes.</p>"
+        },
+        "porcupine0000000": {
+            "name": "Porc-épic",
+            "description": "<p>Animal trapu qui se déplace en se dandinant dans les profondeurs des bois, le porc-épic est protégé par un manteau de piquants acérés qui se hérissent au moindre signe de danger. Lorsqu’il se sent menacé, il tourne le dos, fait bruisser ses piquants tel un assemblage de roseaux secs et attend que son adversaire commette une erreur.</p>"
+        },
+        "raven00000000000": {
+            "name": "Corbeau",
+            "description": "<p>Créatures volantes de la famille des corvidés. Les corbeaux sont des animaux très intelligents et sociaux, capables d'imiter la parole ; ils sont tout à fait aptes à se comporter aussi bien en prédateurs qu'en charognards.</p>"
+        },
+        "waterElemental00": {
+            "name": "Élémentaire d'eau",
+            "description": "<p>Créatures élémentaires correspondant à l'élément du Givre.</p>"
         }
     }
 }

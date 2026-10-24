@@ -203,7 +203,7 @@
                     "actions": {
                         "rallyingElixir": {
                             "name": "Élixir de ralliement",
-                            "description": "<p>Recouvrez immédiatement un montant de @Rule[resource.morale]{Moral} dépendant de la qualité de l'élixir.</p><ul><li><p><strong>Bâclée</strong> - Soigne immédiatement 6 points de <strong>Moral</strong>.</p></li><li><p><strong>Commune</strong> - Soigne immédiatement 12 points de <strong>Moral</strong>.</p></li><li><p><strong>Raffinée</strong> - Soigne immédiatement 24 points de <strong>Moral</strong>.</p></li><li><p><strong>Supérieure</strong> - Soigne immédiatement 48 points de <strong>Moral</strong>.</p></li><li><p><strong>Chef-d’œuvre</strong> - Soigne immédiatement 96 points de <strong>Moral</strong>.</p></li></ul>"
+                            "description": "<p>Recouvrez immédiatement un montant de @Rule[resource.morale]{Moral} dépendant de la qualité de l'élixir.</p><ul><li><p><strong>Bâclée</strong> - Soigne immédiatement 6 points de <strong>Moral</strong>.</p></li><li><p><strong>Commune</strong> - Soigne immédiatement 12 points de <strong>Moral</strong>.</p></li><li><p><strong>Raffinée</strong> - Soigne immédiatement 24 points de <strong>Moral</strong>.</p></li><li><p><strong>Supérieure</strong> - Soigne immédiatement 48 points de <strong>Moral</strong>.</p></li><li><p><strong>Magistrale</strong> - Soigne immédiatement 96 points de <strong>Moral</strong>.</p></li></ul>"
                         }
                     }
                 },
@@ -215,7 +215,7 @@
                     "actions": {
                         "healingElixir": {
                             "name": "Élixir de santé",
-                            "description": "<p>Recouvrez immédiatement un montant de @Rule[resource.health] dépendant de la qualité de l'élixir.</p><ul><li><p><strong>Bâclée</strong> - Soigne immédiatement 6 points de <strong>Santé</strong>.</p></li><li><p><strong>Commune</strong> - Soigne immédiatement 12 points de <strong>Santé</strong>.</p></li><li><p><strong>Raffinée</strong> - Soigne immédiatement 24 points de <strong>Santé</strong>.</p></li><li><p><strong>Supérieure</strong> - Soigne immédiatement 48 points de <strong>Santé</strong>.</p></li><li><p><strong>Chef-d’œuvre</strong> - Soigne immédiatement 96 points de <strong>Santé</strong>.</p></li></ul>"
+                            "description": "<p>Recouvrez immédiatement un montant de @Rule[resource.health] dépendant de la qualité de l'élixir.</p><ul><li><p><strong>Bâclée</strong> - Soigne immédiatement 6 points de <strong>Santé</strong>.</p></li><li><p><strong>Commune</strong> - Soigne immédiatement 12 points de <strong>Santé</strong>.</p></li><li><p><strong>Raffinée</strong> - Soigne immédiatement 24 points de <strong>Santé</strong>.</p></li><li><p><strong>Supérieure</strong> - Soigne immédiatement 48 points de <strong>Santé</strong>.</p></li><li><p><strong>Magistrale</strong> - Soigne immédiatement 96 points de <strong>Santé</strong>.</p></li></ul>"
                         }
                     }
                 },
@@ -518,7 +518,7 @@
                     "actions": {
                         "rallyingElixir": {
                             "name": "Élixir de ralliement",
-                            "description": "<p>Recouvrez immédiatement un montant de @Rule[resource.morale]{Moral} dépendant de la qualité de l'élixir.</p><ul><li><p><strong>Bâclée</strong> - Soigne immédiatement 6 points de <strong>Moral</strong>.</p></li><li><p><strong>Commune</strong> - Soigne immédiatement 12 points de <strong>Moral</strong>.</p></li><li><p><strong>Raffinée</strong> - Soigne immédiatement 24 points de <strong>Moral</strong>.</p></li><li><p><strong>Supérieure</strong> - Soigne immédiatement 48 points de <strong>Moral</strong>.</p></li><li><p><strong>Chef-d’œuvre</strong> - Soigne immédiatement 96 points de <strong>Moral</strong>.</p></li></ul>"
+                            "description": "<p>Recouvrez immédiatement un montant de @Rule[resource.morale]{Moral} dépendant de la qualité de l'élixir.</p><ul><li><p><strong>Bâclée</strong> - Soigne immédiatement 6 points de <strong>Moral</strong>.</p></li><li><p><strong>Commune</strong> - Soigne immédiatement 12 points de <strong>Moral</strong>.</p></li><li><p><strong>Raffinée</strong> - Soigne immédiatement 24 points de <strong>Moral</strong>.</p></li><li><p><strong>Supérieure</strong> - Soigne immédiatement 48 points de <strong>Moral</strong>.</p></li><li><p><strong>Magistrale</strong> - Soigne immédiatement 96 points de <strong>Moral</strong>.</p></li></ul>"
                         }
                     }
                 },
@@ -766,7 +766,7 @@
                     "actions": {
                         "healingElixir": {
                             "name": "Élixir de santé",
-                            "description": "<p>Recouvrez immédiatement un montant de @Rule[resource.health] dépendant de la qualité de l'élixir.</p><ul><li><p><strong>Bâclée</strong> - Soigne immédiatement 6 points de <strong>Santé</strong>.</p></li><li><p><strong>Commune</strong> - Soigne immédiatement 12 points de <strong>Santé</strong>.</p></li><li><p><strong>Raffinée</strong> - Soigne immédiatement 24 points de <strong>Santé</strong>.</p></li><li><p><strong>Supérieure</strong> - Soigne immédiatement 48 points de <strong>Santé</strong>.</p></li><li><p><strong>Chef-d’œuvre</strong> - Soigne immédiatement 96 points de <strong>Santé</strong>.</p></li></ul>"
+                            "description": "<p>Recouvrez immédiatement un montant de @Rule[resource.health] dépendant de la qualité de l'élixir.</p><ul><li><p><strong>Bâclée</strong> - Soigne immédiatement 6 points de <strong>Santé</strong>.</p></li><li><p><strong>Commune</strong> - Soigne immédiatement 12 points de <strong>Santé</strong>.</p></li><li><p><strong>Raffinée</strong> - Soigne immédiatement 24 points de <strong>Santé</strong>.</p></li><li><p><strong>Supérieure</strong> - Soigne immédiatement 48 points de <strong>Santé</strong>.</p></li><li><p><strong>Magistrale</strong> - Soigne immédiatement 96 points de <strong>Santé</strong>.</p></li></ul>"
                         }
                     }
                 },
@@ -778,7 +778,7 @@
                     "actions": {
                         "rallyingElixir": {
                             "name": "Élixir de ralliement",
-                            "description": "<p>Recouvrez immédiatement un montant de @Rule[resource.morale]{Moral} dépendant de la qualité de l'élixir.</p><ul><li><p><strong>Bâclée</strong> - Soigne immédiatement 6 points de <strong>Moral</strong>.</p></li><li><p><strong>Commune</strong> - Soigne immédiatement 12 points de <strong>Moral</strong>.</p></li><li><p><strong>Raffinée</strong> - Soigne immédiatement 24 points de <strong>Moral</strong>.</p></li><li><p><strong>Supérieure</strong> - Soigne immédiatement 48 points de <strong>Moral</strong>.</p></li><li><p><strong>Chef-d’œuvre</strong> - Soigne immédiatement 96 points de <strong>Moral</strong>.</p></li></ul>"
+                            "description": "<p>Recouvrez immédiatement un montant de @Rule[resource.morale]{Moral} dépendant de la qualité de l'élixir.</p><ul><li><p><strong>Bâclée</strong> - Soigne immédiatement 6 points de <strong>Moral</strong>.</p></li><li><p><strong>Commune</strong> - Soigne immédiatement 12 points de <strong>Moral</strong>.</p></li><li><p><strong>Raffinée</strong> - Soigne immédiatement 24 points de <strong>Moral</strong>.</p></li><li><p><strong>Supérieure</strong> - Soigne immédiatement 48 points de <strong>Moral</strong>.</p></li><li><p><strong>Magistrale</strong> - Soigne immédiatement 96 points de <strong>Moral</strong>.</p></li></ul>"
                         }
                     }
                 },
@@ -1132,7 +1132,7 @@
                     "actions": {
                         "steelJawArm": {
                             "name": "Armer le piège à mâchoire de fer",
-                            "description": "<p>La mise en place de ce piège représente un péril important pouvant causer des dégâts considérables en cas de déclenchement. Il doit être fixé par une chaîne solide à un objet immobile, tel qu'un arbre ou un pieu enfoncé dans le sol. La zone du piège est un cercle de @[feet 2] de rayon.</p><p>Lorsqu'il est déclenché, la créature qui a posé le piège fait une attaque de compétence @Rule[skill.wilderness] contre la défense de @Rule[defense.reflex] d'une unique cible qui a déclenché le piège. S'il fonctionne, il inflige des dégâts <strong>Perforants</strong> et applique la condition @Condition[restrained]. Les dégâts de base infligés par le piège varient en fonction de la qualité du piège.</p><ul><li><p><strong>Bâclée</strong> - 1 damage</p></li><li><p><strong>Commune</strong> - 2 damage</p></li><li><p><strong>Raffinée</strong> - 4 damage</p></li><li><p><strong>Supérieure</strong> - 8 damage</p></li><li><p><strong>Chef-d’œuvre</strong> - 16 damage</p></li></ul>"
+                            "description": "<p>La mise en place de ce piège représente un péril important pouvant causer des dégâts considérables en cas de déclenchement. Il doit être fixé par une chaîne solide à un objet immobile, tel qu'un arbre ou un pieu enfoncé dans le sol. La zone du piège est un cercle de @[feet 2] de rayon.</p><p>Lorsqu'il est déclenché, la créature qui a posé le piège fait une attaque de compétence @Rule[skill.wilderness] contre la défense de @Rule[defense.reflex] d'une unique cible qui a déclenché le piège. S'il fonctionne, il inflige des dégâts <strong>Perforants</strong> et applique la condition @Condition[restrained]. Les dégâts de base infligés par le piège varient en fonction de la qualité du piège.</p><ul><li><p><strong>Bâclée</strong> - 1 damage</p></li><li><p><strong>Commune</strong> - 2 damage</p></li><li><p><strong>Raffinée</strong> - 4 damage</p></li><li><p><strong>Supérieure</strong> - 8 damage</p></li><li><p><strong>Magistrale</strong> - 16 damage</p></li></ul>"
                         }
                     }
                 },
@@ -1144,7 +1144,7 @@
                     "actions": {
                         "rallyingElixir": {
                             "name": "Élixir de ralliement",
-                            "description": "<p>Recouvrez immédiatement un montant de @Rule[resource.morale]{Moral} dépendant de la qualité de l'élixir.</p><ul><li><p><strong>Bâclée</strong> - Soigne immédiatement 6 points de <strong>Moral</strong>.</p></li><li><p><strong>Commune</strong> - Soigne immédiatement 12 points de <strong>Moral</strong>.</p></li><li><p><strong>Raffinée</strong> - Soigne immédiatement 24 points de <strong>Moral</strong>.</p></li><li><p><strong>Supérieure</strong> - Soigne immédiatement 48 points de <strong>Moral</strong>.</p></li><li><p><strong>Chef-d’œuvre</strong> - Soigne immédiatement 96 points de <strong>Moral</strong>.</p></li></ul>"
+                            "description": "<p>Recouvrez immédiatement un montant de @Rule[resource.morale]{Moral} dépendant de la qualité de l'élixir.</p><ul><li><p><strong>Bâclée</strong> - Soigne immédiatement 6 points de <strong>Moral</strong>.</p></li><li><p><strong>Commune</strong> - Soigne immédiatement 12 points de <strong>Moral</strong>.</p></li><li><p><strong>Raffinée</strong> - Soigne immédiatement 24 points de <strong>Moral</strong>.</p></li><li><p><strong>Supérieure</strong> - Soigne immédiatement 48 points de <strong>Moral</strong>.</p></li><li><p><strong>Magistrale</strong> - Soigne immédiatement 96 points de <strong>Moral</strong>.</p></li></ul>"
                         }
                     }
                 },
@@ -1384,7 +1384,7 @@
                     "actions": {
                         "rallyingElixir": {
                             "name": "Élixir de ralliement",
-                            "description": "<p>Recouvrez immédiatement un montant de @Rule[resource.morale]{Moral} dépendant de la qualité de l'élixir.</p><ul><li><p><strong>Bâclée</strong> - Soigne immédiatement 6 points de <strong>Moral</strong>.</p></li><li><p><strong>Commune</strong> - Soigne immédiatement 12 points de <strong>Moral</strong>.</p></li><li><p><strong>Raffinée</strong> - Soigne immédiatement 24 points de <strong>Moral</strong>.</p></li><li><p><strong>Supérieure</strong> - Soigne immédiatement 48 points de <strong>Moral</strong>.</p></li><li><p><strong>Chef-d’œuvre</strong> - Soigne immédiatement 96 points de <strong>Moral</strong>.</p></li></ul>"
+                            "description": "<p>Recouvrez immédiatement un montant de @Rule[resource.morale]{Moral} dépendant de la qualité de l'élixir.</p><ul><li><p><strong>Bâclée</strong> - Soigne immédiatement 6 points de <strong>Moral</strong>.</p></li><li><p><strong>Commune</strong> - Soigne immédiatement 12 points de <strong>Moral</strong>.</p></li><li><p><strong>Raffinée</strong> - Soigne immédiatement 24 points de <strong>Moral</strong>.</p></li><li><p><strong>Supérieure</strong> - Soigne immédiatement 48 points de <strong>Moral</strong>.</p></li><li><p><strong>Magistrale</strong> - Soigne immédiatement 96 points de <strong>Moral</strong>.</p></li></ul>"
                         }
                     }
                 },
@@ -1396,7 +1396,7 @@
                     "actions": {
                         "healingTonic": {
                             "name": "Stimulant de santé",
-                            "description": "<p>Recouvrez immédiatement, et au début de chacun des 5 prochains <strong>Rounds</strong>, un montant de @Rule[resource.health] dépendant de la qualité du stimulant.</p><ul><li><p><strong>Bâclée</strong> - Soigne 2 points de <strong>Santé</strong> à chaque <strong>Round</strong></p></li><li><p><strong>Commune</strong> - Soigne 4 points de <strong>Santé</strong> à chaque <strong>Round</strong></p></li><li><p><strong>Raffinée</strong> - Soigne 8 points de <strong>Santé</strong> à chaque <strong>Round</strong></p></li><li><p><strong>Supérieure</strong> - Soigne 16 points de <strong>Santé</strong> à chaque <strong>Round</strong></p></li><li><p><strong>Chef-d’œuvre</strong> - Soigne 32 points de <strong>Santé</strong> à chaque <strong>Round</strong></p></li></ul>",
+                            "description": "<p>Recouvrez immédiatement, et au début de chacun des 5 prochains <strong>Rounds</strong>, un montant de @Rule[resource.health] dépendant de la qualité du stimulant.</p><ul><li><p><strong>Bâclée</strong> - Soigne 2 points de <strong>Santé</strong> à chaque <strong>Round</strong></p></li><li><p><strong>Commune</strong> - Soigne 4 points de <strong>Santé</strong> à chaque <strong>Round</strong></p></li><li><p><strong>Raffinée</strong> - Soigne 8 points de <strong>Santé</strong> à chaque <strong>Round</strong></p></li><li><p><strong>Supérieure</strong> - Soigne 16 points de <strong>Santé</strong> à chaque <strong>Round</strong></p></li><li><p><strong>Magistrale</strong> - Soigne 32 points de <strong>Santé</strong> à chaque <strong>Round</strong></p></li></ul>",
                             "effects": {
                                 "Healing Tonic": {
                                     "name": "Stimulant de santé"
@@ -1859,7 +1859,7 @@
                     "actions": {
                         "causticPhial": {
                             "name": "Fiole d'acide",
-                            "description": "<p>Vous jetez la @ref[item.name], infligeant des dégâts immédiats d'<strong>Acide</strong> @Rule[action.weakened] mais causant la condition @Condition[corroding] à tous les ennemis qui ne parviennent pas à éviter l'attaque, dans un rayon d'<strong>Explosion</strong> de @[feet 4].</p><p>Le montant de dégâts corrodés et leur durée dépend de la qualité de la @ref[item.name] :</p><ul><li><p><strong>Bâclée</strong> - 2 damage for 2 rounds</p></li><li><p><strong>Commune</strong> - 3 dégâts pendant 3 rounds</p></li><li><p><strong>Raffinée</strong> - 4 dégâts pendant 4 rounds</p></li><li><p><strong>Supérieure</strong> - 6 dégâts pendant 5 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 8 dégâts pendant 6 rounds</p></li></ul>",
+                            "description": "<p>Vous jetez la @ref[item.name], infligeant des dégâts immédiats d'<strong>Acide</strong> @Rule[action.weakened] mais causant la condition @Condition[corroding] à tous les ennemis qui ne parviennent pas à éviter l'attaque, dans un rayon d'<strong>Explosion</strong> de @[feet 4].</p><p>Le montant de dégâts corrodés et leur durée dépend de la qualité de la @ref[item.name] :</p><ul><li><p><strong>Bâclée</strong> - 2 damage for 2 rounds</p></li><li><p><strong>Commune</strong> - 3 dégâts pendant 3 rounds</p></li><li><p><strong>Raffinée</strong> - 4 dégâts pendant 4 rounds</p></li><li><p><strong>Supérieure</strong> - 6 dégâts pendant 5 rounds</p></li><li><p><strong>Magistrale</strong> - 8 dégâts pendant 6 rounds</p></li></ul>",
                             "effects": {
                                 "Caustic Phial": {
                                     "name": "Fiole d'acide"
@@ -1876,7 +1876,7 @@
                     "actions": {
                         "healingElixir": {
                             "name": "Élixir de santé",
-                            "description": "<p>Recouvrez immédiatement un montant de @Rule[resource.health] dépendant de la qualité de l'élixir.</p><ul><li><p><strong>Bâclée</strong> - Soigne immédiatement 6 points de <strong>Santé</strong>.</p></li><li><p><strong>Commune</strong> - Soigne immédiatement 12 points de <strong>Santé</strong>.</p></li><li><p><strong>Raffinée</strong> - Soigne immédiatement 24 points de <strong>Santé</strong>.</p></li><li><p><strong>Supérieure</strong> - Soigne immédiatement 48 points de <strong>Santé</strong>.</p></li><li><p><strong>Chef-d’œuvre</strong> - Soigne immédiatement 96 points de <strong>Santé</strong>.</p></li></ul>"
+                            "description": "<p>Recouvrez immédiatement un montant de @Rule[resource.health] dépendant de la qualité de l'élixir.</p><ul><li><p><strong>Bâclée</strong> - Soigne immédiatement 6 points de <strong>Santé</strong>.</p></li><li><p><strong>Commune</strong> - Soigne immédiatement 12 points de <strong>Santé</strong>.</p></li><li><p><strong>Raffinée</strong> - Soigne immédiatement 24 points de <strong>Santé</strong>.</p></li><li><p><strong>Supérieure</strong> - Soigne immédiatement 48 points de <strong>Santé</strong>.</p></li><li><p><strong>Magistrale</strong> - Soigne immédiatement 96 points de <strong>Santé</strong>.</p></li></ul>"
                         }
                     }
                 },
@@ -1888,7 +1888,7 @@
                     "actions": {
                         "antitoxin": {
                             "name": "Antidote",
-                            "description": "<p>Consommer cet @ref[item.name] permet de neutraliser toutes les conditions @Condition[poisoned] affectant la cible. Les poisons plus puissants nécessitent un antidote plus puissant pour être neutralisés.</p><p>La catégorie de poison annulée par cet @ref[item.name] dépend de sa qualité :</p><ul><li><p><strong>Bâclée</strong> - Poisons infligeant 3 dégâts ou moins par round</p></li><li><p><strong>Commune</strong> - Poisons infligeant 5 dégâts ou moins par round</p></li><li><p><strong>Raffinée</strong> - Poisons infligeant 7 dégâts ou moins par round</p></li><li><p><strong>Supérieure</strong> - Poisons infligeant 9 dégâts ou moins par round</p></li><li><p><strong>Chef-d’œuvre</strong> - Poisons infligeant 11 dégâts ou moins par round</p></li></ul>"
+                            "description": "<p>Consommer cet @ref[item.name] permet de neutraliser toutes les conditions @Condition[poisoned] affectant la cible. Les poisons plus puissants nécessitent un antidote plus puissant pour être neutralisés.</p><p>La catégorie de poison annulée par cet @ref[item.name] dépend de sa qualité :</p><ul><li><p><strong>Bâclée</strong> - Poisons infligeant 3 dégâts ou moins par round</p></li><li><p><strong>Commune</strong> - Poisons infligeant 5 dégâts ou moins par round</p></li><li><p><strong>Raffinée</strong> - Poisons infligeant 7 dégâts ou moins par round</p></li><li><p><strong>Supérieure</strong> - Poisons infligeant 9 dégâts ou moins par round</p></li><li><p><strong>Magistrale</strong> - Poisons infligeant 11 dégâts ou moins par round</p></li></ul>"
                         }
                     }
                 },
@@ -2161,7 +2161,7 @@
                     "actions": {
                         "omniglotDecoction": {
                             "name": "Décoction omniglotte",
-                            "description": "<p>Consommée, cette décoction confère à celui qui la boit la fascinante capacité de lire, de parler et de comprendre les langues. Sa qualité détermine la durée de l'effet :</p><ul><li><p><strong>Bâclée</strong> - 10 minutes</p></li><li><p><strong>Commune</strong> - 1 heure</p></li><li><p><strong>Raffinée</strong> - 4 heures</p></li><li><p><strong>Supérieure</strong> - 12 heures</p></li><li><p><strong>Chef-d’œuvre</strong> - 24 heures</p></li></ul>",
+                            "description": "<p>Consommée, cette décoction confère à celui qui la boit la fascinante capacité de lire, de parler et de comprendre les langues. Sa qualité détermine la durée de l'effet :</p><ul><li><p><strong>Bâclée</strong> - 10 minutes</p></li><li><p><strong>Commune</strong> - 1 heure</p></li><li><p><strong>Raffinée</strong> - 4 heures</p></li><li><p><strong>Supérieure</strong> - 12 heures</p></li><li><p><strong>Magistrale</strong> - 24 heures</p></li></ul>",
                             "effects": {
                                 "Omniglot Decoction": {
                                     "name": "Décoction omniglotte"
@@ -2178,7 +2178,7 @@
                     "actions": {
                         "rallyingTonic": {
                             "name": "Stimulant de ralliement",
-                            "description": "<p>Recouvrez immédiatement, et au début de chacun des 5 prochains <strong>Rounds</strong>, un montant de @Rule[resource.morale] dépendant de la qualité du stimulant.</p><ul><li><p><strong>Bâclée</strong> - Soigne 2 points de <strong>Moral</strong> à chaque <strong>Round</strong></p></li><li><p><strong>Commune</strong> - Soigne 4 points de <strong>Moral</strong> à chaque <strong>Round</strong></p></li><li><p><strong>Raffinée</strong>- Soigne 8 points de <strong>Moral</strong> à chaque <strong>Round</strong></p></li><li><p><strong>Supérieure</strong> - Soigne 16 points de <strong>Moral</strong> à chaque <strong>Round</strong></p></li><li><p><strong>Chef-d’œuvre</strong> - Soigne 32 points de <strong>Moral</strong> à chaque <strong>Round</strong></p></li></ul>",
+                            "description": "<p>Recouvrez immédiatement, et au début de chacun des 5 prochains <strong>Rounds</strong>, un montant de @Rule[resource.morale] dépendant de la qualité du stimulant.</p><ul><li><p><strong>Bâclée</strong> - Soigne 2 points de <strong>Moral</strong> à chaque <strong>Round</strong></p></li><li><p><strong>Commune</strong> - Soigne 4 points de <strong>Moral</strong> à chaque <strong>Round</strong></p></li><li><p><strong>Raffinée</strong>- Soigne 8 points de <strong>Moral</strong> à chaque <strong>Round</strong></p></li><li><p><strong>Supérieure</strong> - Soigne 16 points de <strong>Moral</strong> à chaque <strong>Round</strong></p></li><li><p><strong>Magistrale</strong> - Soigne 32 points de <strong>Moral</strong> à chaque <strong>Round</strong></p></li></ul>",
                             "effects": {
                                 "Rallying Tonic": {
                                     "name": "Stimulant de ralliement"
@@ -2195,7 +2195,7 @@
                     "actions": {
                         "healingElixir": {
                             "name": "Élixir de santé",
-                            "description": "<p>Recouvrez immédiatement un montant de @Rule[resource.health] dépendant de la qualité de l'élixir.</p><ul><li><p><strong>Bâclée</strong> - Soigne immédiatement 6 points de <strong>Santé</strong>.</p></li><li><p><strong>Commune</strong> - Soigne immédiatement 12 points de <strong>Santé</strong>.</p></li><li><p><strong>Raffinée</strong> - Soigne immédiatement 24 points de <strong>Santé</strong>.</p></li><li><p><strong>Supérieure</strong> - Soigne immédiatement 48 points de <strong>Santé</strong>.</p></li><li><p><strong>Chef-d’œuvre</strong> - Soigne immédiatement 96 points de <strong>Santé</strong>.</p></li></ul>"
+                            "description": "<p>Recouvrez immédiatement un montant de @Rule[resource.health] dépendant de la qualité de l'élixir.</p><ul><li><p><strong>Bâclée</strong> - Soigne immédiatement 6 points de <strong>Santé</strong>.</p></li><li><p><strong>Commune</strong> - Soigne immédiatement 12 points de <strong>Santé</strong>.</p></li><li><p><strong>Raffinée</strong> - Soigne immédiatement 24 points de <strong>Santé</strong>.</p></li><li><p><strong>Supérieure</strong> - Soigne immédiatement 48 points de <strong>Santé</strong>.</p></li><li><p><strong>Magistrale</strong> - Soigne immédiatement 96 points de <strong>Santé</strong>.</p></li></ul>"
                         }
                     }
                 },
@@ -2659,7 +2659,7 @@
                     "actions": {
                         "frostFlask": {
                             "name": "Fiole de gouttes de givre",
-                            "description": "<p>Vous lancez la @ref[item.name], infligeant des dégâts amoindris de <strong>Froid</strong> à tous les ennemis dans le rayon de l'explosion qui ne parviennent pas à éviter l'attaque et les rendant @Condition[slowed] brièvement. Le rayon de l'<strong>Explosion</strong> dépend de la qualité de la bombe :</p><ul><li><p><strong>Bâclée</strong> - @[feet 3]</p></li><li><p><strong>Commune</strong> - @[feet 4]</p></li><li><p><strong>Raffinée</strong> - @[feet 6]</p></li><li><p><strong>Supérieure</strong> - @[feet 8]</p></li><li><p><strong>Chef-d’œuvre</strong> - @[feet 10]</p></li></ul>",
+                            "description": "<p>Vous lancez la @ref[item.name], infligeant des dégâts amoindris de <strong>Froid</strong> à tous les ennemis dans le rayon de l'explosion qui ne parviennent pas à éviter l'attaque et les rendant @Condition[slowed] brièvement. Le rayon de l'<strong>Explosion</strong> dépend de la qualité de la bombe :</p><ul><li><p><strong>Bâclée</strong> - @[feet 3]</p></li><li><p><strong>Commune</strong> - @[feet 4]</p></li><li><p><strong>Raffinée</strong> - @[feet 6]</p></li><li><p><strong>Supérieure</strong> - @[feet 8]</p></li><li><p><strong>Magistrale</strong> - @[feet 10]</p></li></ul>",
                             "effects": {
                                 "Frostdrop Phial": {
                                     "name": "Fiole de gouttes de givre"
@@ -2676,7 +2676,7 @@
                     "actions": {
                         "alchemistsFire": {
                             "name": "Feu de l'alchimiste",
-                            "description": "<p>Vous jetez le @ref[item.name], infligeant des dégâts immédiats de <strong>Feu</strong> @Rule[action.weakened] mais causant la condition @Condition[burning] à tous les ennemis qui ne parviennent pas à éviter l'attaque dans un rayon d'<strong>Explosion</strong> de @[feet 4].</p><p>Le montant des dégâts enflammés et leur durée dépendent de la qualité du @ref[item.name] :</p><ul><li><p><strong>Bâclée</strong> - 2 dégâts pendant 2 rounds</p></li><li><p><strong>Commune</strong> - 3 dégâts pendant 3 rounds</p></li><li><p><strong>Raffinée</strong> - 4 dégâts pendant 4 rounds</p></li><li><p><strong>Supérieure</strong> - 6 dégâts pendant 5 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 8 dégâts pendant 6 rounds</p></li></ul>",
+                            "description": "<p>Vous jetez le @ref[item.name], infligeant des dégâts immédiats de <strong>Feu</strong> @Rule[action.weakened] mais causant la condition @Condition[burning] à tous les ennemis qui ne parviennent pas à éviter l'attaque dans un rayon d'<strong>Explosion</strong> de @[feet 4].</p><p>Le montant des dégâts enflammés et leur durée dépendent de la qualité du @ref[item.name] :</p><ul><li><p><strong>Bâclée</strong> - 2 dégâts pendant 2 rounds</p></li><li><p><strong>Commune</strong> - 3 dégâts pendant 3 rounds</p></li><li><p><strong>Raffinée</strong> - 4 dégâts pendant 4 rounds</p></li><li><p><strong>Supérieure</strong> - 6 dégâts pendant 5 rounds</p></li><li><p><strong>Magistrale</strong> - 8 dégâts pendant 6 rounds</p></li></ul>",
                             "effects": {
                                 "Alchemist's Fire": {
                                     "name": "Feu de l'alchimiste"
@@ -2693,7 +2693,7 @@
                     "actions": {
                         "healingElixir": {
                             "name": "Élixir de santé",
-                            "description": "<p>Recouvrez immédiatement un montant de @Rule[resource.health] dépendant de la qualité de l'élixir.</p><ul><li><p><strong>Bâclée</strong> - Soigne immédiatement 6 points de <strong>Santé</strong>.</p></li><li><p><strong>Commune</strong> - Soigne immédiatement 12 points de <strong>Santé</strong>.</p></li><li><p><strong>Raffinée</strong> - Soigne immédiatement 24 points de <strong>Santé</strong>.</p></li><li><p><strong>Supérieure</strong> - Soigne immédiatement 48 points de <strong>Santé</strong>.</p></li><li><p><strong>Chef-d’œuvre</strong> - Soigne immédiatement 96 points de <strong>Santé</strong>.</p></li></ul>"
+                            "description": "<p>Recouvrez immédiatement un montant de @Rule[resource.health] dépendant de la qualité de l'élixir.</p><ul><li><p><strong>Bâclée</strong> - Soigne immédiatement 6 points de <strong>Santé</strong>.</p></li><li><p><strong>Commune</strong> - Soigne immédiatement 12 points de <strong>Santé</strong>.</p></li><li><p><strong>Raffinée</strong> - Soigne immédiatement 24 points de <strong>Santé</strong>.</p></li><li><p><strong>Supérieure</strong> - Soigne immédiatement 48 points de <strong>Santé</strong>.</p></li><li><p><strong>Magistrale</strong> - Soigne immédiatement 96 points de <strong>Santé</strong>.</p></li></ul>"
                         }
                     }
                 },

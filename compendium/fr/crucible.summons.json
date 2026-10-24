@@ -3,7 +3,8 @@
     "folders": {
         "Gesture: Create": "Signe : Création",
         "Gesture: Conjure": "Signe : Conjuration",
-        "Talents": "Talents"
+        "Talents": "Talents",
+        "Beastmaster": "Maître des bêtes"
     },
     "entries": {
         "56puGK932Qc0cowe": {
@@ -465,6 +466,267 @@
                 "description": "<p>Manifestation incorporelle des esprits ancestraux, invoquée pour veiller sur les vivants. Elle n'a ni corps physique à blesser, ni volonté à briser.</p>"
             },
             "tokenName": "Gardien ancestral"
+        },
+        "companionAir0000": {
+            "name": "Compagnon de l'air",
+            "tokenName": "Bête de l'air",
+            "archetype": {
+                "name": "Compagnon bestial",
+                "description": "<p>Bêtes qui, par des moyens magiques ou grâce à un dressage, sont devenues des compagnons loyaux.</p>"
+            },
+            "taxonomy": {
+                "name": "Bête de l'air",
+                "description": "<p>Compagnons bestiaux qui prennent leur envol. Leur point de vue depuis les airs peut offrir à leurs maîtres un avantage tactique considérable, tout en leur permettant de conserver une agilité suffisante pour prêter main-forte au combat si nécessaire.</p>"
+            },
+            "items": {
+                "glider0000000000": {
+                    "name": "Planeur",
+                    "description": "<p>@ref[actor.name]{La créature} contrôle sa descente quand elle tombe. À moins qu'elle ne soit @Condition[incapacitated] ou @Condition[restrained], la chute devient un <strong>Vol plané</strong> : Un déplacement de <strong>Vol</strong> descendant plutôt qu'un impact, ne subissant aucun dégât de chute.</p><p>En planant, la @Rule[movement.stride] de la créature est doublée et un @Rule[movement.freeMovement]{déplacement gratuit} lui est alloué, afin qu'elle puisse toujours planer au moins sur une courte distance. Son vol plané doit descendre, et elle s'immobilise là où le déplacement s'achève ; si elle termine son vol plané en l'air, elle obtient la condition @Condition[flying].</p>",
+                    "actions": {
+                        "fallGlide": {
+                            "name": "Vol plané",
+                            "description": "<p>@ref[actor.name]{La créature} plane au lieu de tomber, volant vers le bas avec contrôle. Le déplacement doit être descendant et n'inflige aucun dégât de chute. Si la créature termine son vol plané en l'air, elle obtient la condition @Condition[flying].</p>"
+                        }
+                    }
+                },
+                "rake000000000000": {
+                    "name": "Ratissage",
+                    "description": "<p>@ref[actor.name]{La créature} attaque rapidement avec ses serres, infligeant de multiples coups lacérants contre une cible unique.</p>",
+                    "actions": {
+                        "rake": {
+                            "name": "Ratissage",
+                            "description": "<p>@ref[actor.name]{La créature} attaque rapidement avec ses deux griffes ou serres.</p><p>Si au moins une attaque résulte en une @Rule[dice.criticalSuccess], elle inflige la condition @Condition[bleeding] pendant <strong>2 Rounds</strong>.</p>",
+                            "effects": {
+                                "Rake": {
+                                    "name": "Ratissage"
+                                }
+                            }
+                        }
+                    }
+                },
+                "echolocation0000": {
+                    "name": "Écholocalisation",
+                    "description": "<p>@ref[actor.name]{Cette créature} perçoit le monde grâce à l'émission d'impulsions sonores qui détectent les formes avec précision, ce qui lui permet de localiser les créatures en mouvement ou émettant un son, jusqu'à @[feet 60] de distance, à condition qu'elles n'aient pas une couverture totale. Si la créature est @Condition[deafened], ce sens ne peut être utilisé.</p><p>Une créature détectée par l'@ref[name] est concidérée comme visible pour les actions nécessitant que vous voyiez votre cible.</p>"
+                },
+                "beak000000000000": {
+                    "name": "Bec",
+                    "description": {
+                        "public": "<p>@ref[actor.name]{La créature} possède un bec acéré et déchirant.</p>"
+                    }
+                },
+                "talons0000000000": {
+                    "name": "Serres",
+                    "description": {
+                        "public": "<p>La @ref[actor.name]{créature} possède des serres recourbées pour agripper et déchirer sa proie.</p>"
+                    }
+                },
+                "battleWorn000000": {
+                    "name": "Repos du guerrier",
+                    "description": "<p>Votre corps a subi tant de blessures qu'il a appris à se réparer avec une efficacité remarquable. Lorsque vous effectuez une action de @Action[default rest], vous recouvrez un nombre de @Rule[resource.wounds] supplémentaires égal à la moitié de votre score de @Rule[ability.toughness] (arrondi à l'inférieur).</p>"
+                },
+                "loyalProtector00": {
+                    "name": "Protecteur loyal",
+                    "description": "<p>@ref[actor.name]{Le compagnon} fait preuve d’une loyauté farouche envers son maître ; il se placera à ses côtés et lui apportera une assistance défensive dès que cela lui sera demandé.</p>",
+                    "actions": {
+                        "loyalProtector": {
+                            "name": "Protecteur loyal",
+                            "description": "<p>@ref[actor.name]{Le compagnon} se déplace à côté de son maître, lui conférant la condition @Condition[guarded] jusqu’au début de son prochain tour.</p>",
+                            "effects": {
+                                "Loyal Protector": {
+                                    "name": "Protecteur loyal"
+                                }
+                            }
+                        }
+                    }
+                },
+                "flankingManeuver": {
+                    "name": "Prise en tenailles",
+                    "description": "<p>Travaillant de concert avec son maître, @ref[actor.name]{le compagnon} peut créer des brèches dans les défenses, même face aux adversaires les plus attentifs.</p>",
+                    "actions": {
+                        "flankingManeuver": {
+                            "name": "Prise en tenailles",
+                            "description": "<p>@ref[actor.name]{Le compagnon} effectue une frappe délibérée à un adversaire qui est actuellement aux prises avec son maître. En cas de réussite, l'adversaire devient @Condition[overrun] jusqu'au début de son prochain tour.</p>",
+                            "effects": {
+                                "Flanking Maneuver": {
+                                    "name": "Prise en tenailles"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "companionLand000": {
+            "name": "Compagnon de la terre",
+            "tokenName": "Bête de l'air",
+            "archetype": {
+                "name": "Compagnon bestial",
+                "description": "<p>Bêtes qui, par des moyens magiques ou grâce à un dressage, sont devenues des compagnons loyaux.</p>"
+            },
+            "taxonomy": {
+                "name": "Bête de la terre",
+                "description": "<p>Compagnons bestiaux qui parcourent les terres. Leur force et leurs tactiques de chasse en meute sont précieuses pour leurs maîtres ; elles font souvent office de membre supplémentaire au sein de l'équipe en première ligne.</p>"
+            },
+            "items": {
+                "pouncingStrike00": {
+                    "name": "Frappe bondissante",
+                    "description": "<p>Cette créature se jette en avant, mettant tout son poids dans une frappe sautée.</p>",
+                    "actions": {
+                        "pouncingStrike": {
+                            "name": "Frappe bondissante",
+                            "description": "<p>Cette attaque peut être utilisée après un <strong>Déplacement</strong> qui rapproche @ref[actor.name]{la créature} d'au moins @[feet 10] de sa cible. Si la créature était au-dessus de la cible, cette attaque obtient @Rule[dice.boon]{+1 Faveur} par tranche de @[feet 10] de diminution d'élévation dans ce mouvement.</p><p>Si cette attaque est un @Rule[dice.criticalSuccess]{Coup critique}, la cible de l'attaque est immédiatement mise @Condition[prone].</p>",
+                            "effects": {
+                                "Pouncing Strike": {
+                                    "name": "Frappe bondissante"
+                                }
+                            }
+                        }
+                    }
+                },
+                "packhunter000000": {
+                    "name": "Chasse en meute",
+                    "description": "<p>Cette créature chasse en meute, comptant sur ses alliés pour déborder et harceler une cible afin de l'exposer à davantage de dégâts.</p><p>Cette créature double le nombre des @Rule[dice.boon]{Faveurs} accordées en attaquant un ennemi @Condition[flanked].</p>"
+                },
+                "darkvision000000": {
+                    "name": "Vision dans le noir",
+                    "description": "<p>@ref[actor.name]{La créature} peut voir dans l'obscurité comme s'il s'agissait d'une faible luminosité jusqu'à une distance de @[feet 60], percevant son environnement en nuances de gris. La Vision dans le noir ne fonctionne pas si @ref[actor.name]{la créature} est @Condition[blinded].</p>"
+                },
+                "thickHide0000000": {
+                    "name": "Peau épaisse",
+                    "description": {
+                        "public": "<p>@ref[actor.name]{La créature} possède une peau épaisse et coriace, résiliente face aux attaques.</p>"
+                    }
+                },
+                "bite000000000000": {
+                    "name": "Morsure",
+                    "description": {
+                        "public": "<p>@ref[actor.name]{La créature} est dotée d'une formidable mâchoire aux dents acérées.</p>"
+                    }
+                },
+                "claws00000000000": {
+                    "name": "Griffes",
+                    "description": {
+                        "public": "<p>@ref[actor.name]{La créature} possède des griffes allongées et acérées.</p>"
+                    }
+                },
+                "battleWorn000000": {
+                    "name": "Repos du guerrier",
+                    "description": "<p>Votre corps a subi tant de blessures qu'il a appris à se réparer avec une efficacité remarquable. Lorsque vous effectuez une action de @Action[default rest], vous recouvrez un nombre de @Rule[resource.wounds] supplémentaires égal à la moitié de votre score de @Rule[ability.toughness] (arrondi à l'inférieur).</p>"
+                },
+                "loyalProtector00": {
+                    "name": "Protecteur loyal",
+                    "description": "<p>@ref[actor.name]{Le compagnon} fait preuve d’une loyauté farouche envers son maître ; il se placera à ses côtés et lui apportera une assistance défensive dès que cela lui sera demandé.</p>",
+                    "actions": {
+                        "loyalProtector": {
+                            "name": "Protecteur loyal",
+                            "description": "<p>@ref[actor.name]{Le compagnon} se déplace à côté de son maître, lui conférant la condition @Condition[guarded] jusqu’au début de son prochain tour.</p>",
+                            "effects": {
+                                "Loyal Protector": {
+                                    "name": "Protecteur loyal"
+                                }
+                            }
+                        }
+                    }
+                },
+                "flankingManeuver": {
+                    "name": "Prise en tenailles",
+                    "description": "<p>Travaillant de concert avec son maître, @ref[actor.name]{le compagnon} peut créer des brèches dans les défenses, même face aux adversaires les plus attentifs.</p>",
+                    "actions": {
+                        "flankingManeuver": {
+                            "name": "Prise en tenailles",
+                            "description": "<p>@ref[actor.name]{Le compagnon} effectue une frappe délibérée à un adversaire qui est actuellement aux prises avec son maître. En cas de réussite, l'adversaire devient @Condition[overrun] jusqu'au début de son prochain tour.</p>",
+                            "effects": {
+                                "Flanking Maneuver": {
+                                    "name": "Prise en tenailles"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "companionSea0000": {
+            "name": "Compagnon de la mer",
+            "tokenName": "Bête de l'air",
+            "archetype": {
+                "name": "Compagnon bestial",
+                "description": "<p>Bêtes qui, par des moyens magiques ou grâce à un dressage, sont devenues des compagnons loyaux.</p>"
+            },
+            "taxonomy": {
+                "name": "Bête de la mer",
+                "description": "<p>Compagnons bestiaux qui habitent les profondeurs. Leur vision aveugle peut révéler à leurs maîtres la position d’ennemis cherchant à se dissimuler ; malheur à quiconque se retrouve pris au piège par de telles bêtes.</p>"
+            },
+            "items": {
+                "ensnare000000000": {
+                    "name": "Piéger",
+                    "description": "<p>@ref[actor.name]{La créature} utilise un tentacule, un filin, ou un membre pour saisir sa proie à distance et l'entraîner dans une étreinte écrasante.</p>",
+                    "actions": {
+                        "ensnare": {
+                            "name": "Piéger",
+                            "description": "<p>@ref[actor.name]{La créature} tente de saisir une unique cible à distance, attaquant son @Rule[defense.reflex]. Sur une réussite, la cible est tirée à portée et devient @Condition[restrained]. Cette action ne peut être utilisée que sur les créatures qui sont des cibles éligibles pour @Action[Compendium.crucible.talent.Item.grapple000000000 grapple].</p><p>L'emprise est maintenue jusqu'à ce que @ref[actor.name]{la créature} la relâche, la cible s'échappe, ou qu'une autre créature soit ciblée avec Piéger.</p>",
+                            "effects": {
+                                "Ensnared": {
+                                    "name": "Piégé"
+                                }
+                            }
+                        }
+                    }
+                },
+                "blindsight000000": {
+                    "name": "Vision aveugle",
+                    "description": "<p>@ref[actor.name]{Cette créature} perçoit son environnement sans utiliser la vue, détectant la position précise des créatures et des objets dans un rayon de @[feet 60]. Elle n'est pas affectée par la condition @Condition[blinded], les ténèbres, ou l'invisibilité, et toute créature qu'elle détecte de cette manière est traitée comme étant visible pour elle.</p>"
+                },
+                "slipperyForm0000": {
+                    "name": "Forme glissante",
+                    "description": "<p>Cette créature est glissante en permanence, lui donnant la capacité d'échapper à la capture par des entraves physiques.</p>",
+                    "actions": {
+                        "slipperyEscape": {
+                            "name": "Évasion glissante",
+                            "description": "<p>La créature utilise sa forme glissante pour échapper aux entraves, mettant immédiatement fin à la condition @Condition[restrained].</p>"
+                        }
+                    }
+                },
+                "tentacles0000000": {
+                    "name": "Tentacules",
+                    "description": {
+                        "public": "<p>@ref[actor.name]{La créature} attaque avec des tentacules ondulants et agrippants.</p>"
+                    }
+                },
+                "battleWorn000000": {
+                    "name": "Repos du guerrier",
+                    "description": "<p>Votre corps a subi tant de blessures qu'il a appris à se réparer avec une efficacité remarquable. Lorsque vous effectuez une action de @Action[default rest], vous recouvrez un nombre de @Rule[resource.wounds] supplémentaires égal à la moitié de votre score de @Rule[ability.toughness] (arrondi à l'inférieur).</p>"
+                },
+                "loyalProtector00": {
+                    "name": "Protecteur loyal",
+                    "description": "<p>@ref[actor.name]{Le compagnon} fait preuve d’une loyauté farouche envers son maître ; il se placera à ses côtés et lui apportera une assistance défensive dès que cela lui sera demandé.</p>",
+                    "actions": {
+                        "loyalProtector": {
+                            "name": "Protecteur loyal",
+                            "description": "<p>@ref[actor.name]{Le compagnon} se déplace à côté de son maître, lui conférant la condition @Condition[guarded] jusqu’au début de son prochain tour.</p>",
+                            "effects": {
+                                "Loyal Protector": {
+                                    "name": "Protecteur loyal"
+                                }
+                            }
+                        }
+                    }
+                },
+                "flankingManeuver": {
+                    "name": "Prise en tenailles",
+                    "description": "<p>Travaillant de concert avec son maître, @ref[actor.name]{le compagnon} peut créer des brèches dans les défenses, même face aux adversaires les plus attentifs.</p>",
+                    "actions": {
+                        "flankingManeuver": {
+                            "name": "Prise en tenailles",
+                            "description": "<p>@ref[actor.name]{Le compagnon} effectue une frappe délibérée à un adversaire qui est actuellement aux prises avec son maître. En cas de réussite, l'adversaire devient @Condition[overrun] jusqu'au début de son prochain tour.</p>",
+                            "effects": {
+                                "Flanking Maneuver": {
+                                    "name": "Prise en tenailles"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

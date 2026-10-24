@@ -43,7 +43,7 @@
             "actions": {
                 "alchemistsFire": {
                     "name": "Feu de l'alchimiste",
-                    "description": "<p>Vous jetez le @ref[item.name], infligeant des dégâts immédiats de <strong>Feu</strong> @Rule[action.weakened] mais causant la condition @Condition[burning] à tous les ennemis qui ne parviennent pas à éviter l'attaque dans un rayon d'<strong>Explosion</strong> de @[feet 4].</p><p>Le montant des dégâts enflammés et leur durée dépendent de la qualité du @ref[item.name] :</p><ul><li><p><strong>Bâclée</strong> - 2 dégâts pendant 2 rounds</p></li><li><p><strong>Commune</strong> - 3 dégâts pendant 3 rounds</p></li><li><p><strong>Raffinée</strong> - 4 dégâts pendant 4 rounds</p></li><li><p><strong>Supérieure</strong> - 6 dégâts pendant 5 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 8 dégâts pendant 6 rounds</p></li></ul>",
+                    "description": "<p>Vous jetez le @ref[item.name], infligeant des dégâts immédiats de <strong>Feu</strong> @Rule[action.weakened] mais causant la condition @Condition[burning] à tous les ennemis qui ne parviennent pas à éviter l'attaque dans un rayon d'<strong>Explosion</strong> de @[feet 4].</p><p>Le montant des dégâts enflammés et leur durée dépendent de la qualité du @ref[item.name] :</p><ul><li><p><strong>Bâclée</strong> - 2 dégâts pendant 2 rounds</p></li><li><p><strong>Commune</strong> - 3 dégâts pendant 3 rounds</p></li><li><p><strong>Raffinée</strong> - 4 dégâts pendant 4 rounds</p></li><li><p><strong>Supérieure</strong> - 6 dégâts pendant 5 rounds</p></li><li><p><strong>Magistrale</strong> - 8 dégâts pendant 6 rounds</p></li></ul>",
                     "effects": {
                         "Alchemist's Fire": {
                             "name": "Feu de l'alchimiste"
@@ -93,7 +93,7 @@
             "actions": {
                 "antitoxin": {
                     "name": "Antidote",
-                    "description": "<p>Consommer cet @ref[item.name] permet de neutraliser toutes les conditions @Condition[poisoned] affectant la cible. Les poisons plus puissants nécessitent un antidote plus puissant pour être neutralisés.</p><p>La catégorie de poison annulée par cet @ref[item.name] dépend de sa qualité :</p><ul><li><p><strong>Bâclée</strong> - Poisons infligeant 3 dégâts ou moins par round</p></li><li><p><strong>Commune</strong> - Poisons infligeant 5 dégâts ou moins par round</p></li><li><p><strong>Raffinée</strong> - Poisons infligeant 7 dégâts ou moins par round</p></li><li><p><strong>Supérieure</strong> - Poisons infligeant 9 dégâts ou moins par round</p></li><li><p><strong>Chef-d’œuvre</strong> - Poisons infligeant 11 dégâts ou moins par round</p></li></ul>"
+                    "description": "<p>Consommer cet @ref[item.name] permet de neutraliser toutes les conditions @Condition[poisoned] affectant la cible. Les poisons plus puissants nécessitent un antidote plus puissant pour être neutralisés.</p><p>La catégorie de poison annulée par cet @ref[item.name] dépend de sa qualité :</p><ul><li><p><strong>Bâclée</strong> - Poisons infligeant 3 dégâts ou moins par round</p></li><li><p><strong>Commune</strong> - Poisons infligeant 5 dégâts ou moins par round</p></li><li><p><strong>Raffinée</strong> - Poisons infligeant 7 dégâts ou moins par round</p></li><li><p><strong>Supérieure</strong> - Poisons infligeant 9 dégâts ou moins par round</p></li><li><p><strong>Magistrale</strong> - Poisons infligeant 11 dégâts ou moins par round</p></li></ul>"
                 }
             }
         },
@@ -173,7 +173,7 @@
             "actions": {
                 "causticPhial": {
                     "name": "Fiole d'acide",
-                    "description": "<p>Vous jetez la @ref[item.name], infligeant des dégâts immédiats d'<strong>Acide</strong> @Rule[action.weakened] mais causant la condition @Condition[corroding] à tous les ennemis qui ne parviennent pas à éviter l'attaque, dans un rayon d'<strong>Explosion</strong> de @[feet 4].</p><p>Le montant de dégâts corrodés et leur durée dépend de la qualité de la @ref[item.name] :</p><ul><li><p><strong>Bâclée</strong> - 2 damage for 2 rounds</p></li><li><p><strong>Commune</strong> - 3 dégâts pendant 3 rounds</p></li><li><p><strong>Raffinée</strong> - 4 dégâts pendant 4 rounds</p></li><li><p><strong>Supérieure</strong> - 6 dégâts pendant 5 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 8 dégâts pendant 6 rounds</p></li></ul>",
+                    "description": "<p>Vous jetez la @ref[item.name], infligeant des dégâts immédiats d'<strong>Acide</strong> @Rule[action.weakened] mais causant la condition @Condition[corroding] à tous les ennemis qui ne parviennent pas à éviter l'attaque, dans un rayon d'<strong>Explosion</strong> de @[feet 4].</p><p>Le montant de dégâts corrodés et leur durée dépend de la qualité de la @ref[item.name] :</p><ul><li><p><strong>Bâclée</strong> - 2 damage for 2 rounds</p></li><li><p><strong>Commune</strong> - 3 dégâts pendant 3 rounds</p></li><li><p><strong>Raffinée</strong> - 4 dégâts pendant 4 rounds</p></li><li><p><strong>Supérieure</strong> - 6 dégâts pendant 5 rounds</p></li><li><p><strong>Magistrale</strong> - 8 dégâts pendant 6 rounds</p></li></ul>",
                     "effects": {
                         "Caustic Phial": {
                             "name": "Fiole d'acide"
@@ -234,7 +234,7 @@
             "actions": {
                 "chokingAmpoule": {
                     "name": "Ampoule d'étouffement",
-                    "description": "<p>Vous lancez l'@ref[item.name], qui a un effet immédiat @Rule[action.harmless], mais cause la condition @Condition[poisoned] à tous les ennemis qui échouent à résister à l'attaque contre leur @Rule[defense.fortitude], dans une <strong>Explosion</strong> de @[feet 8] de rayon.</p><p>Le gaz inflige des dégâts de poison au @Rule[resource.morale] d'un montant dépendant de la Qualité de l'@ref[item.name]. Sur une réussite critique, la cible affectée devient également @Condition[silenced] pour la même durée.</p><ul><li><p><strong>Bâclée</strong> - 2 dégâts pendant 3 rounds</p></li><li><p><strong>Commune</strong> - 6 dégâts pendant 3 rounds</p></li><li><p><strong>Raffinée</strong> - 12 dégâts pendant 3 rounds</p></li><li><p><strong>Supérieure</strong> - 20 dégâts pendant 3 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 30 dégâts pendant 3 rounds</p></li></ul>",
+                    "description": "<p>Vous lancez l'@ref[item.name], qui a un effet immédiat @Rule[action.harmless], mais cause la condition @Condition[poisoned] à tous les ennemis qui échouent à résister à l'attaque contre leur @Rule[defense.fortitude], dans une <strong>Explosion</strong> de @[feet 8] de rayon.</p><p>Le gaz inflige des dégâts de poison au @Rule[resource.morale] d'un montant dépendant de la Qualité de l'@ref[item.name]. Sur une réussite critique, la cible affectée devient également @Condition[silenced] pour la même durée.</p><ul><li><p><strong>Bâclée</strong> - 2 dégâts pendant 3 rounds</p></li><li><p><strong>Commune</strong> - 6 dégâts pendant 3 rounds</p></li><li><p><strong>Raffinée</strong> - 12 dégâts pendant 3 rounds</p></li><li><p><strong>Supérieure</strong> - 20 dégâts pendant 3 rounds</p></li><li><p><strong>Magistrale</strong> - 30 dégâts pendant 3 rounds</p></li></ul>",
                     "effects": {
                         "Choking Ampoule": {
                             "name": "Ampoule d'étouffement"
@@ -361,7 +361,7 @@
             "actions": {
                 "electrochargeAmpoule": {
                     "name": "Ampoule de charge électrique",
-                    "description": "<p>Vous lancez l'@ref[item.name], infligeant des dégâts amoindris d'<strong>Électricité</strong> à tous les ennemis dans le rayon de la décharge qui ne parviennent pas à éviter l'attaque et les laissant @Condition[staggered] brièvement. Le rayon de la <strong>Décharge</strong> dépend de la qualité de la bombe :</p><ul><li><p><strong>Bâclée</strong> - @[feet 3]</p></li><li><p><strong>Commune</strong> - @[feet 4]</p></li><li><p><strong>Raffinée</strong> - @[feet 6]</p></li><li><p><strong>Supérieure</strong> - @[feet 8]</p></li><li><p><strong>Chef-d’œuvre</strong> - @[feet 10]</p></li></ul>",
+                    "description": "<p>Vous lancez l'@ref[item.name], infligeant des dégâts amoindris d'<strong>Électricité</strong> à tous les ennemis dans le rayon de la décharge qui ne parviennent pas à éviter l'attaque et les laissant @Condition[staggered] brièvement. Le rayon de la <strong>Décharge</strong> dépend de la qualité de la bombe :</p><ul><li><p><strong>Bâclée</strong> - @[feet 3]</p></li><li><p><strong>Commune</strong> - @[feet 4]</p></li><li><p><strong>Raffinée</strong> - @[feet 6]</p></li><li><p><strong>Supérieure</strong> - @[feet 8]</p></li><li><p><strong>Magistrale</strong> - @[feet 10]</p></li></ul>",
                     "effects": {
                         "Electrocharge Ampoule": {
                             "name": "Ampoule de charge électrique"
@@ -385,7 +385,7 @@
         "expandedToolbelt": {
             "name": "Ceinture porte-outils optimisée",
             "description": {
-                "public": "<p>Une ceinture porte-outils optimisée, sous forme de ceinture utilitaire, de bandoulière ou d'un ensemble de poches cousues dans votre équipement.</p><p>Cet objet procure une nombre d'emplacements supplémentaires dépendant de son niveau de qualité :</p><ul><li><p><strong>Commune</strong> : +1 Emplacement de ceinture porte-outils</p></li><li><p><strong>Raffinée</strong> : +2 Emplacements de ceinture porte-outils</p></li><li><p><strong>Supérieure</strong> : +3 Emplacements de ceinture porte-outils</p></li><li><p><strong>Chef-d’œuvre</strong> : +4 Emplacements de ceinture porte-outils</p></li></ul>"
+                "public": "<p>Une ceinture porte-outils optimisée, sous forme de ceinture utilitaire, de bandoulière ou d'un ensemble de poches cousues dans votre équipement.</p><p>Cet objet procure une nombre d'emplacements supplémentaires dépendant de son niveau de qualité :</p><ul><li><p><strong>Commune</strong> : +1 Emplacement de ceinture porte-outils</p></li><li><p><strong>Raffinée</strong> : +2 Emplacements de ceinture porte-outils</p></li><li><p><strong>Supérieure</strong> : +3 Emplacements de ceinture porte-outils</p></li><li><p><strong>Magistrale</strong> : +4 Emplacements de ceinture porte-outils</p></li></ul>"
             }
         },
         "firestarter00000": {
@@ -441,7 +441,7 @@
             "actions": {
                 "frostFlask": {
                     "name": "Fiole de gouttes de givre",
-                    "description": "<p>Vous lancez la @ref[item.name], infligeant des dégâts amoindris de <strong>Froid</strong> à tous les ennemis dans le rayon de l'explosion qui ne parviennent pas à éviter l'attaque et les rendant @Condition[slowed] brièvement. Le rayon de l'<strong>Explosion</strong> dépend de la qualité de la bombe :</p><ul><li><p><strong>Bâclée</strong> - @[feet 3]</p></li><li><p><strong>Commune</strong> - @[feet 4]</p></li><li><p><strong>Raffinée</strong> - @[feet 6]</p></li><li><p><strong>Supérieure</strong> - @[feet 8]</p></li><li><p><strong>Chef-d’œuvre</strong> - @[feet 10]</p></li></ul>",
+                    "description": "<p>Vous lancez la @ref[item.name], infligeant des dégâts amoindris de <strong>Froid</strong> à tous les ennemis dans le rayon de l'explosion qui ne parviennent pas à éviter l'attaque et les rendant @Condition[slowed] brièvement. Le rayon de l'<strong>Explosion</strong> dépend de la qualité de la bombe :</p><ul><li><p><strong>Bâclée</strong> - @[feet 3]</p></li><li><p><strong>Commune</strong> - @[feet 4]</p></li><li><p><strong>Raffinée</strong> - @[feet 6]</p></li><li><p><strong>Supérieure</strong> - @[feet 8]</p></li><li><p><strong>Magistrale</strong> - @[feet 10]</p></li></ul>",
                     "effects": {
                         "Frostdrop Phial": {
                             "name": "Fiole de gouttes de givre"
@@ -458,7 +458,7 @@
             "actions": {
                 "gemOfConjuredFlame": {
                     "name": "Invocation d'élémentaire de feu",
-                    "description": "<p>La @ref[item.name] se brise dans une explosion de flammes, laissant à sa place un élémentaire flamboyant. Les élémentaires invoqués par cette gemme restent 6 Rounds (1 minute).</p><ul><li><p><strong>Bâclée</strong> - Aucun élémentaire n'est invoqué</p></li><li><p><strong>Commune</strong> - Particule</p></li><li><p><strong>Raffinée</strong> - Lutin</p></li><li><p><strong>Supérieure</strong> - Visiteur</p></li><li><p><strong>Chef-d’œuvre</strong> - Vagabond</p></li></ul>"
+                    "description": "<p>La @ref[item.name] se brise dans une explosion de flammes, laissant à sa place un élémentaire flamboyant. Les élémentaires invoqués par cette gemme restent 6 Rounds (1 minute).</p><ul><li><p><strong>Bâclée</strong> - Aucun élémentaire n'est invoqué</p></li><li><p><strong>Commune</strong> - Particule</p></li><li><p><strong>Raffinée</strong> - Lutin</p></li><li><p><strong>Supérieure</strong> - Visiteur</p></li><li><p><strong>Magistrale</strong> - Vagabond</p></li></ul>"
                 }
             }
         },
@@ -609,7 +609,7 @@
             "actions": {
                 "healingElixir": {
                     "name": "Élixir de santé",
-                    "description": "<p>Recouvrez immédiatement un montant de @Rule[resource.health] dépendant de la qualité de l'élixir.</p><ul><li><p><strong>Bâclée</strong> - Soigne immédiatement 6 points de <strong>Santé</strong>.</p></li><li><p><strong>Commune</strong> - Soigne immédiatement 12 points de <strong>Santé</strong>.</p></li><li><p><strong>Raffinée</strong> - Soigne immédiatement 24 points de <strong>Santé</strong>.</p></li><li><p><strong>Supérieure</strong> - Soigne immédiatement 48 points de <strong>Santé</strong>.</p></li><li><p><strong>Chef-d’œuvre</strong> - Soigne immédiatement 96 points de <strong>Santé</strong>.</p></li></ul>"
+                    "description": "<p>Recouvrez immédiatement un montant de @Rule[resource.health] dépendant de la qualité de l'élixir.</p><ul><li><p><strong>Bâclée</strong> - Soigne immédiatement 6 points de <strong>Santé</strong>.</p></li><li><p><strong>Commune</strong> - Soigne immédiatement 12 points de <strong>Santé</strong>.</p></li><li><p><strong>Raffinée</strong> - Soigne immédiatement 24 points de <strong>Santé</strong>.</p></li><li><p><strong>Supérieure</strong> - Soigne immédiatement 48 points de <strong>Santé</strong>.</p></li><li><p><strong>Magistrale</strong> - Soigne immédiatement 96 points de <strong>Santé</strong>.</p></li></ul>"
                 }
             }
         },
@@ -621,7 +621,7 @@
             "actions": {
                 "healingTonic": {
                     "name": "Stimulant de santé",
-                    "description": "<p>Recouvrez immédiatement, et au début de chacun des 5 prochains <strong>Rounds</strong>, un montant de @Rule[resource.health] dépendant de la qualité du stimulant.</p><ul><li><p><strong>Bâclée</strong> - Soigne 2 points de <strong>Santé</strong> à chaque <strong>Round</strong></p></li><li><p><strong>Commune</strong> - Soigne 4 points de <strong>Santé</strong> à chaque <strong>Round</strong></p></li><li><p><strong>Raffinée</strong> - Soigne 8 points de <strong>Santé</strong> à chaque <strong>Round</strong></p></li><li><p><strong>Supérieure</strong> - Soigne 16 points de <strong>Santé</strong> à chaque <strong>Round</strong></p></li><li><p><strong>Chef-d’œuvre</strong> - Soigne 32 points de <strong>Santé</strong> à chaque <strong>Round</strong></p></li></ul>",
+                    "description": "<p>Recouvrez immédiatement, et au début de chacun des 5 prochains <strong>Rounds</strong>, un montant de @Rule[resource.health] dépendant de la qualité du stimulant.</p><ul><li><p><strong>Bâclée</strong> - Soigne 2 points de <strong>Santé</strong> à chaque <strong>Round</strong></p></li><li><p><strong>Commune</strong> - Soigne 4 points de <strong>Santé</strong> à chaque <strong>Round</strong></p></li><li><p><strong>Raffinée</strong> - Soigne 8 points de <strong>Santé</strong> à chaque <strong>Round</strong></p></li><li><p><strong>Supérieure</strong> - Soigne 16 points de <strong>Santé</strong> à chaque <strong>Round</strong></p></li><li><p><strong>Magistrale</strong> - Soigne 32 points de <strong>Santé</strong> à chaque <strong>Round</strong></p></li></ul>",
                     "effects": {
                         "Healing Tonic": {
                             "name": "Stimulant de santé"
@@ -712,7 +712,7 @@
             "actions": {
                 "blastFlask": {
                     "name": "Fiole explosive",
-                    "description": "<p>Vous allumez et lancez la @ref[item.name], infligeant des dégâts de <strong>Feu</strong> à tous les ennemis dans le rayon de l'explosion qui ne parviennent pas à éviter l'attaque. Le rayon de l'<strong>Explosion</strong> dépend de la qualité de la bombe :</p><ul><li><p><strong>Bâclée</strong> - @[feet 3]</p></li><li><p><strong>Commune</strong> - @[feet 4]</p></li><li><p><strong>Raffinée</strong> - @[feet 6]</p></li><li><p><strong>Supérieure</strong> - @[feet 8]</p></li><li><p><strong>Chef-d’œuvre</strong> - @[feet 10]</p></li></ul>"
+                    "description": "<p>Vous allumez et lancez la @ref[item.name], infligeant des dégâts de <strong>Feu</strong> à tous les ennemis dans le rayon de l'explosion qui ne parviennent pas à éviter l'attaque. Le rayon de l'<strong>Explosion</strong> dépend de la qualité de la bombe :</p><ul><li><p><strong>Bâclée</strong> - @[feet 3]</p></li><li><p><strong>Commune</strong> - @[feet 4]</p></li><li><p><strong>Raffinée</strong> - @[feet 6]</p></li><li><p><strong>Supérieure</strong> - @[feet 8]</p></li><li><p><strong>Magistrale</strong> - @[feet 10]</p></li></ul>"
                 }
             }
         },
@@ -730,7 +730,7 @@
             "actions": {
                 "lightLantern": {
                     "name": "Allumer une lanterne",
-                    "description": "<p>Vous allumez la @ref[item.name], produisant un éclairage constant dans un large rayon. Cette action consume une unité de @UUID[Compendium.crucible.equipment.Item.lanternOil000000]{Huile pour lanterne} de votre inventaire ; la durée de combustion dépend de la qualité de l'huile consommée :</p><ul><li><p><strong>Bâclée</strong> - 1 heure</p></li><li><p><strong>Commune</strong> - 4 heures</p></li><li><p><strong>Raffinée</strong> - 12 heures</p></li><li><p><strong>Supérieure</strong> - 24 heures</p></li><li><p><strong>Chef-d’œuvre</strong> - 48 heures</p></li></ul>",
+                    "description": "<p>Vous allumez la @ref[item.name], produisant un éclairage constant dans un large rayon. Cette action consume une unité de @UUID[Compendium.crucible.equipment.Item.lanternOil000000]{Huile pour lanterne} de votre inventaire ; la durée de combustion dépend de la qualité de l'huile consommée :</p><ul><li><p><strong>Bâclée</strong> - 1 heure</p></li><li><p><strong>Commune</strong> - 4 heures</p></li><li><p><strong>Raffinée</strong> - 12 heures</p></li><li><p><strong>Supérieure</strong> - 24 heures</p></li><li><p><strong>Magistrale</strong> - 48 heures</p></li></ul>",
                     "effects": {
                         "Lantern": {
                             "name": "Lanterne"
@@ -742,7 +742,7 @@
         "lanternOil000000": {
             "name": "Huile pour lanterne",
             "description": {
-                "public": "<p>Une petite fiole d'huile à brûler. Une unité d'Huile pour lanterne est consommée pour allumer une @UUID[Compendium.crucible.equipment.Item.lantern000000000]{Lanterne} ; la durée de combustion dépend de la qualité de l'huile :</p><ul><li><p><strong>Bâclée</strong> - 1 heure</p></li><li><p><strong>Commune</strong> - 4 heures</p></li><li><p><strong>Raffinée</strong> - 12 heures</p></li><li><p><strong>Supérieure</strong> - 24 heures</p></li><li><p><strong>Chef-d’œuvre</strong> - 48 heures</p></li></ul>"
+                "public": "<p>Une petite fiole d'huile à brûler. Une unité d'Huile pour lanterne est consommée pour allumer une @UUID[Compendium.crucible.equipment.Item.lantern000000000]{Lanterne} ; la durée de combustion dépend de la qualité de l'huile :</p><ul><li><p><strong>Bâclée</strong> - 1 heure</p></li><li><p><strong>Commune</strong> - 4 heures</p></li><li><p><strong>Raffinée</strong> - 12 heures</p></li><li><p><strong>Supérieure</strong> - 24 heures</p></li><li><p><strong>Magistrale</strong> - 48 heures</p></li></ul>"
             }
         },
         "leatherArmor0000": {
@@ -810,7 +810,7 @@
         "net0000000000000": {
             "name": "Filet",
             "description": {
-                "public": "<p>Ces fibres à tissage serré sont renforcées pour être utilisées au combat afin de piéger et d'emmêler même les ennemis les plus dangereux, les rendant vulnérables.</p>"
+                "public": "<p>Ces fibres à tissage serré sont renforcées pour être utilisées au combat afin de piéger et d'emmêler même les ennemis les plus dangereux, les rendant impuissants.</p>"
             },
             "actions": {
                 "net": {
@@ -832,7 +832,7 @@
             "actions": {
                 "omniglotDecoction": {
                     "name": "Décoction omniglotte",
-                    "description": "<p>Consommée, cette décoction confère à celui qui la boit la fascinante capacité de lire, de parler et de comprendre les langues. Sa qualité détermine la durée de l'effet :</p><ul><li><p><strong>Bâclée</strong> - 10 minutes</p></li><li><p><strong>Commune</strong> - 1 heure</p></li><li><p><strong>Raffinée</strong> - 4 heures</p></li><li><p><strong>Supérieure</strong> - 12 heures</p></li><li><p><strong>Chef-d’œuvre</strong> - 24 heures</p></li></ul>",
+                    "description": "<p>Consommée, cette décoction confère à celui qui la boit la fascinante capacité de lire, de parler et de comprendre les langues. Sa qualité détermine la durée de l'effet :</p><ul><li><p><strong>Bâclée</strong> - 10 minutes</p></li><li><p><strong>Commune</strong> - 1 heure</p></li><li><p><strong>Raffinée</strong> - 4 heures</p></li><li><p><strong>Supérieure</strong> - 12 heures</p></li><li><p><strong>Magistrale</strong> - 24 heures</p></li></ul>",
                     "effects": {
                         "Omniglot Decoction": {
                             "name": "Décoction omniglotte"
@@ -855,7 +855,7 @@
             "actions": {
                 "paralyticIngest": {
                     "name": "Ingestion paralytique",
-                    "description": "<p>Lorsque cette toxine est ingérée ou pénètre d'une autre manière dans le flux sanguin d'une créature, cela est initialement @Rule[action.harmless], mais la cible doit se défendre d'une attaque contre sa @Rule[defense.fortitude] ou être @Condition[paralyzed].</p><p>La durée dépend de la qualité de la @ref[item.name] :</p><ul><li><p><strong>Bâclée</strong> - 1 rounds</p></li><li><p><strong>Commune</strong> - 2 rounds</p></li><li><p><strong>Raffinée</strong> - 4 rounds</p></li><li><p><strong>Supérieure</strong> - 8 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - Indéfini</p></li></ul><p><em>Cette action doit être prise lorsque le poison est ingéré plutôt que lors de sa première application.</em></p>",
+                    "description": "<p>Lorsque cette toxine est ingérée ou pénètre d'une autre manière dans le flux sanguin d'une créature, cela est initialement @Rule[action.harmless], mais la cible doit se défendre d'une attaque contre sa @Rule[defense.fortitude] ou être @Condition[paralyzed].</p><p>La durée dépend de la qualité de la @ref[item.name] :</p><ul><li><p><strong>Bâclée</strong> - 1 rounds</p></li><li><p><strong>Commune</strong> - 2 rounds</p></li><li><p><strong>Raffinée</strong> - 4 rounds</p></li><li><p><strong>Supérieure</strong> - 8 rounds</p></li><li><p><strong>Magistrale</strong> - Indéfini</p></li></ul><p><em>Cette action doit être prise lorsque le poison est ingéré plutôt que lors de sa première application.</em></p>",
                     "effects": {
                         "Paralytic Toxin": {
                             "name": "Toxine paralytique"
@@ -926,7 +926,7 @@
             "actions": {
                 "poisonIngest": {
                     "name": "Poison d'ingestion",
-                    "description": "<p>Lorsque cette toxine est ingérée ou entre autrement dans le sang d'une créature, elle est initialement @Rule[action.harmless], mais la cible doit se défendre d'une attaque contre sa @Rule[defense.fortitude] ou être @Condition[poisoned].</p><p>Le montant des dégâts de poison et leur durée dépendent de la qualité du @ref[item.name] :</p><ul><li><p><strong>Bâclée</strong> - 2 dégâts pendant 4 rounds</p></li><li><p><strong>Commune</strong> - 4 dégâts pendant 6 rounds</p></li><li><p><strong>Raffinée</strong> - 6 dégâts pendant 8 rounds</p></li><li><p><strong>Supérieure</strong> - 8 dégâts pendant 10 rounds</p></li><li><p><strong>Chef-d’œuvre</strong> - 10 dégâts pendant 12 rounds</p></li></ul><p><em>Cette action doit être utilisée lorsque le poison est ingéré plutôt que lors de sa première application.</em></p>",
+                    "description": "<p>Lorsque cette toxine est ingérée ou entre autrement dans le sang d'une créature, elle est initialement @Rule[action.harmless], mais la cible doit se défendre d'une attaque contre sa @Rule[defense.fortitude] ou être @Condition[poisoned].</p><p>Le montant des dégâts de poison et leur durée dépendent de la qualité du @ref[item.name] :</p><ul><li><p><strong>Bâclée</strong> - 2 dégâts pendant 4 rounds</p></li><li><p><strong>Commune</strong> - 4 dégâts pendant 6 rounds</p></li><li><p><strong>Raffinée</strong> - 6 dégâts pendant 8 rounds</p></li><li><p><strong>Supérieure</strong> - 8 dégâts pendant 10 rounds</p></li><li><p><strong>Magistrale</strong> - 10 dégâts pendant 12 rounds</p></li></ul><p><em>Cette action doit être utilisée lorsque le poison est ingéré plutôt que lors de sa première application.</em></p>",
                     "effects": {
                         "Poisoned": {
                             "name": "Empoisonné"
@@ -959,7 +959,7 @@
             "actions": {
                 "rallyingElixir": {
                     "name": "Élixir de ralliement",
-                    "description": "<p>Recouvrez immédiatement un montant de @Rule[resource.morale]{Moral} dépendant de la qualité de l'élixir.</p><ul><li><p><strong>Bâclée</strong> - Soigne immédiatement 6 points de <strong>Moral</strong>.</p></li><li><p><strong>Commune</strong> - Soigne immédiatement 12 points de <strong>Moral</strong>.</p></li><li><p><strong>Raffinée</strong> - Soigne immédiatement 24 points de <strong>Moral</strong>.</p></li><li><p><strong>Supérieure</strong> - Soigne immédiatement 48 points de <strong>Moral</strong>.</p></li><li><p><strong>Chef-d’œuvre</strong> - Soigne immédiatement 96 points de <strong>Moral</strong>.</p></li></ul>"
+                    "description": "<p>Recouvrez immédiatement un montant de @Rule[resource.morale]{Moral} dépendant de la qualité de l'élixir.</p><ul><li><p><strong>Bâclée</strong> - Soigne immédiatement 6 points de <strong>Moral</strong>.</p></li><li><p><strong>Commune</strong> - Soigne immédiatement 12 points de <strong>Moral</strong>.</p></li><li><p><strong>Raffinée</strong> - Soigne immédiatement 24 points de <strong>Moral</strong>.</p></li><li><p><strong>Supérieure</strong> - Soigne immédiatement 48 points de <strong>Moral</strong>.</p></li><li><p><strong>Magistrale</strong> - Soigne immédiatement 96 points de <strong>Moral</strong>.</p></li></ul>"
                 }
             }
         },
@@ -971,7 +971,7 @@
             "actions": {
                 "rallyingTonic": {
                     "name": "Stimulant de ralliement",
-                    "description": "<p>Recouvrez immédiatement, et au début de chacun des 5 prochains <strong>Rounds</strong>, un montant de @Rule[resource.morale] dépendant de la qualité du stimulant.</p><ul><li><p><strong>Bâclée</strong> - Soigne 2 points de <strong>Moral</strong> à chaque <strong>Round</strong></p></li><li><p><strong>Commune</strong> - Soigne 4 points de <strong>Moral</strong> à chaque <strong>Round</strong></p></li><li><p><strong>Raffinée</strong>- Soigne 8 points de <strong>Moral</strong> à chaque <strong>Round</strong></p></li><li><p><strong>Supérieure</strong> - Soigne 16 points de <strong>Moral</strong> à chaque <strong>Round</strong></p></li><li><p><strong>Chef-d’œuvre</strong> - Soigne 32 points de <strong>Moral</strong> à chaque <strong>Round</strong></p></li></ul>",
+                    "description": "<p>Recouvrez immédiatement, et au début de chacun des 5 prochains <strong>Rounds</strong>, un montant de @Rule[resource.morale] dépendant de la qualité du stimulant.</p><ul><li><p><strong>Bâclée</strong> - Soigne 2 points de <strong>Moral</strong> à chaque <strong>Round</strong></p></li><li><p><strong>Commune</strong> - Soigne 4 points de <strong>Moral</strong> à chaque <strong>Round</strong></p></li><li><p><strong>Raffinée</strong>- Soigne 8 points de <strong>Moral</strong> à chaque <strong>Round</strong></p></li><li><p><strong>Supérieure</strong> - Soigne 16 points de <strong>Moral</strong> à chaque <strong>Round</strong></p></li><li><p><strong>Magistrale</strong> - Soigne 32 points de <strong>Moral</strong> à chaque <strong>Round</strong></p></li></ul>",
                     "effects": {
                         "Rallying Tonic": {
                             "name": "Stimulant de ralliement"
@@ -1184,7 +1184,7 @@
         "spellScrollFine0": {
             "name": "Parchemin de sort (Raffiné)",
             "description": {
-                "public": "<p>Un parchemin de sort est un morceau de vélin ou de parchemin spécialisé sur lequel sont soigneusement incrustés les glyphes d'un ou plusieurs composantes de sorcellerie. Activer ce parchemin de sort confère temporairement à son lecteur une profonde familiarité avec ces composantes, comme s'il les connaissait depuis des années.</p><p>Le nombre de composantes de sorcellerie qu'un parchemin peut contenir dépend de la qualité de sa fabrication.</p><ul><li><p><strong>Raffiné</strong> : Ne peut contenir qu'une seule composante de sorcellerie</p></li><li><p><strong>Supérieure</strong> : Peur contenir deux composantes de sorcellerie</p></li><li><p><strong>Chef-d’œuvre</strong> : Peur contenir trois composantes de sorcellerie</p></li></ul>"
+                "public": "<p>Un parchemin de sort est un morceau de vélin ou de parchemin spécialisé sur lequel sont soigneusement incrustés les glyphes d'un ou plusieurs composantes de sorcellerie. Activer ce parchemin de sort confère temporairement à son lecteur une profonde familiarité avec ces composantes, comme s'il les connaissait depuis des années.</p><p>Le nombre de composantes de sorcellerie qu'un parchemin peut contenir dépend de la qualité de sa fabrication.</p><ul><li><p><strong>Raffiné</strong> : Ne peut contenir qu'une seule composante de sorcellerie</p></li><li><p><strong>Supérieure</strong> : Peur contenir deux composantes de sorcellerie</p></li><li><p><strong>Magistrale</strong> : Peur contenir trois composantes de sorcellerie</p></li></ul>"
             },
             "actions": {
                 "readScroll": {
@@ -1199,9 +1199,9 @@
             }
         },
         "spellScrollMaste": {
-            "name": "Parchemin de sort (Chef-d’œuvre)",
+            "name": "Parchemin de sort (Magistrale)",
             "description": {
-                "public": "<p>Un parchemin de sort est un morceau de vélin ou de parchemin spécialisé sur lequel sont soigneusement incrustés les glyphes d'un ou plusieurs composantes de sorcellerie. Activer ce parchemin de sort confère temporairement à son lecteur une profonde familiarité avec ces composantes, comme s'il les connaissait depuis des années.</p><p>Le nombre de composantes de sorcellerie qu'un parchemin peut contenir dépend de la qualité de sa fabrication.</p><ul><li><p><strong>Raffiné</strong> : Ne peut contenir qu'une seule composante de sorcellerie</p></li><li><p><strong>Supérieure</strong> : Peur contenir deux composantes de sorcellerie</p></li><li><p><strong>Chef-d’œuvre</strong> : Peur contenir trois composantes de sorcellerie</p></li></ul>"
+                "public": "<p>Un parchemin de sort est un morceau de vélin ou de parchemin spécialisé sur lequel sont soigneusement incrustés les glyphes d'un ou plusieurs composantes de sorcellerie. Activer ce parchemin de sort confère temporairement à son lecteur une profonde familiarité avec ces composantes, comme s'il les connaissait depuis des années.</p><p>Le nombre de composantes de sorcellerie qu'un parchemin peut contenir dépend de la qualité de sa fabrication.</p><ul><li><p><strong>Raffiné</strong> : Ne peut contenir qu'une seule composante de sorcellerie</p></li><li><p><strong>Supérieure</strong> : Peur contenir deux composantes de sorcellerie</p></li><li><p><strong>Magistrale</strong> : Peur contenir trois composantes de sorcellerie</p></li></ul>"
             },
             "actions": {
                 "readScroll": {
@@ -1218,7 +1218,7 @@
         "spellScrollSuper": {
             "name": "Parchemin de sort (Supérieur)",
             "description": {
-                "public": "<p>Un parchemin de sort est un morceau de vélin ou de parchemin spécialisé sur lequel sont soigneusement incrustés les glyphes d'un ou plusieurs composantes de sorcellerie. Activer ce parchemin de sort confère temporairement à son lecteur une profonde familiarité avec ces composantes, comme s'il les connaissait depuis des années.</p><p>Le nombre de composantes de sorcellerie qu'un parchemin peut contenir dépend de la qualité de sa fabrication.</p><ul><li><p><strong>Raffiné</strong> : Ne peut contenir qu'une seule composante de sorcellerie</p></li><li><p><strong>Supérieure</strong> : Peur contenir deux composantes de sorcellerie</p></li><li><p><strong>Chef-d’œuvre</strong> : Peur contenir trois composantes de sorcellerie</p></li></ul>"
+                "public": "<p>Un parchemin de sort est un morceau de vélin ou de parchemin spécialisé sur lequel sont soigneusement incrustés les glyphes d'un ou plusieurs composantes de sorcellerie. Activer ce parchemin de sort confère temporairement à son lecteur une profonde familiarité avec ces composantes, comme s'il les connaissait depuis des années.</p><p>Le nombre de composantes de sorcellerie qu'un parchemin peut contenir dépend de la qualité de sa fabrication.</p><ul><li><p><strong>Raffiné</strong> : Ne peut contenir qu'une seule composante de sorcellerie</p></li><li><p><strong>Supérieure</strong> : Peur contenir deux composantes de sorcellerie</p></li><li><p><strong>Magistrale</strong> : Peur contenir trois composantes de sorcellerie</p></li></ul>"
             },
             "actions": {
                 "readScroll": {
@@ -1264,7 +1264,7 @@
             "actions": {
                 "steelJawArm": {
                     "name": "Armer le piège à mâchoire de fer",
-                    "description": "<p>La mise en place de ce piège représente un péril important pouvant causer des dégâts considérables en cas de déclenchement. Il doit être fixé par une chaîne solide à un objet immobile, tel qu'un arbre ou un pieu enfoncé dans le sol. La zone du piège est un cercle de @[feet 2] de rayon.</p><p>Lorsqu'il est déclenché, la créature qui a posé le piège fait une attaque de compétence @Rule[skill.wilderness] contre la défense de @Rule[defense.reflex] d'une unique cible qui a déclenché le piège. S'il fonctionne, il inflige des dégâts <strong>Perforants</strong> et applique la condition @Condition[restrained]. Les dégâts de base infligés par le piège varient en fonction de la qualité du piège.</p><ul><li><p><strong>Bâclée</strong> - 1 damage</p></li><li><p><strong>Commune</strong> - 2 damage</p></li><li><p><strong>Raffinée</strong> - 4 damage</p></li><li><p><strong>Supérieure</strong> - 8 damage</p></li><li><p><strong>Chef-d’œuvre</strong> - 16 damage</p></li></ul>"
+                    "description": "<p>Poser ce piège met en place un péril qui produit son effet s'il est déclenché. La zone du piège est un cercle d'un rayon de @[feet 2] de rayon.</p><p>Lorsqu'il est déclenché, la créature qui a posé le piège fait une attaque de compétence @Rule[skill.wilderness] contre la défense de @Rule[defense.reflex] de la créature qui l'a déclenché. Si l'attaque réussie, il inflige des dégâts @Rule[damageType.piercing] et applique la condition @Condition[restrained]. Les dégâts de base infligés par le piège dépendent de la qualité du piège.</p><ul><li><p><strong>Bâclée</strong> - 1 damage</p></li><li><p><strong>Commune</strong> - 2 damage</p></li><li><p><strong>Raffinée</strong> - 4 damage</p></li><li><p><strong>Supérieure</strong> - 8 damage</p></li><li><p><strong>Magistrale</strong> - 16 damage</p></li></ul>"
                 }
             }
         },
@@ -1441,7 +1441,7 @@
             },
             "actions": {
                 "potionGliding": {
-                    "description": "<p>Pendant toute la durée de l'effet de cette potion, celui qui la boit bénéficie du talent @UUID[Compendium.crucible.adversary-talents.Item.glider0000000000]{Planeur} comme s'il s'agissait d'une créature dotée de cette caractéristique, transformant ce qui aurait autrement été des chutes en <strong>Vols planés</strong> contrôlés.</p><p>La qualité de la potion détermine la durée de cet effet :</p><ul><li><p><strong>Bâclée</strong>- 10 minutes</p></li><li><p><strong>Commune</strong> - 1 hour</p></li><li><p><strong>Raffinée</strong> - 4 hours</p></li><li><p><strong>Supérieure</strong> - 12 hours</p></li><li><p><strong>Chef-d’œuvre</strong>- 24 hours</p></li></ul>",
+                    "description": "<p>Pendant toute la durée de l'effet de cette potion, celui qui la boit bénéficie du talent @UUID[Compendium.crucible.adversary-talents.Item.glider0000000000]{Planeur} comme s'il s'agissait d'une créature dotée de cette caractéristique, transformant ce qui aurait autrement été des chutes en <strong>Vols planés</strong> contrôlés.</p><p>La qualité de la potion détermine la durée de cet effet :</p><ul><li><p><strong>Bâclée</strong>- 10 minutes</p></li><li><p><strong>Commune</strong> - 1 hour</p></li><li><p><strong>Raffinée</strong> - 4 hours</p></li><li><p><strong>Supérieure</strong> - 12 hours</p></li><li><p><strong>Magistrale</strong>- 24 hours</p></li></ul>",
                     "name": "Potion de chute lente",
                     "effects": {
                         "Potion of Gliding": {
@@ -1513,6 +1513,48 @@
             "name": "Crosse tortillante",
             "description": {
                 "public": "<p>Un bâton recourbé en bois noir qui se tord et s'enroule lentement de lui-même. Les lanceurs de sorts peuvent canaliser leur sorcellerie à travers ce talisman ou l'utiliser pour frapper leurs ennemis en infligeant des dégâts de @Rule[damageType.void].</p>"
+            }
+        },
+        "batteringSnare00": {
+            "name": "Piège percutant",
+            "description": {
+                "public": "<p>Ce piège se compose d’une pierre plate ou d’une plaque métallique maintenue en place par un ressort ou une branche flexible.</p>"
+            },
+            "actions": {
+                "batteringSnareArm": {
+                    "name": "Armement du piège percutant",
+                    "description": "<p>Poser le piège met en place un péril qui produit son effet s'il est déclenché. La zone du piège est un cercle d'un rayon de @[feet 2].</p><p>Lorsqu’il est déclenché, la créature qui a posé le piège effectue une attaque de compétence @Rule[skill.wilderness] contre la défense de @Rule[defense.reflex] de la créature qui l'a déclenché. Si l'attaque réussie, l’objet plat décrit une large trajectoire et percute la créature, infligeant des dégâts @Rule[damageType.bludgeoning]. Si l'attaque est une @Rule[dice.criticalSuccess], la créature est également @Condition[stunned] jusqu'à la fin de son prochain tour. Les dégâts de base infligés par le piège dépendent de sa qualité.</p><ul><li><p><strong>Bâclée</strong> - 2 dégâts</p></li><li><p><strong>Commune</strong> - 4 dégâts</p></li><li><p><strong>Raffinée</strong> - 8 dégâts</p></li><li><p><strong>Supérieure</strong> - 12 dégâts</p></li><li><p><strong>Magistrale</strong> - 20 dégâts</p></li></ul>"
+                }
+            }
+        },
+        "caltropSnare0000": {
+            "name": "Chausse-trapes",
+            "description": {
+                "public": "<p>Ce piège se compose d’un récipient dissimulé contenant des chausse-trapes, relié à un fil de détente. Lorsque le piège est déclenché, il projette les chausse-trapes dans les environs.</p>"
+            },
+            "actions": {
+                "caltropSnareArm": {
+                    "name": "Armement des chausse-trapes",
+                    "description": "<p>Poser le piège met en place un péril qui produit son effet s'il est déclenché. La zone du piège est un cercle d'un rayon de @[feet 2].</p><p>Lorsqu’il est déclenché, le piège projette ses chausse-trapes et la zone devient dangereuse. La créature qui a posé le piège effectue une attaque de compétence @Rule[skill.wilderness] contre la défense de @Rule[defense.reflex] d'une créature qui entre ou commence son tour dans la zone, une fois par round seulement. Si l'attaque réussie, elle inflige des dégâts @Rule[damageType.piercing] et cause les conditions @Condition[bleeding] et @Condition[slowed]. Les dégâts ensanglantés et la durée des deux conditions dépendent de la qualité du piège.</p><ul><li><p><strong>Bâclée</strong> - 1 dégât, 1 round</p></li><li><p><strong>Commune</strong> - 2 dégâts, 2 rounds</p></li><li><p><strong>Raffinée</strong> - 3 dégâts, 3 rounds</p></li><li><p><strong>Supérieure</strong> - 4 dégâts, 4 rounds</p></li><li><p><strong>Magistrale</strong> - 6 dégâts, 6 rounds</p></li></ul>"
+                }
+            }
+        },
+        "compass000000000": {
+            "description": {
+                "public": "<p>Un élément en métal ferreux suspendu dans un liquide ; lorsqu'il est maintenu parallèlement au sol, il fournit une indication de direction satisfaisante pour la navigation.</p><p></p><p>Cet outil confère @Advantage[2] pour des tâches de navigation sur terre ou en mer.</p>"
+            },
+            "name": "Boussole"
+        },
+        "poisonBarbSnare0": {
+            "name": "Piège à dard empoisonné",
+            "description": {
+                "public": "<p>Un cercle de pointes enduites de venin, dissimulé de manière à se fondre dans le terrain environnant. Une fois le piège armé, toute créature qui pénètre dans sa zone d’effet le déclenche.</p>"
+            },
+            "actions": {
+                "poisonBarbSnareArm": {
+                    "name": "Armement du piège à dard empoisonné",
+                    "description": "<p>Poser le piège met en place un péril qui produit son effet s'il est déclenché. La zone du piège est un cercle d'un rayon de @[feet 2].</p><p>Lorsqu’il est déclenché, la créature qui a posé le piège effectue une attaque de compétence @Rule[skill.wilderness] contre la défense de @Rule[defense.reflex] de la créature qui l'a déclenché. Si l'attaque réussie, Les dards empoisonnés s’enfoncent dans la créature avec une attaque @Rule[action.weakened], infligeant des dégâts de @Rule[damageType.poison] et causant la condition @Condition[poisoned]. Les dégâts de poison et la durée de la condition dépendent de la qualité du piège.</p><ul><li><p><strong>Bâclée</strong> - 1 dégât, 1 round</p></li><li><p><strong>Commune</strong> - 2 dégâts, 2 rounds</p></li><li><p><strong>Raffinée</strong> - 3 dégâts, 3 rounds</p></li><li><p><strong>Supérieure</strong> - 4 dégâts, 4 rounds</p></li><li><p><strong>Magistrale</strong> - 6 dégâts, 6 rounds</p></li></ul>"
+                }
             }
         }
     }
