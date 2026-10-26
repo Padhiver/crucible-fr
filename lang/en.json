@@ -566,6 +566,7 @@
     "RequestRollsSuffix": "{label}: Request Rolls",
     "RequiresMovement": "You must plan a movement path before this action can be used.",
     "RequiresRegion": "You must place a Region before this action can be used.",
+    "Reversed": "Reversed",
     "SkillCheck": "{skill} Skill Check",
     "SkillCheckGeneric": "Skill Check",
     "StandardCheck": "Standard Check",
@@ -946,6 +947,10 @@
             "label": "Allow Interruption",
             "hint": "If checked, it is possible for this rest to be interrupted by configured gameplay events."
           },
+          "allowRestActions": {
+            "label": "Allow Rest Actions",
+            "hint": "If checked, each resting character may perform one rest action as part of the rest."
+          },
           "hours": {
             "label": "Hours of Rest",
             "hint": "Hours which will elapse if the rest is not interrupted."
@@ -955,9 +960,18 @@
             "hint": "Each selected character will perform the Rest action."
           }
         },
+        "STATUSES": {
+          "Cancelled": "Cancelled",
+          "Complete": "Complete",
+          "Interrupted": "Interrupted",
+          "Pending": "Pending"
+        },
+        "CardTitle": "{name} Rest ({hours} Hours)",
         "Confirm": "Begin Rest",
+        "ConfirmRest": "Confirm Rest",
         "ContinuationHint": "This rest is being continued from a previous rest that was interrupted. {hoursCompleted} of {hoursRequired} hours have been completed.",
         "Interrupted": "Your rest has been interrupted after {hours} hours!",
+        "NoChanges": "No recovery needed",
         "Title": "Confirm Group Rest"
       },
       "WARNINGS": {
@@ -2957,6 +2971,9 @@
       "adversary": "Adversary",
       "group": "Group",
       "hero": "Hero"
+    },
+    "ChatMessage": {
+      "rest": "Group Rest"
     },
     "Item": {
       "accessory": "Accessory",
