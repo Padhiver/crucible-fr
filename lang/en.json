@@ -337,6 +337,10 @@
       "HealingTooltip": "This action provides restoration by testing an ally's Wounds threshold.",
       "IconicSpell": "Iconic Spell",
       "IconicSpellTooltip": "This action is an Iconic Spell learned through mastery of its components.",
+      "Involuntary": "Involuntary",
+      "InvoluntaryTooltip": "This action happens to a creature rather than being chosen, so it occurs even while the creature is Incapacitated.",
+      "Irreversible": "Irreversible",
+      "IrreversibleTooltip": "This action cannot be reversed once confirmed, so a Gamemaster must confirm it manually.",
       "Keen": "Keen",
       "KeenTooltip": "This action is precise, lowering its Critical Success Threshold by 2 and making a Critical Hit more likely.",
       "MainHand": "Main-Hand",
@@ -479,17 +483,19 @@
       },
       "CannotAffordMove": "{name} has insufficient action to move this distance which requires {cost}A!",
       "CannotConfirmTarget": "Cannot {change} {action} while the action it responds to is {state}.",
-      "CannotSpendAction":"{name} cannot spend Action because they are Incapacitated!",
+      "CannotReverse": "{action} is irreversible and cannot be reversed once confirmed.",
       "CannotSpendFocus": "{name} cannot spend Focus because they are currently {status}!",
       "CannotTargetSelf": "You cannot target yourself with this Action!",
       "CannotThrow": "You cannot throw this weapon.",
       "CannotUse": "{name} does not satisfy the prerequisites to use {action}.",
       "CannotUseReason": "{name} does not satisfy the prerequisites to use {action}: {reason}",
       "CannotUseTagGeneric": "with tag {tag}",
+      "CyclicEffects": "{action} cannot create effects which depend upon one another in a cycle.",
       "DirectMovementOnly": "This action requires a direct movement path with no intermediate waypoints.",
       "CannotHideEngaged": "You cannot Hide while you are engaged with an enemy.",
       "GemConjuredFlameShoddy": "A Shoddy quality Gem of Conjured Flame fails to summon any elemental.",
       "HideObservers": "Additional Observers",
+      "Incapacitated": "{name} cannot act while Incapacitated.",
       "IncorrectTargets": "You may only designate up to {number} {type} targets for {action}!",
       "InteractRange": "You are too far away to interact with that object.",
       "InvalidTarget": "You must designate at least one {type} target for {action}!",
@@ -622,7 +628,7 @@
       "RequiresOpening": "Estocade requires a target who is Exposed, Prone, Slowed, Staggered, Paralyzed, or Disarmed."
     },
     "FieldStudy": {
-      "Effect": "Field Study: {knowledge}",
+      "Effect": "Field Study",
       "Label": "Topic of Study",
       "Required": "You must choose a field of Knowledge to study.",
       "Title": "Field Study"
@@ -632,9 +638,9 @@
     },
     "Gambit": {
       "AnteWon": "Gambit (+{count})",
-      "Charges": "Gambit ({count})",
       "ChargeDescription": "A number of Gambit charges that can be spent instead of <strong>Heroism</strong> to perform your \"All In\" action.",
-      "LoadedDice": "Loaded Dice"
+      "LoadedDice": "Loaded Dice",
+      "Name": "Gambit"
     },
     "Glide": {
       "MustDescend": "A glide must end at a lower elevation than where it began."
@@ -644,7 +650,7 @@
       "AlreadyGrappling": "You are already Grappling another creature."
     },
     "Grudgebearer": {
-      "Grudge": "Grudge: {target}"
+      "Grudge": "Grudge"
     },
     "ImbueAffix": {
       "AffixLabel": "Affix",
@@ -661,7 +667,11 @@
       "NotMaster": "You must target the companion's master."
     },
     "PetrifyingCloud": {
-      "PetrificationStage": "Petrification: Stage {stage}"
+      "Petrification": "Petrification",
+      "Stage": "Stage {stage}"
+    },
+    "Regurgitate": {
+      "NotHeld": "You are not holding {target}."
     },
     "Revive": {
       "RequiresDead": "Revive requires a Dead target."
@@ -676,11 +686,11 @@
       "LightName": "Thrown Torch ({actor})"
     },
     "VowOfAnimus": {
-      "VowDescription": "You vowed to vanquish a specific foe who became the subject of your animus.",
-      "VowName": "Sworn Vow: {target}"
+      "VowDescription": "You vowed to vanquish a specific foe who became the subject of your animus."
     }
   },
   "ACTIVE_EFFECT": {
+    "ContextName": "{effect} ({context})",
     "ACTIONS": {
       "Create": "Create Effect",
       "Delete": "Delete Effect",
@@ -1507,7 +1517,7 @@
       "DeleteDoT": "Remove Damage Over Time",
       "Maintain": "Maintain",
       "MaintainCost": "Maintain ({cost} Focus)",
-      "MaintainDetail": "Expend Focus to maintain {effect}.",
+      "MaintainDetail": "Continue to maintain {effect}.",
       "MaintainName": "Maintain {effect}"
     },
     "PROPERTIES": {
@@ -1516,7 +1526,7 @@
       "Magical": "Magical",
       "MagicalTooltip": "This effect is magical in nature and may be removed by anti-magic abilities.",
       "Maintained": "Maintained",
-      "MaintainedTooltip": "This effect lapses at the end of your turn unless you spend Focus to maintain it.",
+      "MaintainedTooltip": "This effect lapses at the end of your turn unless you maintain it.",
       "Removable": "Removable",
       "RemovableTooltip": "This effect may be removed by overcoming its removal difficulty."
     },
@@ -1526,7 +1536,9 @@
       "Removal": "Removal"
     },
     "SUPPRESSION": {
-      "Maintenance": "Requires Maintenance"
+      "Incapacitated": "Suppressed while Incapacitated",
+      "Maintenance": "Requires Maintenance",
+      "Source": "Suppressed while its Source is Inactive"
     },
     "MAINTENANCE": {
       "EndConfirm": "Maintaining {effect} will end {effects}, which you can no longer maintain.",
@@ -2204,6 +2216,7 @@
       "FREQUENCIES": {
         "every": "Every Time",
         "once": "Once",
+        "oncePerActor": "Once per Actor",
         "roundActor": "Once per Round per Actor"
       },
       "TABS": {
