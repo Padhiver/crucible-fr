@@ -513,6 +513,7 @@
       "MustFollowMainhandStrike": "You may only perform the {action} action after a basic Strike action with your mainhand weapon.",
       "MustFollowMeleeDefense": "You may only perform the {action} action after defending a melee attack with a {defense}.",
       "MustFollowMeleeKill": "You may only perform the {action} action after incapacitating an enemy with a melee attack.",
+      "MustFollowMove": "You may only perform the {action} action immediately after a Move.",
       "MustFollowRanged": "You may only perform the {action} action after a ranged weapon attack.",
       "MustFollowRest": "You may only perform the {action} action immediately after a Rest.",
       "MustFollowStrike": "You may only perform the {action} action after a basic Strike action",
@@ -1799,6 +1800,7 @@
     "WoundsShort": "Healing"
   },
   "DETECTION_MODES": {
+    "Blindsight": "Blindsight",
     "BloodSense": "Blood Sense",
     "Echolocation": "Echolocation",
     "SenseCreature": "Sense Creature",
@@ -2647,6 +2649,8 @@
       "NotConfigured": "This Iconic Spell is not yet fully configured. It requires all three spellcraft components to be defined.",
       "SorcererNoIconic": "As a {talent}, you cannot cast Iconic Spells."
     },
+    "ComposedDescription": "A composed spell using the {rune} Rune and the {gesture} Gesture.",
+    "ComposedDescriptionInflected": "A composed spell using the {rune} Rune, the {gesture} Gesture, and the {inflection} Inflection.",
     "DamageType": "Damage Type",
     "Iconic": "Iconic Spell",
     "IconicPl": "Iconic Spells",
