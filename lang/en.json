@@ -67,7 +67,7 @@
         "Name": "Escape"
       },
       "Fall": {
-        "Description": "You plummet to the surface beneath you. Falls of 11-30 feet challenge Reflex, dealing Bludgeoning damage to Health. Falls of more than 30 feet are a Severe hazard challenging Fortitude. Unless resisted, the creature falls Prone.",
+        "Description": "You plummet to the surface beneath you. Falls of 11-30 feet are a hazard challenging Reflex, dealing Bludgeoning damage to Health. Falls of more than 30 feet are a Severe hazard challenging Fortitude. Unless resisted, the creature falls Prone.",
         "Name": "Fall",
         "NameDistance": "Fall ({distance} feet)"
       },
@@ -102,7 +102,7 @@
         "Name": "Reload Weapon"
       },
       "Rest": {
-        "Description": "Spend ten hours to fully rest, including time to eat, sleep, tend to wounds, and recover resources. Delivers all <strong>Recover</strong> benefits, and characters who suffer <strong>Wounds</strong> and <strong>Madness</strong> reduce each by their <strong>Level</strong>. Temporary effects with a longer duration also end.",
+        "Description": "Spend ten hours to fully rest, including time to eat, sleep, tend to wounds, and recover resources. Delivers all <strong>Recover</strong> benefits, and characters reduce their <strong>Wounds</strong> by their <strong>Level</strong> plus <strong>Toughness</strong>, and their <strong>Madness</strong> by their <strong>Level</strong> plus <strong>Presence</strong>. Temporary effects with a longer duration also end.",
         "Name": "Rest"
       },
       "Search": {
@@ -324,7 +324,7 @@
       "DualWield": "Dual Wield",
       "DualWieldTooltip": "This action requires wielding two separate weapons or being entirely unarmed to perform.",
       "Empowered": "Empowered",
-      "EmpoweredTooltip": "This action is powerful and deals additional damage, gaining a +6 damage bonus if successful.",
+      "EmpoweredTooltip": "This action is powerful and deals additional damage, gaining a +3 damage bonus if successful.",
       "Finesse": "Finesse",
       "FinesseTooltip": "This action requires a certain amount of finesse to perform. You must be wielding a weapon which scales using Dexterity.",
       "Flanking": "Flanking",
@@ -347,6 +347,8 @@
       "MainHandTooltip": "This action utilizes your main-hand weapon to make an attack.",
       "Maintained": "Maintained",
       "MaintainedTooltip": "This action can be maintained, incurring its focus cost at the start of your turns.",
+      "Massive": "Massive",
+      "MassiveTooltip": "This action strikes with great force and has a +6 damage bonus.",
       "Mechanical": "Mechanical",
       "MechanicalTooltip": "This action requires use of a mechanical weapon.",
       "Melee": "Melee",
@@ -401,6 +403,8 @@
       "ShieldTooltip": "This action requires wielding a shield to perform.",
       "Skill": "Skill",
       "SkillTooltip": "This action involves a targeted or opposed Skill check.",
+      "Slight": "Slight",
+      "SlightTooltip": "This action lands only a slight blow and has a -6 damage bonus.",
       "Spell": "Spell",
       "SpellTooltip": "This action involves spellcraft.",
       "Strike": "Strike",
@@ -423,7 +427,7 @@
       "Vocal": "Vocal",
       "VocalTooltip": "This action requires its user to speak or otherwise vocalize sound.",
       "Weakened": "Weakened",
-      "WeakenedTooltip": "This action is weaker than normal attacks and has a -6 damage bonus."
+      "WeakenedTooltip": "This action is weaker than normal attacks and has a -3 damage bonus."
     },
     "TAG_CATEGORIES": {
       "Attack": "Attack",
@@ -671,6 +675,13 @@
     "PetrifyingCloud": {
       "Petrification": "Petrification",
       "Stage": "Stage {stage}"
+    },
+    "Pickpocket": {
+      "Caught": "Caught",
+      "Feigned": "Feigned",
+      "Noticed": "Noticed",
+      "Perfect": "Perfect",
+      "Suspected": "Suspected"
     },
     "Regurgitate": {
       "NotHeld": "You are not holding {target}."
@@ -2224,6 +2235,10 @@
         "frequency": {
           "hint": "How frequently should this action be able to be applied to a triggering token?",
           "label": "Frequency"
+        },
+        "immediate": {
+          "hint": "Also perform this action against eligible tokens within the region when it is first placed.",
+          "label": "Trigger Immediately"
         },
         "origin": {
           "hint": "The effect responsible for tracking the existence of this behavior.",
